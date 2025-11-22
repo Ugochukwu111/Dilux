@@ -1,0 +1,183 @@
+:root {
+  --dark-maroon: #733939; 
+  --light-gold: #d3a23e; 
+  
+  --light-gray: #EBEBEB; 
+  --dark-gray: #5C5C5C;
+  
+  --deep-black: #1A1A1A; 
+  --bright-white: #F7F7F7; 
+  
+  --text-black: #222222; 
+  --green: #388E3C; 
+  --black: #000000;
+  --white: #FFFFFF; 
+
+  --soft-gradient: linear-gradient(
+      135deg, 
+      var(--light-gold) 0%,
+      var(--bright-white) 70%,
+      var(--dark-maroon) 100%
+  );
+  
+  --deep-gradient: linear-gradient(
+      45deg, 
+      var(--dark-maroon) 0%,
+      var(--light-gold) 100%
+  );
+
+/* FONT FAMILY */
+  --font-header: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+
+/* --- Background Color Utilities --- */
+.bg-dark-maroon { background-color: var(--dark-maroon); }
+.bg-light-gold { background-color: var(--light-gold); }
+.bg-light-gray { background-color: var(--light-gray); }
+.bg-dark-gray { background-color: var(--dark-gray); }
+.bg-deep-black { background-color: var(--deep-black); }
+.bg-bright-white { background-color: var(--bright-white); }
+.bg-text-black { background-color: var(--text-black); }
+.bg-green { background-color: var(--green); }
+.bg-black { background-color: var(--black); }
+.bg-white { background-color: var(--white); }
+
+/* --- Text Color Utilities --- */
+.text-dark-maroon { color: var(--dark-maroon); }
+.text-light-gold { color: var(--light-gold); }
+.text-light-gray { color: var(--light-gray); }
+.text-dark-gray { color: var(--dark-gray); }
+.text-deep-black { color: var(--deep-black); }
+.text-bright-white { color: var(--bright-white); }
+.text-text-black { color: var(--text-black); } /* Use text-black for body/primary text */
+.text-green { color: var(--green); }
+.text-black { color: var(--black); }
+.text-white { color: var(--white); }
+
+/* --- Gradient Background Utilities --- */
+.bg-soft-gradient { background: var(--soft-gradient); }
+.bg-deep-gradient { background: var(--deep-gradient); }
+
+/* ======== ======FONT FAMILY */
+.font-heading{font-family: var(--font-header);}
+.font-body{font-family: var(--font-body);}
+
+.FWBB{font-weight: 700;}
+.FWB{font-weight: 600;}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: var(--bright-white);
+    font-family: var(--font-body), sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: var(--text-black);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    min-height: 100svh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-gold);
+  transition: color 0.3s ease;
+  font-weight: 600;
+}
+
+nav ul li a{
+  display: flex;
+  align-items: center;
+  padding: 0 .5em;
+}
+nav ul li a span{
+   padding: 0 .5em;
+}
+
+button{
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1.1em 1.5em;
+  transition: all 200ms ease;
+}
+
+button:hover{
+  transform: scale(1.05);
+}
+
+button:active{
+  opacity: .9;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+  font-family: var(--font-header);
+  color: var(--dark-maroon);
+}
+
+h1 {font-size: clamp(2.8rem, 2.8rem + 6vw, 4.8rem);}
+
+h2 {font-size: clamp(2.2rem, 2.2rem + 4vw, 3.8rem);}
+
+h3 {font-size: clamp(1.8rem, 1.8rem + 3vw, 2.8rem);}
+
+h4 {font-size: clamp(1.4rem, 1.4rem + 2vw, 2.2rem);}
+
+h5 {font-size: clamp(1.2rem, 1.2rem + 1.5vw, 1.8rem);}
+
+h6 {font-size: clamp(1.05rem, 1.05rem + 1vw, 1.5rem);}
+
+img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ====== DISPLAYS ===== */
+.d-flex{display: flex;}
+.d-grid{display: grid;}
+.d-block{display: block;}
+.d-inline-b{display: inline-block;}
+.d-none{display: none;}
+
+/* FLEX DIRECTION */
+.flex-column{flex-direction: column;}
+.flex-row{flex-direction: row;}
+.f-wrap{flex-wrap: wrap;}
+.flex-1{flex: 1;}
+.bd{border: 2px solid red;}
+
+/* DISPLAY CENTERS */
+.flex-center{ display: flex; align-items: center; justify-content: center;}
+.grid-center{display: grid; place-items: center;}
+.block-center{display: block; margin-inline: auto;}
+
+
+/* FLEX PLACEMENTS */
+.justify-start{justify-content: start;}
+.justify-center{ justify-content: center; }
+.justify-s-between{justify-content: space-between;}
+.justify-s-around{justify-content: space-around;}
+.justify-s-evenly{justify-content: space-evenly;}
+.justify-end{justify-content: end;}
+.align-start{align-items: start;}
+.align-center{align-items: center;}
+.align-end{align-items: end;}
+.align-strecth{align-items: stretch;}
+
+
+.dilux-logo{
+  width: clamp(45px, 25vw, 50px);
+  cursor: pointer;
+}
