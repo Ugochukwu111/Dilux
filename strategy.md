@@ -9,7 +9,14 @@ and high-trust to make the brand the clear choice for strategic real estate inve
     The website is structured to systematically answer the user's primary question: 
   **Is this guaranteed 24% ROI legitimate and safe?**
   
+   
+   ## DILUX PAGES
+   ##    Investment Plan  (PAGE).
+   ##    Properties  (PAGE).
+   ##    Certificate  (PAGE).
+   ##    Contact us  (PAGE).
 
+   ## And a landing Page(first page user sees) which include different sections like.....
 
    ## Core Purpose & Message:  Premium Content Focus
    
@@ -27,6 +34,7 @@ using the large, animated counter).
   Transparency & Clarity. Detail the high-yield product clearly and simply.
   Message: A Guaranteed Cash Return. Clear Returns, No Uncertainty. 
   (Feature the 24% table, define the term/duration, and explain how the return is paid).
+  (Call to action btn to the investment page)
 
 ## 4. How It Works / Simple Process
   De-risk the process. Show the investment journey in 3 easy steps to lower the barrier to entry.
@@ -36,6 +44,7 @@ using the large, animated counter).
   Visual Proof. Show evidence of success and quality.
   Message: Our Vision. Your Asset. (High-quality, professional images/renders of completed or 
   ongoing projects in prime areas).
+  (Call to action btn to the properties page)
 
 # 6.Leadership & Expertise
   Humanize the Brand. Show the experts behind the promise.
@@ -44,6 +53,7 @@ using the large, animated counter).
 ## 7. Legal & Compliance
   Build Trust. Address the risk openly (but professionally).
   Message: Fully Compliant. Due Diligence is Our Foundation. (Mention registration details, legal partnerships, and include a transparent disclaimer about risk, confirming legitimacy).
+  (Call to action btn to the certificate page)
 
  ## 8.Client Testimonials
   Social Proof. Let others vouch for the returns and service.

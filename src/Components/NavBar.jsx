@@ -1,4 +1,4 @@
-import { NavLink} from 'react-router-dom'
+import { NavLink, Link} from 'react-router-dom'
 import { ShieldCheck, TrendingUp, LandPlot, Users,Menu  } from "lucide-react"
 import { useState } from 'react'
 import diluxLogo from '../assets/dilux-logo.png'
@@ -14,9 +14,11 @@ export function NavBar() {
   return (
     <div className='nav-bar-container-wrapper'>
     <div className={`nav-bar-container ${isNavBar?'active-nav': '' }`}>
+      <Link to="/">
       <figure className='dilux-logo'>
         <img src={diluxLogo} alt="diluc logo" />
       </figure>
+      </Link>
 
      <div 
        className={`d-flex align-center flex-1 justify-s-between navbar-book-btn-container 
@@ -32,26 +34,26 @@ export function NavBar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="portfolio">
+            <NavLink to="properties">
               <LandPlot />
               <span>
-                Portfolio
+                Properties
               </span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="our-team">
+            <NavLink to="certificate">
               <Users />
               <span>
-                Our Team
+                Certificate
               </span>
             </NavLink>
           </li>
           <li>
-            <NavLink to="faqs">
+            <NavLink to="contact us">
                <ShieldCheck />
                <span>
-                 FAQs/S
+                Contact us
                </span>
             </NavLink>
           </li>
