@@ -3,6 +3,11 @@ import { ChartNoAxesColumnDecreasing, BadgeCheck,Settings  } from 'lucide-react'
 import land1Src from './src/assets/land1.jpg'
 import land2Src from './src/assets/land2.jpg'
 
+import testimonial1 from './src/assets/testimonials/uifaces-human-avatar (1).jpg'
+import testimonial2 from './src/assets/testimonials/uifaces-human-avatar.jpg'
+import testimonial3 from './src/assets/testimonials/uifaces-popular-avatar (1).jpg'
+import testimonial4 from './src/assets/testimonials/uifaces-popular-avatar.jpg'
+
 export const whatWeOffer = [
     {
       id: 1,
@@ -178,33 +183,43 @@ export const landListings = [
 
 export const clientTestimonials = [
   {
+    image: testimonial1, 
     id: 1,
     quote: "The 24% returns were delivered exactly as promised. Dilux is the most secure investment platform I've used. They handle the legal work with complete transparency.",
     name: "A. Williams",
-    location: "Investor, Abuja",
+    location: " Abuja",
+    job:'Investor',
   },
   {
+    image: testimonial2,
     id: 2,
     quote: "Finding legally vetted land has always been a challenge, but Dilux made the entire process seamless and trustworthy. Highly recommend their auditing service and professional approach.",
     name: "T. Okoro",
-    location: "First-time Buyer, Lagos",
+    location: " Lagos",
+    job:'Entrepreneur',
   },
   {
+    image: testimonial3,
     id: 3,
     quote: "Our capital was secured, and the monthly income arrived on time. The personalized consultation was key to our decision and provided a clear path to growth.",
     name: "C. Eke",
-    location: "Portfolio Manager, Port Harcourt",
+    location: "Port Harcourt",
+    job:'Software Developer',
   },
   {
+    image: testimonial4,
     id: 4,
     quote: "Exceptional service from start to finish. The team is knowledgeable, and the property titles were clean and verified, which gave me total confidence in my purchase.",
     name: "J. Adewale",
-    location: "Diaspora Investor, UK",
+    location: "UK (united Kingdom)",
+    job:'Senetor',
   },
   {
+    image: testimonial1,
     id: 5,
     quote: "Dilux is a game-changer in real estate investment. Their guarantee gave me peace of mind, and the asset value has already exceeded my expectations.",
     name: "M. Udoma",
-    location: "Entrepreneur, Kano",
+    location: "Kano",
+    job:'Bank Manager',
   },
 ];
