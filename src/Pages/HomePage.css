@@ -36,6 +36,15 @@
   padding-top: 5em;
 }
 
+@media screen and (max-height: 400px) {
+  .hero-section-container{
+    height: auto;
+  }
+  .homepage-container header{
+    height: auto;
+  }
+}
+
 
 
 .hero-section-container >*{

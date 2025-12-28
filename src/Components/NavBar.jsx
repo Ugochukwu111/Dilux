@@ -10,9 +10,22 @@ export function NavBar() {
   const[isNavBar, setIsNavBar] = useState(false);
 
 
+/*  
+when nav bar is active ,
+clicking on the blured background will run the function 
+"handleCloseNavBar" 
+which closes it
+ */
+  const handleCloseNavBar = () => {
+    if(isNavBar){
+      setIsNavBar(false);
+    }
+  }
 
   return (
-    <div className='nav-bar-container-wrapper'>
+    <div 
+     onClick={handleCloseNavBar}
+     className={`nav-bar-container-wrapper ${isNavBar?'active': '' }`}>
     <div className={`nav-bar-container ${isNavBar?'active-nav': '' }`}>
       <Link to="/">
       <figure className='dilux-logo'>
