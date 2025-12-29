@@ -1,16 +1,23 @@
 import { MoveUpRight, MoveRight, MapPin } from "lucide-react";
-import { useRef, } from "react";
+import { useRef } from "react";
 import { NavBar } from "../Components/NavBar";
-import { whatWeOffer, investmentReturns, landListings, clientTestimonials } from "../../content";
-import { TestimonialCard } from '../Components/TestimonialCard'
+import {
+  whatWeOffer,
+  investmentReturns,
+  landListings,
+  clientTestimonials,
+} from "../../content";
+import { TestimonialCard } from "../Components/TestimonialCard";
+
+import howItWorksImage1 from '/src/assets/how-it-works/consultation.jpg'
+import howItWorksImage2 from '/src/assets/how-it-works/dilux.png'
+import howItWorksImage3 from '/src/assets/how-it-works/money-transfer.png'
 
 import "./HomePage.css";
 
 export function HomePage() {
   const wrapperRef = useRef(null);
   const contentRef = useRef(null);
-
-
 
   return (
     <div className="homepage-container">
@@ -193,60 +200,48 @@ export function HomePage() {
           </div>
         </section>
 
-        {/* <section>
+        <section className="how-it-works-section">
           <div className="container">
-            <h3 className="text-center">
-              Real Results, Real Trust: Verified Returns from Dilux Investors
-            </h3>
+             <h3>How it works</h3>
 
-            <p className="text-center sub-text text-dark-gray">
-              Our clients' success is the true measure of our due diligence.
-              Read the stories of investors who have achieved their financial
-              goals through our **guaranteed 24% returns** and **legally
-              audited** real estate assets.
-            </p>
+             <div className="h-i-w-list">
+               {/* continer text for how it works */}
+              <div>
+                <ol>
+                  <li>
+                    <p>Consultation</p>
+                    Speak with our expert advisors to align your financial goals with the right property opportunities. We provide personalized market insights to ensure your strategy is built on a solid foundation.
+                  </li>
 
-            <div ref={wrapperRef} className="smooth-wrapper">
-              <div ref={contentReff} className="smooth-content">
-                <div className="spacer"></div>
-                <div className="testimonial-container">
-              {
-                clientTestimonials.map((testimonial, index)=>{
-                  return(
-                    <TestimonialCard key={testimonial.id} testimonial = {testimonial}
-                    index ={index}/>
-                  )
-                })
-              }
-              </div>
-              </div>
-              <div className="client-testimonial-card">
-                 <div>
-                  <figure>
-                    <img src="" alt="" />
-                  </figure>
-                  <p className="clients-name FWB">
-                    A. Williams
-                  </p>
-                 </div>
+                  <li>
+                    <p>Secure your Investment</p>
+                    Finalize your selection through our streamlined, secure portal. From legal verification to digital contracts, we handle the complexities so you can commit to your asset with total confidence.
+                  </li>
 
-                 <br />
-                 <div className="testimonial-content">
-                   <p>
-                    The 24% returns were delivered exactly as promised. Dilux is the most secure investment platform I've used. They handle the legal work with complete transparency.
-                   </p>
-                   <span>location: Investor, Abuja</span>
-                 </div>
+                  <li>
+                    <p>Receive Payouts</p>
+                     Sit back and watch your capital grow. Whether through rental yield or property appreciation, your returns are deposited directly to you, providing a hassle-free passive income stream
+                  </li>
+                </ol>
               </div>
-            </div>
+              {/* container  for illustration of pics of how it works */}
+              <div className="how-it-works-image-container">
+                <figure><img src={howItWorksImage1} alt="" /></figure>
+                <figure><img src={howItWorksImage3} alt="" /></figure>
+                <figure><img src={howItWorksImage3} alt="" /></figure>
+              </div>
+
+             </div>
+
           </div>
-        </section> */}
-      <section className="testimonial-section">
-      <div className="">
-        <h3 className="text-center">Real Results, Real Trust</h3>
-        <p className="text-center sub-text text-dark-gray">
-          Verified stories from investors who earned guaranteed 24% growth.
-        </p>
+        </section>
+
+        <section className="testimonial-section">
+          <div className="">
+            <h3 className="text-center">Real Results, Real Trust</h3>
+            <p className="text-center sub-text text-dark-gray">
+              Verified stories from investors who earned guaranteed 24% growth.
+            </p>
 
             <div className="testimonial-container">
               {clientTestimonials.map((testimonial, index) => (
@@ -257,9 +252,10 @@ export function HomePage() {
                 />
               ))}
             </div>
+          </div>
+        </section>
 
-      </div>
-    </section>
+        
       </main>
     </div>
   );
