@@ -8,6 +8,7 @@
      align-items: start;
      overflow: auto;
      scrollbar-width: none;
+       z-index: 9999;
 }
 
 .nav-bar-container-wrapper.active{
@@ -28,7 +29,7 @@
   border-radius: 10rem;
   align-items: center;
   box-shadow: 2px 2px 4px var(--dark-gray);
-  z-index: 2;
+  z-index: 100;
   position: relative;
   
 }

@@ -154,7 +154,7 @@ h1, h2, h3 {
   margin-bottom: 0.5em;    /* Better spacing for content */
 }
 
-img{
+img,picture{
   width: 100%;
   height: 100%;
   display: block;

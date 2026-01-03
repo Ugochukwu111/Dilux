@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   MoveUpRight,
   MoveRight,
@@ -23,39 +24,112 @@ import { Faqs } from "./Faqs";
 import { DiluxAds } from "../Components/DiluxAds";
 import diluxLogo from "../assets/dilux-logo.png";
 
+import heroSectionImage1 from "../assets/hero/dilux-hero1.jpg";
+import heroSectionImage2 from "../assets/hero/dilux-hero2.jpg";
+import heroSectionImage3 from "../assets/hero/dilux-hero3.jpg";
+import phoneHeroSectionImage3 from "../assets/hero/phone-dilux-hero3.jpg";
+import phoneHeroSectionImage2 from "../assets/hero/phone-dilux-hero2.jpg";
+import phoneHeroSectionImage1 from "../assets/hero/phone-dilux-hero1.jpg";
+
 import "./HomePage.css";
 
 export function HomePage() {
+  const [index, setIndex] = useState(0);
+
+  const heroSlides = [
+    {
+      id: 1,
+      heading: "Verified C of O. Zero Risk. Period.",
+      subtext:
+        "Stop worrying about land scams. We only deal in 100% vetted, government-cleared titles. Your investment is legally bulletproof.",
+      image: heroSectionImage1,
+      phoneImage: phoneHeroSectionImage1,
+      link: "/listings",
+      cta: "See Available Lands",
+    },
+    {
+      id: 2,
+      heading: "Your Money, Growing by 24% Every Year.",
+      subtext:
+        "Why save in a bank when land appreciates faster? Secure high-growth plots in Epe & Ibeju-Lekki and lock in guaranteed capital gains.",
+      image: heroSectionImage2,
+      phoneImage: phoneHeroSectionImage2,
+      link: "/investment",
+      cta: "Get ROI Breakdown",
+    },
+    {
+      id: 3,
+      heading: "Luxury Land. Low Entry. High Reward.",
+      subtext:
+        "Premium estates shouldn't be out of reach. Start your land banking journey with flexible payment plans designed for smart earners.",
+      image: heroSectionImage3,
+      phoneImage: phoneHeroSectionImage3,
+      link: "/investment",
+      cta: "View Payment Plans",
+    },
+    {
+      id: 4,
+      heading: "Instant Allocation. Build Your Legacy.",
+      subtext:
+        "No delays. No stories. Pay today, get your papers tomorrow. Join 500+ investors who built their future with Dilux.",
+      phoneImage: phoneHeroSectionImage1,
+      image: heroSectionImage1,
+      link: "/contact-us",
+      cta: "Talk to an Expert",
+    },
+  ];
+
+  const currentSlide = heroSlides[index];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="homepage-container">
       <header>
         <div className="img-overlay">
-          <img src={howItWorksImage1} alt="" />
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcSet={currentSlide.phoneImage || currentSlide.image}
+            />
+            <source media="(max-width: 1920px)" srcSet={currentSlide.image} />
+            <img
+              key={currentSlide.image}
+              src={currentSlide.image}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              alt=""
+            />
+          </picture>
         </div>
         <NavBar />
         <section className="hero-section-container">
-          <h1 className="text-white">
-            Prime Real Estate. <br />
-            <span className="text-light-gold">Guaranteed 24% Returns.</span>
-          </h1>
+          <div key={index} className="hero-content-wrapper">
+            <h1 className="text-light-gold ">{currentSlide.heading}</h1>
 
-          <p className="short-description text-light-gray">
-            Invest with clarity and confidence. Access exclusive, fully vetted
-            real estate opportunities,{" "}
-            <em className="FWB text-light-gold">legally approved </em>to deliver{" "}
-            <em className="FWB text-light-gold">premium lifestyle</em> rewards
-            alongside your guaranteed{" "}
-            <em className="FWB text-light-gold">24%</em> annual growth.
-          </p>
-
-          <button className="bg-white text-dark-maroon">
-            Book Consultation Now
-            <MoveUpRight size={20} />
-          </button>
+            <p className="short-description text-light-gray">
+              {currentSlide.subtext}
+            </p>
+                        <Link to="/certificates" className="trust-kicker-link">
+              <span className="shield-icon">🛡️</span>
+              GOVERNMENT VERIFIED • SEE CERTIFICATES
+            </Link>
+            <br />
+            <button className="bg-white text-dark-maroon">
+              {currentSlide.cta}
+              <MoveUpRight size={20} />
+            </button>
+          </div>
         </section>
       </header>
       <main>
-
         <section className="why-choose-us-section">
           <div className="container">
             <h2>The Dilux Difference</h2>
@@ -81,9 +155,9 @@ export function HomePage() {
           </div>
         </section>
 
-        <DiluxAds/>
+        <DiluxAds />
 
-         <section className="how-it-works-section">
+        <section className="how-it-works-section">
           <div className="container">
             <h3>How it works</h3>
 
@@ -261,8 +335,6 @@ export function HomePage() {
           </div>
         </section>
 
-    
-
         <section className="testimonial-section">
           <div className="">
             <h3 className="text-center">Real Results, Real Trust</h3>
@@ -383,7 +455,9 @@ export function HomePage() {
                 <li>
                   <a href="#">certified land titles</a>
                 </li>
-                <li><a href="#">legal compliance</a></li>
+                <li>
+                  <a href="#">legal compliance</a>
+                </li>
               </ul>
             </div>
 
@@ -392,7 +466,7 @@ export function HomePage() {
               <ul>
                 <li>
                   <a href="">
-                    <MapPin/> 1007 Adeola Odeku St, Victoria Island, Lagos
+                    <MapPin /> 1007 Adeola Odeku St, Victoria Island, Lagos
                   </a>
                 </li>
                 <li>
@@ -415,10 +489,10 @@ export function HomePage() {
                     <li>
                       <a className="fb" href=""></a>
                     </li>
-                     <li>
+                    <li>
                       <a className="whatsapp" href=""></a>
                     </li>
-                     <li>
+                    <li>
                       <a className="tiktok" href=""></a>
                     </li>
                   </ul>
@@ -426,11 +500,10 @@ export function HomePage() {
               </ul>
             </div>
           </div>
-            <br /><br />
+          <br />
+          <br />
           <div>
-            <p className="text-center">
-              &copy; 2025 all right reserved
-            </p>
+            <p className="text-center">&copy; 2025 all right reserved</p>
           </div>
         </div>
       </footer>

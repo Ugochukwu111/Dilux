@@ -2,26 +2,83 @@
 
 .homepage-container header{
   height: 100svh;
-  background-image: url('../assets/redhouse.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: auto;
   display: flex;
   flex-direction: column;
 }
 
+.homepage-container header h1{
+  font-weight: 900;
+  text-shadow: 3px 3px 2px var(--dark-maroon);
+}
+.homepage-container header p{
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px var(--dark-maroon);
+  font-weight: 700;
+}
+
+
+
 .homepage-container .img-overlay{
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #38333379;
-  z-index: -1;
-  filter: blur(5px);
-  backdrop-filter: blur(.1px);
+  z-index: 0;
+  filter: none;
   overflow: auto;
+  background-color: #1a1a1a;
+}
+
+header .trust-kicker-link{
+  background-color: var(--green);
+  color: var(--bright-white);
+  padding: .25em .5em;
+  border-radius: 2rem;
+  font-size: .9rem;
+}
+
+
+.homepage-container .img-overlay img {
+  position: absolute;
+  z-index: -2; 
+    filter: blur(2px)  brightness(0.9);
+  animation: imageFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  will-change: opacity;
+}
+
+@keyframes imageFadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 2. The Text Slide-Up */
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: textSlideUp 0.8s ease-out forwards;
+  max-width: 900px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes textSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-section-container{
