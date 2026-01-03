@@ -358,7 +358,7 @@
 
 
 .testimonial-section{
-  padding: 2em 0;
+  padding: 0em 0;
   height: 100svh;
 }
 
@@ -429,6 +429,283 @@
   flex-direction: column;
   justify-content: center;
 }
+
+
+/* ==============   OUT TEAM SECTION ==========  */
+.team-section{
+  padding: 2em 0;
+
+}
+
+.team-section > div{
+  padding-inline: 0;
+}
+
+.team-section .slider-wrapper {
+  position: relative;
+  /* This creates a soft fade so cards disappear into the background */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.team-section .team-slider{
+   min-height: 400px;
+   background-color: var(--light-gray);
+   margin: 1em 0;
+   display: flex;
+   flex-shrink: 0;
+   overflow-x: auto;
+   overflow-y: hidden;
+   gap: .5em;
+   padding-top: 2rem;
+   scrollbar-width: none;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+   padding-left: 50%;
+   padding-right: 2rem;
+   scroll-padding-left: 50%;
+}
+
+.team-slider.infinite-mode {
+  display: flex;
+  width: max-content; /* Critical: allows the inner content to define width */
+  gap: 1rem;
+  /* Adjust '30s' to change the speed (higher = slower/more luxury) */
+  animation: marquee 60s linear infinite;
+}
+
+.team-slider.infinite-mode:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* We move exactly half of the total width (one full set of cards) */
+    transform: translateX(-100%);
+  }
+}
+
+.team-section .team-slider figure{
+   width: 220px;
+   flex-shrink: 0;
+   border-top-left-radius: .5rem;
+   border-top-right-radius: .5rem;
+   overflow: hidden;
+   position: relative;
+   transition: 250ms ease;
+
+   backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: transform 400ms ease, opacity 400ms ease;
+  will-change: transform, opacity;
+}
+
+.team-slider figcaption{
+  position: absolute;
+  top: 0;
+  padding: .5em;
+  line-height: .9;
+}
+
+.team-slider:has(figure:hover) figure {
+  transform: scale(0.95);
+  opacity: 0.6;
+  filter: grayscale(0.5); /* Optional: adds a serious, premium feel */
+}
+
+.team-section .team-slider figure:hover{
+  transform: scale(1.05);
+  z-index: 5;
+  opacity: 1 !important;
+  filter: grayscale(0);
+}
+
+.team-slider figcaption .member-name{
+  font-weight: 700;
+  color: var(--light-gold);
+}
+.team-slider figcaption .member-position{
+  color: var(--bright-white);
+  font-size: .9rem;
+}
+
+
+.team-section .team-slider figure:hover .overlay{
+clip-path: ellipse(100% 100% at 20% 50%);
+opacity: 0;
+}
+
+.team-section .team-slider .overlay{
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+  clip-path: ellipse(100% 100% at 20% 50%);
+
+background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(247, 247, 247, 0.432) 40%,
+    var(--bright-white) 100%
+  );
+  transition: all 400ms ease;
+  display: flex;
+  align-items: end;
+  padding-bottom: 1em;
+}
+
+
+/* ============== FREQUENTLY ASKED SECTION ============= */
+.faq-section{
+  background:  var(--light-gold);
+  padding: 10em 0;
+  transform: translateY(-2px);;
+ clip-path: polygon(0 5%, 100% 0%, 40000% 90%, 0 100%);
+}
+.faq-card{
+  max-width: 700px;
+  margin: .25em auto;
+  border: 1px solid var(--text-muted);
+  padding: .5em ;
+  border-radius: .5rem;
+  background-color: var(--bright-white);
+  position: relative;
+}
+.faq-card svg{
+  stroke-width: 4.5px;
+}
+.faq-card::before{
+  content: '';
+  width: 5px;
+  height: 100%;
+  display: block;
+  background-color: var(--dark-maroon);
+  position: absolute;
+  inset: 0;
+  left: -1em;
+  border-radius: 2rem;
+}
+
+
+.faq-card button{
+  padding: .5em;
+  background-color: var(--dark-maroon);
+  color: var(--bright-white);
+}
+
+.faq-header{
+  padding: .5em ;
+}
+
+.faq-card .faq-question{
+  height: 0;
+  overflow: hidden;
+  transition: all 200ms ease;
+  padding-inline: 1em;
+}
+.faq-card.open .faq-question{
+  height: 110px;
+
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+}
+footer ul{
+  list-style:none;
+}
+footer h6{
+  color: var(--bright-white);
+  margin-bottom: .5em;
+}
+footer a{
+  color: var(--bright-white);
+  transition: all 200ms ease;
+}
+footer a:hover{
+  color: var(--light-gold);
+}
+
+footer .upper-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2em 0;
+  gap: .5em;
+}
+footer .upper-container div{
+  flex: 1;  
+  padding: .5em;
+  min-width: 320px;
+}
+
+footer .logo{
+  width: clamp(50px, 20vw, 80px);
+  height: auto;
+  background-color: var(--bright-white);
+  border-radius: .5rem;
+  margin: 1em 0;
+}
+
+footer .social-container{
+  display: flex;
+  gap: .5em;
+  margin-top: 1em;
+}
+
+footer .social-container li{
+  width: fit-content;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 200ms ease;
+}
+
+footer .social-container li:hover{
+  transform: translateY(-12px);
+}
+
+footer .social-container li a{
+  background-position: center;
+  background-size: cover;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.fb{
+  background-image: url('../assets/socials//facebook-logo.jpg');
+}
+.whatsapp{
+  background-image: url('../assets/socials/whatsapp-logo.jpg');
+}
+.tiktok{
+   background-image: url('../assets/socials/tiktok-logo.png');
+}
+
+
+
 
 @media(max-width: 600px){
 .client-testimonial-card{

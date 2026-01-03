@@ -1,28 +1,37 @@
-import { MoveUpRight, MoveRight, MapPin } from "lucide-react";
 import { useRef } from "react";
+import {
+  MoveUpRight,
+  MoveRight,
+  MapPin,
+  Phone,
+  Mail,
+  ClipboardClock,
+} from "lucide-react";
 import { NavBar } from "../Components/NavBar";
 import {
   whatWeOffer,
   investmentReturns,
   landListings,
   clientTestimonials,
+  diluxTeam,
+  diluxFaqs,
 } from "../../content";
 import { TestimonialCard } from "../Components/TestimonialCard";
-
-import howItWorksImage1 from '/src/assets/how-it-works/consultation.jpg'
-import howItWorksImage2 from '/src/assets/how-it-works/dilux.png'
-import howItWorksImage3 from '/src/assets/how-it-works/money-transfer.png'
+import howItWorksImage1 from "/src/assets/how-it-works/consultation.jpg";
+import howItWorksImage3 from "/src/assets/how-it-works/money-transfer.png";
+import { Faqs } from "./Faqs";
+import { DiluxAds } from "../Components/DiluxAds";
+import diluxLogo from "../assets/dilux-logo.png";
 
 import "./HomePage.css";
 
 export function HomePage() {
-  const wrapperRef = useRef(null);
-  const contentRef = useRef(null);
-
   return (
     <div className="homepage-container">
       <header>
-        <div className="img-overlay"></div>
+        <div className="img-overlay">
+          <img src={howItWorksImage1} alt="" />
+        </div>
         <NavBar />
         <section className="hero-section-container">
           <h1 className="text-white">
@@ -46,6 +55,7 @@ export function HomePage() {
         </section>
       </header>
       <main>
+
         <section className="why-choose-us-section">
           <div className="container">
             <h2>The Dilux Difference</h2>
@@ -67,6 +77,57 @@ export function HomePage() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </section>
+
+        <DiluxAds/>
+
+         <section className="how-it-works-section">
+          <div className="container">
+            <h3>How it works</h3>
+
+            <div className="h-i-w-list">
+              {/* continer text for how it works */}
+              <div>
+                <ol>
+                  <li>
+                    <p>Consultation</p>
+                    Speak with our expert advisors to align your financial goals
+                    with the right property opportunities. We provide
+                    personalized market insights to ensure your strategy is
+                    built on a solid foundation.
+                  </li>
+
+                  <li>
+                    <p>Secure your Investment</p>
+                    Finalize your selection through our streamlined, secure
+                    portal. From legal verification to digital contracts, we
+                    handle the complexities so you can commit to your asset with
+                    total confidence.
+                  </li>
+
+                  <li>
+                    <p>Receive Payouts</p>
+                    Sit back and watch your capital grow. Whether through rental
+                    yield or property appreciation, your returns are deposited
+                    directly to you, providing a hassle-free passive income
+                    stream
+                  </li>
+                </ol>
+              </div>
+              {/* container  for illustration of pics of how it works */}
+              <div className="how-it-works-image-container">
+                <figure>
+                  <img src={howItWorksImage1} alt="step1" />
+                </figure>
+                <figure>
+                  <img src={howItWorksImage3} alt="step2" />
+                </figure>
+                <figure>
+                  <img src={howItWorksImage3} alt="step3" />
+                </figure>
+              </div>
             </div>
           </div>
         </section>
@@ -200,41 +261,7 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="how-it-works-section">
-          <div className="container">
-             <h3>How it works</h3>
-
-             <div className="h-i-w-list">
-               {/* continer text for how it works */}
-              <div>
-                <ol>
-                  <li>
-                    <p>Consultation</p>
-                    Speak with our expert advisors to align your financial goals with the right property opportunities. We provide personalized market insights to ensure your strategy is built on a solid foundation.
-                  </li>
-
-                  <li>
-                    <p>Secure your Investment</p>
-                    Finalize your selection through our streamlined, secure portal. From legal verification to digital contracts, we handle the complexities so you can commit to your asset with total confidence.
-                  </li>
-
-                  <li>
-                    <p>Receive Payouts</p>
-                     Sit back and watch your capital grow. Whether through rental yield or property appreciation, your returns are deposited directly to you, providing a hassle-free passive income stream
-                  </li>
-                </ol>
-              </div>
-              {/* container  for illustration of pics of how it works */}
-              <div className="how-it-works-image-container">
-                <figure><img src={howItWorksImage1} alt="" /></figure>
-                <figure><img src={howItWorksImage3} alt="" /></figure>
-                <figure><img src={howItWorksImage3} alt="" /></figure>
-              </div>
-
-             </div>
-
-          </div>
-        </section>
+    
 
         <section className="testimonial-section">
           <div className="">
@@ -255,8 +282,158 @@ export function HomePage() {
           </div>
         </section>
 
-        
+        <section className="team-section">
+          <div className="container">
+            <h3 className="text-center">
+              The <em className="text-light-gold">Visionaries</em> Behind Your
+              Next Project
+            </h3>
+
+            {/* div below contain the slider */}
+            <div className="slider-wrapper">
+              <div className="team-slider infinite-mode">
+                {diluxTeam.map((member) => {
+                  return (
+                    <figure key={`first-${member.name}`}>
+                      <img src={member.image} alt={member.name} />
+                      <figcaption>
+                        <span className="member-name">{member.name}</span>{" "}
+                        <br />
+                        <span className="member-position">
+                          {member.position}
+                        </span>
+                      </figcaption>
+                      <div className="overlay">
+                        {/* <p className="member-bio">{member.bio}</p> */}
+                      </div>
+                    </figure>
+                  );
+                })}
+
+                {diluxTeam.map((member) => {
+                  return (
+                    <figure key={`second-${member.name}`} aria-hidden="true">
+                      <img src={member.image} alt={member.name} />
+                      <figcaption>
+                        <span className="member-name">{member.name}</span>{" "}
+                        <br />
+                        <span className="member-position">
+                          {member.position}
+                        </span>
+                      </figcaption>
+                      <div className="overlay">
+                        {/* <p className="member-bio">{member.bio}</p> */}
+                      </div>
+                    </figure>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* div below contains buttons for movement of the slider */}
+            <p>
+              Meet the Dilux team:{" "}
+              <span className="text-light-gold FWB">
+                specialists in land acquisition, zoning, and long-term
+                investment strategy.
+              </span>{" "}
+              We don't just find dirt; we find your future foundation.
+            </p>
+          </div>
+        </section>
+
+        <section className="faq-section">
+          <div className="container ">
+            <h3 className="text-center text-white">
+              Frequently Asked Questions
+            </h3>
+            {diluxFaqs.map((faq) => {
+              return <Faqs key={faq.id} faq={faq} />;
+            })}
+          </div>
+        </section>
       </main>
+
+      <footer className="bg-dark-maroon text-white">
+        <div className="container">
+          <div className="upper-container">
+            <div>
+              <figure className="logo">
+                <img src={diluxLogo} alt="Dilux Properties Logo" />
+              </figure>
+              <h6 className="text-white">
+                Dilux <span className="text-light-gold">Properties</span>
+              </h6>
+              <p>
+                Providing secure, certified, and affordable land investments
+                across Nigeria. From titled acres to a guaranteed 24% ROI, we
+                turn 'dirt' into your future wealth and legacy.
+              </p>
+            </div>
+
+            <div>
+              <h6 className="text-light-gold">Our offers</h6>
+              <ul>
+                <li>
+                  <a href="#">24% investment ROI</a>
+                </li>
+                <li>
+                  <a href="#">available lands and properties</a>
+                </li>
+                <li>
+                  <a href="#">certified land titles</a>
+                </li>
+                <li><a href="#">legal compliance</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 className="text-light-gold">lets connect</h6>
+              <ul>
+                <li>
+                  <a href="">
+                    <MapPin/> 1007 Adeola Odeku St, Victoria Island, Lagos
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+2349012345678">
+                    <Phone /> +234 901 234 5678
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:info@diluxproperties.com">
+                    <Mail /> info@diluxproperties.com
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <ClipboardClock /> Working Hours: Mon - Fri: 9am - 6pm
+                  </a>
+                </li>
+                <li>
+                  <ul className="social-container">
+                    <li>
+                      <a className="fb" href=""></a>
+                    </li>
+                     <li>
+                      <a className="whatsapp" href=""></a>
+                    </li>
+                     <li>
+                      <a className="tiktok" href=""></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <br /><br />
+          <div>
+            <p className="text-center">
+              &copy; 2025 all right reserved
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

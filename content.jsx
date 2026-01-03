@@ -223,3 +223,140 @@ export const clientTestimonials = [
     job:'Bank Manager',
   },
 ];
+
+export const diluxTeam = [
+  {
+    name: "Marcus Thorne",
+    position: "Founder & Chief Strategist",
+    image: testimonial1,
+    bio: "Visionary leader with 15+ years in land acquisition and wealth preservation.",
+    socials: { linkedin: "#", twitter: "#" }
+  },
+  {
+    name: "Sarah Chen",
+    position: "Head of Land Acquisition",
+    image: testimonial2,
+    bio: "Expert at identifying high-yield undeveloped plots before they hit the open market.",
+    socials: { linkedin: "#", instagram: "#" }
+  },
+  {
+    name: "David Okoro",
+    position: "Senior Property Surveyor",
+    image: testimonial3,
+    bio: "Ensures every acre sold by Dilux is precisely mapped and structurally sound for development.",
+    socials: { linkedin: "#" }
+  },
+  {
+    name: "Elena Rodriguez",
+    position: "Legal & Compliance Director",
+    image: testimonial4,
+    bio: "Specialist in land titles and zoning laws to ensure a 100% risk-free purchase for our clients.",
+    socials: { linkedin: "#" }
+  },
+  {
+    name: "Jameson Blake",
+    position: "Portfolio Growth Manager",
+    image: testimonial1,
+    bio: "Helps investors turn raw land into high-performing real estate portfolios.",
+    socials: { linkedin: "#", twitter: "#" }
+  },
+  {
+    name: "Amara Williams",
+    position: "Client Relations Lead",
+    image: testimonial2,
+    bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
+    socials: { linkedin: "#", instagram: "#" }
+  },
+  {
+    name: "Samuel Vane",
+    position: "Land Development Consultant",
+    image: testimonial3,
+    bio: "Bridging the gap between raw earth and architectural masterpieces.",
+    socials: { linkedin: "#" }
+  },
+  {
+    name: "Isabella Rossi",
+    position: "Director of Marketing",
+    image: testimonial4,
+    bio: "Capturing the story and potential of every property in the Dilux collection.",
+    socials: { instagram: "#", twitter: "#" }
+  },
+  {
+    name: "Tunde Bakare",
+    position: "Field Operations Manager",
+    image: testimonial1,
+    bio: "The boots on the ground ensuring site security and infrastructure readiness.",
+    socials: { linkedin: "#" }
+  },
+  {
+    name: "Sophia Grant",
+    position: "Investment Analyst",
+    image: testimonial2,
+    bio: "Using data-driven insights to predict the next big 'growth corridor' for land buyers.",
+    socials: { linkedin: "#", twitter: "#" }
+  }
+];
+
+export const diluxFaqs = [
+  {
+    id: 1,
+    question: "Is Dilux Properties a certified real estate company in Nigeria?",
+    answer: "Yes, Dilux is a fully registered and certified real estate firm. We pride ourselves on transparency, ensuring all our properties meet legal standards and regulatory requirements to protect our clients' interests."
+  },
+  {
+    id: 2,
+    question: "What kind of titles do your lands have? Do they come with a CofO?",
+    answer: "We prioritize secure titles. Many of our premium listings come with a Certificate of Occupancy (CofO), Governor’s Consent, or are Free from Government Acquisition. We provide all necessary credentials so you can buy with total peace of mind."
+  },
+  {
+    id: 3,
+    question: "How does the 24% Return on Investment (ROI) work?",
+    answer: "Our Land Buy-Back scheme allows you to invest in strategic locations with high appreciation rates. With a minimum capital of ₦1 Million, we guarantee a 24% return over a 12-month period, backed by a post-dated cheque and a Deed of Agreement."
+  },
+  {
+    id: 4,
+    question: "What is the minimum amount I need to start investing with Dilux?",
+    answer: "We believe in making land ownership affordable. You can start your investment journey with Dilux with as little as ₦1 Million. We also offer flexible payment plans to help you become a land owner without financial strain."
+  },
+  {
+    id: 5,
+    question: "I live abroad. How can I safely buy land or invest with Dilux from the Diaspora?",
+    answer: "We have a dedicated process for our Diaspora clients. We provide virtual tours, digital documentation, and secure payment gateways. You can also appoint a legal representative in Nigeria to verify documents on your behalf before closing."
+  },
+  {
+    id: 6,
+    question: "Are there any hidden charges like 'Omonile' fees after purchase?",
+    answer: "No. At Dilux, we clear all communal and family hurdles before putting land on the market. Once you pay for your land and its documentation, you are free from any 'Omonile' interference or hidden development levies."
+  },
+  {
+    id: 7,
+    question: "Can I visit the site before making a payment?",
+    answer: "Absolutely. We conduct free site inspections from Monday to Saturday. We want you to see the 'future foundation' of your investment physically before any commitment is made."
+  },
+  {
+    id: 8,
+    question: "What happens after I make my full payment?",
+    answer: "Upon completion of payment, you receive your physical allocation and all relevant documents, including the Deed of Assignment and a Survey Plan, confirming you as the rightful owner of the property."
+  }
+];
+
+export const adsData = [
+  {
+    id: 1,
+    heading: "50ft x 100ft for only ₦600k!",
+    subtext: "Flash Sale: Own a full plot in a fast-developing zone at an impossible price. Instant allocation guaranteed.",
+    btnText: "Grab This Deal"
+  },
+  {
+    id: 2,
+    heading: "Earn 24% Profit in 12 Months",
+    subtext: "Why let your money sit in a bank? Our Land Buy-Back scheme outpaces inflation with guaranteed ROI.",
+    btnText: "Start Investing"
+  },
+  {
+    id: 3,
+    heading: "100% Gov't Backed - View CofO",
+    subtext: "Sleep easy with 100% legal security. Verified titles and Government-approved certificates available for inspection.",
+    btnText: "Verify Now"
+  }
+];

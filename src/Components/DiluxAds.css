@@ -1,0 +1,67 @@
+.ads-section{
+  padding-top:0 ;
+  padding-bottom: 0;
+  /* The Gradient Background */
+  background: linear-gradient(-45deg, #733939, #d3a23e, #1A1A1A, #733939);
+  background-size: 400% 400%;
+  
+  /* Adding the moving animation and your wiggle animation */
+  animation: gradientBG 10s ease infinite, wiggle 3s ease-in-out infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ads-section h4{
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ads-container{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 2px 3px var(--dark-gray);
+  animation: slideUpFade 5s ease-out infinite;
+  align-items: start;
+  background: rgba(26, 26, 26, 0.8); 
+  backdrop-filter: blur(10px);
+  border: 1px solid #d3a23e;
+}
+
+
+
+@keyframes slideUpFade {
+  0%{
+    transform:rotate(0deg);
+  }
+  25%{
+    transform: rotate(1deg);
+  }50%{
+    transform: rotate(2deg);
+  }
+  75%{
+    transform: rotate(1deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.ads-content h4 {
+  min-height: 1.2em; 
+}
