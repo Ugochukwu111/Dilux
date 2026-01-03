@@ -31,6 +31,8 @@ import phoneHeroSectionImage3 from "../assets/hero/phone-dilux-hero3.jpg";
 import phoneHeroSectionImage2 from "../assets/hero/phone-dilux-hero2.jpg";
 import phoneHeroSectionImage1 from "../assets/hero/phone-dilux-hero1.jpg";
 
+import { PartnerSlider } from "../Components/PartnerSlider";
+
 import "./HomePage.css";
 
 export function HomePage() {
@@ -130,6 +132,7 @@ export function HomePage() {
         </section>
       </header>
       <main>
+        <PartnerSlider/>
         <section className="why-choose-us-section">
           <div className="container">
             <h2>The Dilux Difference</h2>

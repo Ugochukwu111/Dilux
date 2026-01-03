@@ -1,0 +1,63 @@
+.partner-slider{
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 1em;
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+}
+
+.partner-slider:hover .slider-track {
+  animation-play-state: paused;
+  cursor: pointer; /* Tells the user they can interact with it */
+}
+
+.partner-slider .slider-track{
+  min-width: 110%;
+  display: flex;
+  gap: 2rem;
+  animation: scroll 20s linear infinite;
+}
+
+.partner-slider .slider-track span{
+  font-weight: 900;
+  text-align: center;
+  color: var(--light-gray);
+  transition: all;
+  display: flex;
+  align-items: center;
+}
+.partner-slider .slider-track span:hover{
+  color: var(--dark-gray);
+}
+
+.slider-track span::after {
+  content: "•"; 
+  /* This margin replaces &nbsp; for perfect control */
+  margin-left: 4rem; 
+  font-size: 2.5rem;
+  color: var(--dark-grey);
+  line-height: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
