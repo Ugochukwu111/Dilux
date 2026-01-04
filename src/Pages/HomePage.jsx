@@ -30,6 +30,7 @@ import heroSectionImage3 from "../assets/hero/dilux-hero3.jpg";
 import phoneHeroSectionImage3 from "../assets/hero/phone-dilux-hero3.jpg";
 import phoneHeroSectionImage2 from "../assets/hero/phone-dilux-hero2.jpg";
 import phoneHeroSectionImage1 from "../assets/hero/phone-dilux-hero1.jpg";
+import IRE from "../assets/team/IRE.jpg";
 
 import { PartnerSlider } from "../Components/PartnerSlider";
 
@@ -111,7 +112,6 @@ export function HomePage() {
             />
           </picture>
         </div>
-        <NavBar />
         <section className="hero-section-container">
           <div key={index} className="hero-content-wrapper">
             <h1 className="text-light-gold ">{currentSlide.heading}</h1>
@@ -159,7 +159,10 @@ export function HomePage() {
             </div>
             </div>
             <div className="video-container">
-             <video autoPlay loop muted controls  >
+             <video 
+               poster={IRE} 
+               loop 
+               controls  >
                 <source
                    
                   src="https://www.w3schools.com/html/mov_bbb.mp4"
@@ -173,7 +176,6 @@ export function HomePage() {
         </section>
 
         <DiluxAds />
-
         <section className="how-it-works-section">
           <div className="container">
             <h3>How it works</h3>
@@ -219,6 +221,7 @@ export function HomePage() {
                   <img src={howItWorksImage3} alt="step3" />
                 </figure>
               </div>
+              
             </div>
           </div>
         </section>
