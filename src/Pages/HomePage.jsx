@@ -8,7 +8,7 @@ import {
   Mail,
   ClipboardClock,
 } from "lucide-react";
-import { NavBar } from "../Components/NavBar";
+import { FaTwitter, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import {
   whatWeOffer,
   investmentReturns,
@@ -133,44 +133,55 @@ export function HomePage() {
       </header>
       <main>
         <PartnerSlider/>
+        {/* dilux-differences section */}
         <section className="why-choose-us-section">
           <div className="container">
-            <div className="d-flex">
+            <div className="d-flex vedio-content-container">
               <div>
-            <h2>The Dilux Difference</h2>
-            <p className="text-dark-gray sub-text">
-              Guaranteed returns stem from our stringent, multi-layered audit.
-              We secure stable, legally compliant, exclusive assets.
-            </p>
-            <br />
-            <br />
-            <div className="offers-container">
-              {whatWeOffer.map((offer) => {
-                return (
-                  <div key={offer.id} className={`offer-card ${offer.bgcolor}`}>
-                    <span className="text-white ">{offer.icon}</span>
-                    <p className="FWB offer-title text-white">{offer.name}</p>
-                    <p className="offer-description text-bright-white">
-                      {offer.description}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-            </div>
-            <div className="video-container">
-             <video 
-               poster={IRE} 
-               loop 
-               controls  >
-                <source
-                   
-                  src="https://www.w3schools.com/html/mov_bbb.mp4"
-                  type="video/mp4"
-                />
-                 Your browser does not support the video tag.
-             </video>
-             </div>
+                <h2>The Dilux Difference</h2>
+                <p className="text-dark-gray sub-text">
+                  Guaranteed returns stem from our stringent, multi-layered audit.
+                  We secure stable, legally compliant, exclusive assets.
+                </p>
+                <br />
+
+                <div className="offers-container">
+                  {whatWeOffer.map((offer) => {
+                    return (
+                      <div key={offer.id} className={`offer-card ${offer.bgcolor}`}>
+                        <span className="text-white ">{offer.icon}</span>
+                        <p className="FWB offer-title text-white">{offer.name}</p>
+                        <p className="offer-description text-bright-white">
+                          {offer.description}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+              </div>
+              <div className="video-container ">
+                <div className="d-flex justify-s-between">
+                <p className="FWB">
+                  connect on  &rarr;
+                </p>
+                <div>
+                   <a href=""><FaFacebook color="#1877F2"  size={30}/></a> &nbsp;
+                   <a href=""><FaWhatsapp color="#25D366"  size={30}/></a>
+                </div>
+                </div>
+              <video 
+                poster={IRE} 
+                loop 
+                controls  >
+                  <source
+                    
+                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+              </video>
+              </div>
             </div>
           </div>
         </section>
@@ -221,7 +232,7 @@ export function HomePage() {
                   <img src={howItWorksImage3} alt="step3" />
                 </figure>
               </div>
-              
+
             </div>
           </div>
         </section>

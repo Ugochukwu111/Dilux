@@ -214,3 +214,14 @@ section {
 .w100{
   width: 100%;
 }
+
+.facebook {
+  background-color: #1877F2;
+  color: #ffffff;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  background-color: #25D366;
+  color: #ffffff;
+}

@@ -80,6 +80,8 @@ header .trust-kicker-link{
   z-index: 0;
 }
 
+
+
 @keyframes textSlideUp {
   from {
     opacity: 0;
@@ -137,6 +139,7 @@ header .trust-kicker-link{
 }
 
 
+/* ===============   why choose us section css ============== */
 .why-choose-us-section .sub-text{
   max-width: 700px;
   margin-top: .25em;
@@ -173,6 +176,18 @@ header .trust-kicker-link{
 
 .offer-card .offer-description{
   font-size: 1rem;
+}
+
+@media(max-width:1200px){
+  .vedio-content-container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .vedio-content-container .video-container{
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 5em;
+  }
 }
 
 
@@ -372,17 +387,20 @@ header .trust-kicker-link{
 
 
 .how-it-works-section .h-i-w-list{
-  padding: 2em ;
+  padding: 2 2% ;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
 }
 
-
-.how-it-works-section .h-i-w-list ol{
-  /* flex: 1; */
-  /* max-width: 60%; */
+@media (max-width: 900px) {
+   .how-it-works-section .h-i-w-list{
+    flex-direction: column;
+    align-items: center;
 }
+}
+
 
 .how-it-works-section .h-i-w-list ol li{
   margin: .5em 0;
