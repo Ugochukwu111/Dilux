@@ -22,7 +22,7 @@
 
 .partner-slider:hover .slider-track {
   animation-play-state: paused;
-  cursor: pointer; /* Tells the user they can interact with it */
+  cursor: pointer; 
 }
 
 .partner-slider .slider-track{
@@ -46,7 +46,6 @@
 
 .slider-track span::after {
   content: "•"; 
-  /* This margin replaces &nbsp; for perfect control */
   margin-left: 4rem; 
   font-size: 2.5rem;
   color: var(--dark-grey);

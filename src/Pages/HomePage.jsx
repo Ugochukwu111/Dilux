@@ -135,6 +135,8 @@ export function HomePage() {
         <PartnerSlider/>
         <section className="why-choose-us-section">
           <div className="container">
+            <div className="d-flex">
+              <div>
             <h2>The Dilux Difference</h2>
             <p className="text-dark-gray sub-text">
               Guaranteed returns stem from our stringent, multi-layered audit.
@@ -154,6 +156,18 @@ export function HomePage() {
                   </div>
                 );
               })}
+            </div>
+            </div>
+            <div className="video-container">
+             <video autoPlay loop muted controls  >
+                <source
+                   
+                  src="https://www.w3schools.com/html/mov_bbb.mp4"
+                  type="video/mp4"
+                />
+                 Your browser does not support the video tag.
+             </video>
+             </div>
             </div>
           </div>
         </section>

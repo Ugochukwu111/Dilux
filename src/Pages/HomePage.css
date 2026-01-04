@@ -3,7 +3,6 @@
 .homepage-container header{
   height: 100svh;
   position: relative;
-  z-index: 0;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -36,14 +35,25 @@ header .trust-kicker-link{
   color: var(--bright-white);
   padding: .25em .5em;
   border-radius: 2rem;
-  font-size: .9rem;
+  font-size: .8rem;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.why-choose-us-section .video-container{
+  width: 100%;
+  width: 320px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: .5rem;
+  box-shadow: 2px 2px 4px var(--dark-gray);
 }
 
 
 .homepage-container .img-overlay img {
   position: absolute;
-  z-index: -2; 
-    filter: blur(2px)  brightness(0.9);
+  filter: blur(2px)  brightness(0.9);
   animation: imageFadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   will-change: opacity;
 }
@@ -635,7 +645,8 @@ background: linear-gradient(
 .faq-section{
   background:  var(--light-gold);
   padding: 10em 0;
-  transform: translateY(-2px);;
+  transform: translateY(-2px);
+    transform: none;
  clip-path: polygon(0 5%, 100% 0%, 40000% 90%, 0 100%);
 }
 .faq-card{
