@@ -6,13 +6,13 @@ import {
   MapPin,
   Phone,
   Mail,
+  Dot,
   ClipboardClock,
 } from "lucide-react";
 import { FaTwitter, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import {
   whatWeOffer,
   investmentReturns,
-  landListings,
   clientTestimonials,
   diluxTeam,
   diluxFaqs,
@@ -33,6 +33,7 @@ import phoneHeroSectionImage1 from "../assets/hero/phone-dilux-hero1.jpg";
 import IRE from "../assets/team/IRE.jpg";
 
 import { PartnerSlider } from "../Components/PartnerSlider";
+import { ListingCard } from "../Components/ListingCard";
 
 import "./HomePage.css";
 
@@ -119,7 +120,7 @@ export function HomePage() {
             <p className="short-description text-light-gray">
               {currentSlide.subtext}
             </p>
-                        <Link to="/certificates" className="trust-kicker-link">
+            <Link to="/certificates" className="trust-kicker-link">
               <span className="shield-icon">🛡️</span>
               GOVERNMENT VERIFIED • SEE CERTIFICATES
             </Link>
@@ -132,7 +133,7 @@ export function HomePage() {
         </section>
       </header>
       <main>
-        <PartnerSlider/>
+        <PartnerSlider />
         {/* dilux-differences section */}
         <section className="why-choose-us-section">
           <div className="container">
@@ -140,17 +141,22 @@ export function HomePage() {
               <div>
                 <h2>The Dilux Difference</h2>
                 <p className="text-dark-gray sub-text">
-                  Guaranteed returns stem from our stringent, multi-layered audit.
-                  We secure stable, legally compliant, exclusive assets.
+                  Guaranteed returns stem from our stringent, multi-layered
+                  audit. We secure stable, legally compliant, exclusive assets.
                 </p>
                 <br />
 
                 <div className="offers-container">
                   {whatWeOffer.map((offer) => {
                     return (
-                      <div key={offer.id} className={`offer-card ${offer.bgcolor}`}>
+                      <div
+                        key={offer.id}
+                        className={`offer-card ${offer.bgcolor}`}
+                      >
                         <span className="text-white ">{offer.icon}</span>
-                        <p className="FWB offer-title text-white">{offer.name}</p>
+                        <p className="FWB offer-title text-white">
+                          {offer.name}
+                        </p>
                         <p className="offer-description text-bright-white">
                           {offer.description}
                         </p>
@@ -158,29 +164,27 @@ export function HomePage() {
                     );
                   })}
                 </div>
-
               </div>
               <div className="video-container ">
                 <div className="d-flex justify-s-between">
-                <p className="FWB">
-                  connect on  &rarr;
-                </p>
-                <div>
-                   <a href=""><FaFacebook color="#1877F2"  size={30}/></a> &nbsp;
-                   <a href=""><FaWhatsapp color="#25D366"  size={30}/></a>
+                  <p className="FWB">connect on &rarr;</p>
+                  <div>
+                    <a href="">
+                      <FaFacebook color="#1877F2" size={30} />
+                    </a>{" "}
+                    &nbsp;
+                    <a href="">
+                      <FaWhatsapp color="#25D366" size={30} />
+                    </a>
+                  </div>
                 </div>
-                </div>
-              <video 
-                poster={IRE} 
-                loop 
-                controls  >
+                <video poster={IRE} loop controls>
                   <source
-                    
                     src="https://www.w3schools.com/html/mov_bbb.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
-              </video>
+                </video>
               </div>
             </div>
           </div>
@@ -232,7 +236,6 @@ export function HomePage() {
                   <img src={howItWorksImage3} alt="step3" />
                 </figure>
               </div>
-
             </div>
           </div>
         </section>
@@ -283,54 +286,33 @@ export function HomePage() {
           </div>
         </section>
 
-        <section>
-          <div className="container">
-            <h3 className="text-center">
-              Prime Locations. Exclusive Land & Property Listings.
-            </h3>
-            <p className="text-center">
-              Explore our curated collection of fully vetted land parcels and
-              luxury properties across Nigeria's most strategic regions. Every
-              listing is secured by our legal audit, guaranteeing clean titles
-              and long-term value.
-            </p>
-            <br />
-            <div className="land-listings-container">
-              {landListings.map((listing) => {
-                return (
-                  <div className="land-listing-card">
-                    <figure>
-                      <img src={listing.imageURL} alt={listing.title} />
-                      <span className="listing-status">{listing.status}</span>
-                      <span className="listing-security">
-                        {listing.security}
-                      </span>
-                    </figure>
-                    <div className="land-listing-content">
-                      <p className="listing-title">{listing.title}</p>
-                      <p className="location">
-                        <MapPin />
-                        {listing.location}
-                      </p>
-                      <p className="size">{listing.size}</p>
-                      <p>
-                        <span className="new-price">{listing.newPrice}</span>
-                        <span className="old-price">
-                          <del>{listing.oldPrice}</del>
-                        </span>
-                      </p>
-                    </div>
-                    <button>Book for Inspection</button>
-                  </div>
-                );
-              })}
-            </div>
+        <section className="land-listings-section">
+          <div className="container land-listings-container">
+            <div className="upper-container">
+              <div>
+                <p className="verified-property-tag">
+                  <Dot size={32} className="text-green"/>
+                  Verifird Properties
+                </p>
+                <h2>Curated , Trusted, and Ready for you</h2>
+              </div>
 
-            <br />
-            <br />
-            <button className="view-more-lands">
-              <span>View More</span> <MoveRight />
-            </button>
+              <div className="d-flex flex-column">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                  nulla nemo ut quasi odio. Eos corporis culpa expedita iure
+                  necessitatibus illo temporibus dolore dignissimos, inventore
+                  maxime accusamus quo voluptatum eligendi.
+                </p>
+                <br />
+                <div className="d-flex justify-end">
+                  <Link className="btn">
+                    Explore All Properties <MoveRight />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <ListingCard />
           </div>
         </section>
 

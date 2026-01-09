@@ -88,6 +88,10 @@ body {
     min-height: 100svh;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 a {
   text-decoration: none;
   color: var(--light-gold);
@@ -114,6 +118,26 @@ button{
   display: flex;
   align-items: center;
   text-align: center;
+    font-size: clamp(0.85rem, 1.1vw, 1rem);
+      padding: 
+    clamp(0.4rem, 1.2vw, 0.75rem)
+    clamp(0.75rem, 2.5vw, 1.5rem);
+}
+
+.btn {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1.1em 1.5em;
+  transition: all 200ms ease;
+  border-radius:  1.5rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.btn svg{
+  margin: 0 .8em;
 }
 
 button svg{
@@ -139,9 +163,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1; 
 }
 
-/* The logic: (Minimum Size, Growth Base + Growth Rate, Maximum Size)
-*/
+/* 
 
+The logic: (Minimum Size, Growth Base + Growth Rate, Maximum Size)
+
+*/
 h1 { font-size: clamp(2.25rem, 1.5rem + 4vw, 4.5rem); } 
 h2 { font-size: clamp(1.85rem, 1.2rem + 3.5vw, 3.5rem); }
 h3 { font-size: clamp(1.55rem, 1rem + 2.5vw, 2.75rem); }
