@@ -1,8 +1,9 @@
 import { ListingCard } from "../Components/ListingCard";
 import { landListings } from "../../content";
 import { FilterListings } from "../Components/FilterListings";
+import { Footer } from "../Components/Footer";
 
-import { useSearchParams, useNavigate, useLocation, useParams } from "react-router-dom";
+import { useSearchParams, } from "react-router-dom";
 
 import { useState , useEffect} from "react"; 
 
@@ -59,6 +60,7 @@ export function ListingPage() {
           }
           
         </main>
+        <Footer/>
       </div>
   );
 }
