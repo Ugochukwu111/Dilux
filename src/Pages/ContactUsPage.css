@@ -1,0 +1,119 @@
+.contact-us-container{
+  min-height: 90svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--dark-maroon);
+}
+
+.contact-us-container h1{
+  color: var(--light-gold);
+  max-width: 800px;
+}
+
+.contact-us-container p{
+  color: var(--bright-white);
+  max-width: 1000px;
+  font-weight: 800;
+}
+
+.contact-us-container .cta-container{
+  display: flex;
+  gap: 1em;
+   padding: 0 .5em;
+   justify-content: center;
+}
+
+.contact-us-container .cta-container >*{
+  border: 2px solid var(--bright-white);
+  border-radius: 2rem;
+  box-shadow: 2px 2px 2px var(--dark-gray);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: all 250ms ease;
+}
+
+.contact-us-container .cta-container >*:hover{
+  transform: translateY(-5px);
+}
+
+.contact-us-form-container{
+  display: flex;
+  justify-content: space-between;
+  overflow: visible; /*over ride the global css container*/
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.contact-us-form-container >*{
+  flex: 1;
+  max-width: 700px;
+  min-width: 300px;
+}
+
+.contact-us-form-container form{
+    margin-top: -5rem;
+    padding: 2.5em 2em;
+    border-radius: .5rem;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    box-shadow: 2px 2px 4px var(--light-gold);
+    background-color: var(--light-gold);
+}
+
+.contact-us-form-container form label{
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--bright-white);
+}
+
+.contact-us-form-container form input,textarea{
+  padding: .8em 1.6em;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 2px var(--dark-gray);
+  border: 1px solid var(--light-gray);
+  outline: 2px solid transparent;
+  transition: all 200ms ease;
+}
+
+.contact-us-form-container form input:focus{
+  outline: 2px solid var(--dark-maroon);
+}
+
+
+.contact-us-form-container form textarea{
+  resize: none;
+  height: 150px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+.contact-us-form-container form button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-gold);
+}
+
+.contact-us-container form #name{
+  text-transform: capitalize;
+}
+
+.contact-us-form-container form .input-container{
+  display: flex;
+  flex-direction: column;
+}
+
+@media(max-width:800px){
+  .contact-us-form-container  form{
+    margin-top: 1rem;
+  }
+}

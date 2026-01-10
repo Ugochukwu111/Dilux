@@ -63,7 +63,7 @@ which closes it
             </NavLink>
           </li>
           <li>
-            <NavLink to="contact us">
+            <NavLink to="contact-us">
                <ShieldCheck />
                <span>
                 Contact us

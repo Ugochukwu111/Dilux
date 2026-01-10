@@ -743,7 +743,7 @@ footer .upper-container{
 footer .upper-container div{
   flex: 1;  
   padding: .5em;
-  min-width: 320px;
+  min-width: 250px;
 }
 
 footer .logo{
