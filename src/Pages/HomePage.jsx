@@ -15,6 +15,7 @@ import howItWorksImage3 from "/src/assets/how-it-works/money-transfer.png";
 import { Faqs } from "./Faqs";
 import { DiluxAds } from "../Components/DiluxAds";
 import { InvestmentSection } from "../Components/InvestmentSection";
+import { HeroSection } from '../Components/HeroSection.jsx'
 import { Footer } from "../Components/Footer";
 
 import heroSectionImage1 from "../assets/hero/dilux-hero1.jpg";
@@ -32,101 +33,10 @@ import { DiluxDifferenceCard } from "../Components/DiluxDifferenceCard";
 import "./HomePage.css";
 
 export function HomePage() {
-  const [index, setIndex] = useState(0);
-  const navigate = useNavigate();
-
-  const heroSlides = [
-    {
-      id: 1,
-      heading: "Verified C of O. Zero Risk. Period.",
-      subtext:
-        "Stop worrying about land scams. We only deal in 100% vetted, government-cleared titles. Your investment is legally bulletproof.",
-      image: heroSectionImage1,
-      phoneImage: phoneHeroSectionImage1,
-      link: "/listings",
-      cta: "See Available Lands",
-    },
-    {
-      id: 2,
-      heading: "Your Money, Growing by 24% Every Year.",
-      subtext:
-        "Why save in a bank when land appreciates faster? Secure high-growth plots in Epe & Ibeju-Lekki and lock in guaranteed capital gains.",
-      image: heroSectionImage2,
-      phoneImage: phoneHeroSectionImage2,
-      link: "/investment",
-      cta: "Get ROI Breakdown",
-    },
-    {
-      id: 3,
-      heading: "Luxury Land. Low Entry. High Reward.",
-      subtext:
-        "Premium estates shouldn't be out of reach. Start your land banking journey with flexible payment plans designed for smart earners.",
-      image: heroSectionImage3,
-      phoneImage: phoneHeroSectionImage3,
-      link: "/investment",
-      cta: "View Payment Plans",
-    },
-    {
-      id: 4,
-      heading: "Instant Allocation. Build Your Legacy.",
-      subtext:
-        "No delays. No stories. Pay today, get your papers tomorrow. Join 500+ investors who built their future with Dilux.",
-      phoneImage: phoneHeroSectionImage1,
-      image: heroSectionImage1,
-      link: "/contact-us",
-      cta: "Talk to an Expert",
-    },
-  ];
-
-  const currentSlide = heroSlides[index];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div className="homepage-container">
-      <header>
-        <div className="img-overlay">
-          <picture>
-            <source
-              media="(max-width: 600px)"
-              srcSet={currentSlide.phoneImage || currentSlide.image}
-            />
-            <source media="(max-width: 1920px)" srcSet={currentSlide.image} />
-            <img
-              key={currentSlide.image}
-              src={currentSlide.image}
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              alt=""
-            />
-          </picture>
-        </div>
-        <section className="hero-section-container">
-          <div key={index} className="hero-content-wrapper">
-            <h1 className="text-light-gold ">{currentSlide.heading}</h1>
-
-            <p className="short-description text-light-gray">
-              {currentSlide.subtext}
-            </p>
-            <Link to="/certificates" className="trust-kicker-link">
-              <span className="shield-icon">🛡️</span>
-              GOVERNMENT VERIFIED • SEE CERTIFICATES
-            </Link>
-            <br />
-            <button className="bg-white text-dark-maroon">
-              {currentSlide.cta}
-              <MoveUpRight size={20} />
-            </button>
-          </div>
-        </section>
-      </header>
+      <HeroSection />
       <main>
         <PartnerSlider />
         {/* dilux-differences section */}

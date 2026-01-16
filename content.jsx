@@ -9,6 +9,57 @@ import testimonial2 from './src/assets/testimonials/uifaces-human-avatar.jpg'
 import testimonial3 from './src/assets/testimonials/uifaces-popular-avatar (1).jpg'
 import testimonial4 from './src/assets/testimonials/uifaces-popular-avatar.jpg'
 
+
+import heroSectionImage1 from "./src/assets/hero/dilux-hero1.jpg";
+import heroSectionImage2 from "./src/assets/hero/dilux-hero2.jpg";
+import heroSectionImage3 from "./src/assets/hero/dilux-hero3.jpg";
+import phoneHeroSectionImage3 from "./src/assets/hero/phone-dilux-hero3.jpg";
+import phoneHeroSectionImage2 from "./src/assets/hero/phone-dilux-hero2.jpg";
+import phoneHeroSectionImage1 from "./src/assets/hero/phone-dilux-hero1.jpg";
+
+export  const heroSlides = [
+    {
+      id: 1,
+      heading: "Verified C of O. Zero Risk. Period.",
+      subtext:
+        "Stop worrying about land scams. We only deal in 100% vetted, government-cleared titles. Your investment is legally bulletproof.",
+      image: heroSectionImage1,
+      phoneImage: phoneHeroSectionImage1,
+      link: "/listings",
+      cta: "See Available Lands",
+    },
+    {
+      id: 2,
+      heading: "Your Money, Growing by 24% Every Year.",
+      subtext:
+        "Why save in a bank when land appreciates faster? Secure high-growth plots in Epe & Ibeju-Lekki and lock in guaranteed capital gains.",
+      image: heroSectionImage2,
+      phoneImage: phoneHeroSectionImage2,
+      link: "/investment",
+      cta: "Get ROI Breakdown",
+    },
+    {
+      id: 3,
+      heading: "Luxury Land. Low Entry. High Reward.",
+      subtext:
+        "Premium estates shouldn't be out of reach. Start your land banking journey with flexible payment plans designed for smart earners.",
+      image: heroSectionImage3,
+      phoneImage: phoneHeroSectionImage3,
+      link: "/investment",
+      cta: "View Payment Plans",
+    },
+    {
+      id: 4,
+      heading: "Instant Allocation. Build Your Legacy.",
+      subtext:
+        "No delays. No stories. Pay today, get your papers tomorrow. Join 500+ investors who built their future with Dilux.",
+      phoneImage: phoneHeroSectionImage1,
+      image: heroSectionImage1,
+      link: "/contact-us",
+      cta: "Talk to an Expert",
+    },
+  ];
+
 export const whatWeOffer = [
     {
       id: 1,
