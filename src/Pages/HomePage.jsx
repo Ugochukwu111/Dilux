@@ -31,6 +31,8 @@ import IRE from "../assets/team/IRE.jpg";
 
 import { PartnerSlider } from "../Components/PartnerSlider";
 import { ListingCard } from "../Components/ListingCard";
+import { useInView } from "../Hooks/UseInView"; 
+import { DiluxDifferenceCard } from "../Components/DiluxDifferenceCard";
 
 import "./HomePage.css";
 
@@ -146,18 +148,7 @@ export function HomePage() {
                 <div className="offers-container">
                   {whatWeOffer.map((offer) => {
                     return (
-                      <div
-                        key={offer.id}
-                        className={`offer-card ${offer.bgcolor}`}
-                      >
-                        <span className="text-white ">{offer.icon}</span>
-                        <p className="FWB offer-title text-white">
-                          {offer.name}
-                        </p>
-                        <p className="offer-description text-bright-white">
-                          {offer.description}
-                        </p>
-                      </div>
+                      <DiluxDifferenceCard key={offer.id} offer={offer}/>
                     );
                   })}
                 </div>

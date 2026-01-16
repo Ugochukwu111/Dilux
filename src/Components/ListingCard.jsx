@@ -124,10 +124,6 @@ export function ListingCard({ listing }) {
         <br />
 
         <div className="d-flex flex-wrap align-center listing-cta-buttons-container">
-          <button className="bg-light-gold text-white">
-            {" "}
-            <Eye /> View Listing
-          </button>
           <Link>
             Book for inspection &nbsp;
             <MoveRight />
