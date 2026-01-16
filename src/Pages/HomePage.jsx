@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { MoveUpRight, MoveRight, Dot,BadgeCheck } from "lucide-react";
+import {  MoveRight, Dot, } from "lucide-react";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import {
   whatWeOffer,
@@ -9,6 +9,7 @@ import {
   diluxTeam,
   diluxFaqs,
 } from "../../content";
+import { landListings } from "../../content";
 import { TestimonialCard } from "../Components/TestimonialCard";
 import howItWorksImage1 from "/src/assets/how-it-works/consultation.jpg";
 import howItWorksImage3 from "/src/assets/how-it-works/money-transfer.png";
@@ -18,12 +19,6 @@ import { InvestmentSection } from "../Components/InvestmentSection";
 import { HeroSection } from '../Components/HeroSection.jsx'
 import { Footer } from "../Components/Footer";
 
-import heroSectionImage1 from "../assets/hero/dilux-hero1.jpg";
-import heroSectionImage2 from "../assets/hero/dilux-hero2.jpg";
-import heroSectionImage3 from "../assets/hero/dilux-hero3.jpg";
-import phoneHeroSectionImage3 from "../assets/hero/phone-dilux-hero3.jpg";
-import phoneHeroSectionImage2 from "../assets/hero/phone-dilux-hero2.jpg";
-import phoneHeroSectionImage1 from "../assets/hero/phone-dilux-hero1.jpg";
 import IRE from "../assets/team/IRE.jpg";
 
 import { PartnerSlider } from "../Components/PartnerSlider";
@@ -33,6 +28,19 @@ import { DiluxDifferenceCard } from "../Components/DiluxDifferenceCard";
 import "./HomePage.css";
 
 export function HomePage() {
+
+  const [randomIndex, setRandomIndex] = useState(0);
+
+  const generateRandomNumber = () => {
+    const num = Math.floor(Math.random() * landListings.length);
+    setRandomIndex(num);
+  };
+
+  useEffect(() => {
+    const intervalId = setInterval(generateRandomNumber, 5000);
+    return () => clearInterval(intervalId); // cleanup
+  }, []);
+
 
   return (
     <div className="homepage-container">
@@ -160,7 +168,9 @@ export function HomePage() {
                 </div>
               </div>
             </div>
-            <ListingCard />
+            <ListingCard
+             key={landListings[randomIndex]?.id}  
+             listing = { landListings[randomIndex] }/>
           </div>
         </section>
 

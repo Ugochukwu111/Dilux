@@ -1,5 +1,5 @@
 import { MoveRight, Eye } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export function ListingCard({ listing }) {
@@ -83,9 +83,15 @@ export function ListingCard({ listing }) {
     }
   };
 
+  useEffect(() => {
+  const converted = convertToCurrency(currency, listing?.newPrice || 0);
+  setPriceOfListing(formatCurrency(converted));
+}, [listing, currency])
+
   return (
-    <div className="listing-card">
+    <div key={listing?.id} className="listing-card">
       <figure>
+        <div className="listing-img-overlay"></div>
         <img src={listing?.imageURL} alt={listing?.title} />
       </figure>
 
