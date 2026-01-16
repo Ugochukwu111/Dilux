@@ -91,7 +91,9 @@ export function ListingCard({ listing }) {
   return (
     <div key={listing?.id} className="listing-card">
       <figure>
-        <div className="listing-img-overlay"></div>
+        <div className="listing-img-overlay">
+          <h5>DILUX <span className="text-light-gold">PROPERTIES</span></h5>
+        </div>
         <img src={listing?.imageURL} alt={listing?.title} />
       </figure>
 

@@ -328,9 +328,20 @@ header .trust-kicker-link{
   position: absolute;
   background-color: var(--dark-maroon);
   inset: 0;
-  animation: slideOut .8s linear;
+  animation: slideOut 1.8s linear;
   transform: translateX(-100%);
+  display: grid;
+  place-items: center;
 }
+.listing-img-overlay h5{
+  color: var(--bright-white);
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: clamp(1.85rem, 1.2rem + 3.5vw, 3.5rem);
+  text-align: center;
+  text-shadow: 2px 2px 4px var(--dark-gray);
+}
+
 
 .listing-content{
    animation: fadeSlideIn .8s linear;
