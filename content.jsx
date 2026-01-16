@@ -1,4 +1,5 @@
-import { ChartNoAxesColumnDecreasing, BadgeCheck,Settings  } from 'lucide-react'
+import { ChartNoAxesColumnDecreasing, BadgeCheck,Settings, Briefcase,MapPin,TrendingUp  } from 'lucide-react'
+
 
 import land1Src from './src/assets/land1.jpg'
 import land2Src from './src/assets/land2.jpg'
@@ -31,32 +32,6 @@ export const whatWeOffer = [
       bgcolor:'bg-light-gold ',
     },
   ]
-
-  export const investmentReturns = [
-  {
-    capital: '900,000',
-    income: '11,160,000',
-  },
-  {
-    capital: '8,000,000',
-    income: '9,920,000',
-  },
-  {
-    capital: '7,000,000',
-    income: '8,680,000',
-  },
-  {
-    capital: '6,000,000',
-    income: '7,440,000',
-  },
-  {
-    capital: '5,000,000',
-    income: '6,200,000',
-  },
-];
-
-
-
 export const landListings = [
   {
     id: 1,
@@ -358,3 +333,26 @@ export const adsData = [
     btnText: "Verify Now"
   }
 ];
+
+ export const roiCards = [
+  {
+    id: 1,
+    title: "Start With ₦1,000,000+",
+    text: "This opportunity is designed for serious, hard-working individuals ready to place ₦1 million or more into structured land banking. Your capital is used to acquire land early in fast-developing locations.",
+    icon: <Briefcase/>
+  },
+  {
+    id: 2,
+    title: "Strategic Land Banking",
+    text: "We acquire land at early-stage prices in growth corridors, then position it for value increase through development activity and rising demand. This structured approach is what drives the projected 24% return within a 10-month cycle.",
+    icon: <MapPin/>
+  },
+  {
+    id: 3,
+    title: "Capital + 24% Return",
+    text: "At the end of the 10-month period, investors receive their initial capital plus a return of up to 24%, based on the performance of the land cycle. This is growth tied to real assets, not speculation.",
+    icon: <TrendingUp/>
+  }
+];
+
+

@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import {
-  MoveUpRight,
-  MoveRight,
-  Dot,
-} from "lucide-react";
-import {  FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { MoveUpRight, MoveRight, Dot,BadgeCheck } from "lucide-react";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 import {
   whatWeOffer,
-  investmentReturns,
   clientTestimonials,
   diluxTeam,
   diluxFaqs,
@@ -18,8 +14,8 @@ import howItWorksImage1 from "/src/assets/how-it-works/consultation.jpg";
 import howItWorksImage3 from "/src/assets/how-it-works/money-transfer.png";
 import { Faqs } from "./Faqs";
 import { DiluxAds } from "../Components/DiluxAds";
+import { InvestmentSection } from "../Components/InvestmentSection";
 import { Footer } from "../Components/Footer";
-
 
 import heroSectionImage1 from "../assets/hero/dilux-hero1.jpg";
 import heroSectionImage2 from "../assets/hero/dilux-hero2.jpg";
@@ -31,13 +27,13 @@ import IRE from "../assets/team/IRE.jpg";
 
 import { PartnerSlider } from "../Components/PartnerSlider";
 import { ListingCard } from "../Components/ListingCard";
-import { useInView } from "../Hooks/UseInView"; 
 import { DiluxDifferenceCard } from "../Components/DiluxDifferenceCard";
 
 import "./HomePage.css";
 
 export function HomePage() {
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   const heroSlides = [
     {
@@ -147,9 +143,7 @@ export function HomePage() {
 
                 <div className="offers-container">
                   {whatWeOffer.map((offer) => {
-                    return (
-                      <DiluxDifferenceCard key={offer.id} offer={offer}/>
-                    );
+                    return <DiluxDifferenceCard key={offer.id} offer={offer} />;
                   })}
                 </div>
               </div>
@@ -228,58 +222,14 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="investment-plan-section">
-          <div className="container investment-plan-container">
-            <div className="left-container">
-              <h2 className="text-white">
-                Your Guaranteed <span className="text-light-gold">24% </span>{" "}
-                Cash Return
-              </h2>
-              <br />
-              <p>
-                We commit to full transparency. The DILUX All-Cash Return Plan
-                ensures your principal is secured by legally audited real estate
-                assets, delivering clear, predictable monthly income and a
-                guaranteed total profit of 24%
-              </p>
-              <br />
-              <div className="d-flex flex-1 justify-s-between">
-                <p className="FWB">Capital</p>
-                <p className="FWB text-green">Income</p>
-              </div>
-              <div>
-                <br />
-                {investmentReturns.map((investment) => {
-                  return (
-                    <div className="investment-card d-flex align-center">
-                      <p>${investment.capital}</p> &nbsp; &nbsp; &nbsp;
-                      <div className="flex-1 line">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                      </div>
-                      &nbsp; &nbsp; &nbsp;
-                      <p className="text-green FWB">${investment.income}</p>
-                    </div>
-                  );
-                })}
-              </div>
-              <br />
-              <br />
-              <button>
-                See More Details <MoveRight />
-              </button>
-            </div>
-          </div>
-        </section>
+        <InvestmentSection />
 
         <section className="land-listings-section">
           <div className="container land-listings-container">
             <div className="upper-container">
               <div>
                 <p className="verified-property-tag">
-                  <Dot size={32} className="text-green"/>
+                  <Dot size={32} className="text-green" />
                   Verifird Properties
                 </p>
                 <h2>Curated , Trusted, and Ready for you</h2>
@@ -294,7 +244,7 @@ export function HomePage() {
                 </p>
                 <br />
                 <div className="d-flex justify-end">
-                  <Link className="btn">
+                  <Link to="/properties" className="btn">
                     Explore All Properties <MoveRight />
                   </Link>
                 </div>
@@ -426,7 +376,7 @@ export function HomePage() {
           </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

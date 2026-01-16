@@ -193,54 +193,89 @@ header .trust-kicker-link{
 
 /* ================ INVESTMENT PLAN ==========*/
 .investment-plan-section{
-  background-image: url('../assets/red-texture.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--light-gold);
+  padding: 0;
 }
 
-.investment-plan-section{
-  padding: 0;
-}
-.investment-plan-section >div{
-  padding: 0;
+.investment-plan-container{
   display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
 }
 
-.investment-plan-section .left-container{
-  background-color: #38333379;
-  padding: clamp(1rem, 20vw, 4rem) ;
-  flex: 1;
-  color: var(--white);
+.investment-plan-section .investment-video-container{
+ border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  /* aspect-ratio: 1/.8; */
+  padding: 3em;
+  /* border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem; */
+  position: relative;
+  flex-shrink: 0;
 }
 
-.investment-card{
-  margin-bottom: 1em;
-}
-
-.line{
-  background-color: var(--white);
-  height: 6px;
+.investment-video-container .contact-ceo-link{
+  background-color: var(--dark-maroon);
+  padding:.5em .8em;
+  position: absolute;
+  margin-top: .5em;
+  width: fit-content;
   border-radius: 2rem;
   display: flex;
-  justify-content: space-around;
+  top: 1em;
+  right: 1em;
 }
 
-.line >*{
-  height: 20px;
-  width: 20px;
-  background-color: var(--white);
-  margin: .5em;
-  border-radius: 50%;
-  margin-top: -.4em;
+.investment-content-container{
+  background: var(--bright-white);
+  flex: 1;
+  padding: 2em;
+  padding-top: 3em;
   
 }
 
-.investment-plan-section .logo-text{
-  flex: 1;
-  height: fit-content;
-  text-align: center;
-  align-self: center;
+.roi-cards-container{
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: .5em;
+}
+
+.roi-cards-container .roi-cards{
+  background: var(--light-gold);
+  border-radius: .5rem;
+  color: var(--bright-white);
+  padding: .25em;
+  display: flex;
+  gap: .5em;
+  box-shadow: 2px 2px 4px var(--dark-gray);
+  transition: all 300ms ease;
+}
+
+.roi-cards-container .roi-cards:hover{
+  transform: translateY(-5px);
+}
+
+.roi-cards-container .roi-cards svg{
+  flex-shrink: 0;
+}
+
+.roi-cards .title{
+  font-weight: 800;
+  display: block;
+}
+.roi-cards .description{
+  font-size: .9rem;
+  line-height: .5;
+}
+
+@media(max-width: 1200px){
+  .investment-plan-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
 }
 
 
@@ -518,11 +553,6 @@ min-height: 300px;
 
 
 /* ==============   OUT TEAM SECTION ==========  */
-.team-section{
-  padding: 2em 0;
-
-}
-
 .team-section > div{
   padding-inline: 0;
 }
@@ -663,10 +693,6 @@ background: linear-gradient(
 /* ============== FREQUENTLY ASKED SECTION ============= */
 .faq-section{
   background:  var(--light-gold);
-  padding: 10em 0;
-  transform: translateY(-2px);
-    transform: none;
- clip-path: polygon(0 5%, 100% 0%, 40000% 90%, 0 100%);
 }
 .faq-card{
   max-width: 700px;
