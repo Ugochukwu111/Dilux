@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import { Link,} from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 import IRE from "../assets/team/IRE.jpg";
@@ -14,7 +16,12 @@ export function InvestmentSection() {
   return (
     <section className="investment-plan-section">
       <div className="container investment-plan-container">
-        <div className="investment-video-container">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }} // This acts like an Observer
+          viewport={{ once: true, amount: 0.5 }} // Triggers when 50% visible
+          transition={{ duration: 0.5 }}
+         className="investment-video-container">
           <video src="" preload="none" poster={IRE} controls></video>
           <a
             target="_blank"
@@ -24,7 +31,7 @@ export function InvestmentSection() {
             Contact CEO &nbsp; <FaWhatsapp size={25} />
           </a>
           <h5 className="font-body">Igwe Real Estate (IRE)</h5>
-        </div>
+        </motion.div>
 
         <div className="investment-content-container">
           <h3 className="">
@@ -33,11 +40,7 @@ export function InvestmentSection() {
             Something Real.
           </h3>
           <p>
-            Wealth isn’t only about how much you earn, but how wisely you grow
-            it. While you focus on your work and family, Dilux helps you place
-            your money in strategically located land with strong development
-            potential. It’s a thoughtful way to turn years of effort into
-            lasting value—with projected returns of up to 24% over time.
+           Don't just earn wealth—grow it. Dilux secures your future by placing your capital in strategic land assets with high development potential, offering a 24% projected return while you focus on life.
           </p>
           <br />
           <div className="roi-cards-container">
@@ -47,13 +50,16 @@ export function InvestmentSection() {
                 ref={ref}
                 key={card.id} 
                 className={`roi-cards ${inView ? "reveal-active" : "reveal"}`}>
-                   {card.icon}
-                  <p>
+                  <div className={`roi-cards-upper-container ${card.bg} text-white`}>
+                    {card.icon}
                     <span className="title">{card.title}</span>
-                    <span className="description">
-                       {card.text}
-                    </span>
+                  </div>
+                  <div className="roi-cards-lower-container">
+                  <p className="description">
+                       {card.shortDesc}
                   </p>
+                   <Link>Read more  </Link>
+                  </div>
                 </div>
               );
             })}

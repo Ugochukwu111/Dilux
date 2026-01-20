@@ -385,24 +385,30 @@ export const adsData = [
   }
 ];
 
- export const roiCards = [
+export const roiCards = [
   {
     id: 1,
     title: "Start With ₦1,000,000+",
-    text: "This opportunity is designed for serious, hard-working individuals ready to place ₦1 million or more into structured land banking. Your capital is used to acquire land early in fast-developing locations.",
-    icon: <Briefcase/>
+    shortDesc: "A premium entry point for serious investors ready to leverage structured land banking for wealth creation.",
+    longDesc: "This opportunity is specifically curated for high-intent, serious, and hard-working individuals who are ready to commit a minimum capital of ₦1 million into our structured land banking model. By pooling these resources, we are able to move swiftly in the real estate market, acquiring large tracts of land in high-potential areas before prices skyrocket. Your capital isn't just sitting in a bank; it is actively deployed to secure physical assets in fast-developing corridors. This stage is the bedrock of your investment, ensuring that you enter the market at the lowest possible price point to maximize your eventual exit spread.",
+    icon: <Briefcase size={35} />,
+    bg: 'bg-green'
   },
   {
     id: 2,
     title: "Strategic Land Banking",
-    text: "We acquire land at early-stage prices in growth corridors, then position it for value increase through development activity and rising demand. This structured approach is what drives the projected 24% return within a 10-month cycle.",
-    icon: <MapPin/>
+    shortDesc: "Strategic acquisition and positioning in Nigeria's most promising growth corridors for maximum value appreciation.",
+    longDesc: "Our strategy goes far beyond simply buying land. We identify 'growth corridors'—regions where government infrastructure, industrial expansion, and residential demand are projected to intersect. We acquire these lands at their raw, early-stage prices and then strategically position them for massive value increase. This is achieved through active land management, perimeter fencing, and wait-period optimization. By timing the market cycle perfectly, we create a high-demand asset. This meticulous, data-driven approach is the engine that drives our projected 24% return, turning a passive holding into a high-performance financial instrument within a crisp 10-month window.",
+    icon: <MapPin size={35}/>,
+    bg: 'bg-light-gold'
   },
   {
     id: 3,
     title: "Capital + 24% Return",
-    text: "At the end of the 10-month period, investors receive their initial capital plus a return of up to 24%, based on the performance of the land cycle. This is growth tied to real assets, not speculation.",
-    icon: <TrendingUp/>
+    shortDesc: "Enjoy a guaranteed exit strategy with your initial capital plus a highly competitive 24% return on investment.",
+    longDesc: "The climax of the investment cycle is the payout phase. At the conclusion of the 10-month period, the land assets are liquidated or refinanced based on their new appreciated value. As an investor, you receive your full initial capital back along with a surplus return of up to 24%. Unlike the volatile stock market or depreciating currency, this growth is directly tied to the physical reality of land development and urban expansion in Nigeria. It is a wealth-building strategy built on tangible assets, providing you with a transparent, predictable, and highly rewarding exit. This is not speculation; it is a structured financial harvest from a real-world asset cycle.",
+    icon: <TrendingUp size={35} />,
+    bg: 'bg-green'
   }
 ];
 

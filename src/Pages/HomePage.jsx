@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import {  MoveRight, Dot, } from "lucide-react";
+import { MoveRight, Dot } from "lucide-react";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { WhatsAppIcon } from "../Components/WhatsAppIcon.jsx";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
 import {
   whatWeOffer,
   clientTestimonials,
@@ -16,7 +18,7 @@ import howItWorksImage3 from "/src/assets/how-it-works/money-transfer.png";
 import { Faqs } from "./Faqs";
 import { DiluxAds } from "../Components/DiluxAds";
 import { InvestmentSection } from "../Components/InvestmentSection";
-import { HeroSection } from '../Components/HeroSection.jsx'
+import { HeroSection } from "../Components/HeroSection.jsx";
 import { Footer } from "../Components/Footer";
 
 import IRE from "../assets/team/IRE.jpg";
@@ -28,7 +30,6 @@ import { DiluxDifferenceCard } from "../Components/DiluxDifferenceCard";
 import "./HomePage.css";
 
 export function HomePage() {
-
   const [randomIndex, setRandomIndex] = useState(0);
 
   const generateRandomNumber = () => {
@@ -41,12 +42,13 @@ export function HomePage() {
     return () => clearInterval(intervalId); // cleanup
   }, []);
 
-
   return (
     <div className="homepage-container">
       <HeroSection />
+
       <main>
         <PartnerSlider />
+        <WhatsAppIcon />
         {/* dilux-differences section */}
         <section className="why-choose-us-section">
           <div className="container">
@@ -99,29 +101,43 @@ export function HomePage() {
               {/* continer text for how it works */}
               <div>
                 <ol>
-                  <li>
+                  <motion.li
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }} // This acts like an Observer
+                    viewport={{ once: true, amount: 0.5 }} // Triggers when 50% visible
+                    transition={{ duration: 0.5 }}
+                  >
                     <p>Consultation</p>
                     Speak with our expert advisors to align your financial goals
                     with the right property opportunities. We provide
                     personalized market insights to ensure your strategy is
                     built on a solid foundation.
-                  </li>
-
-                  <li>
+                  </motion.li>
+                  <motion.li
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }} // This acts like an Observer
+                    viewport={{ once: true, amount: 0.5 }} // Triggers when 50% visible
+                    transition={{ duration: 0.6 }}
+                  >
                     <p>Secure your Investment</p>
                     Finalize your selection through our streamlined, secure
                     portal. From legal verification to digital contracts, we
                     handle the complexities so you can commit to your asset with
                     total confidence.
-                  </li>
-
-                  <li>
+                  </motion.li>
+                  motion.
+                  <motion.li
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }} // This acts like an Observer
+                    viewport={{ once: true, amount: 0.5 }} // Triggers when 50% visible
+                    transition={{ duration: 0.8 }}
+                  >
                     <p>Receive Payouts</p>
                     Sit back and watch your capital grow. Whether through rental
                     yield or property appreciation, your returns are deposited
                     directly to you, providing a hassle-free passive income
                     stream
-                  </li>
+                  </motion.li>
                 </ol>
               </div>
               {/* container  for illustration of pics of how it works */}
@@ -169,8 +185,9 @@ export function HomePage() {
               </div>
             </div>
             <ListingCard
-             key={landListings[randomIndex]?.id}  
-             listing = { landListings[randomIndex] }/>
+              key={landListings[randomIndex]?.id}
+              listing={landListings[randomIndex]}
+            />
           </div>
         </section>
 
@@ -180,25 +197,47 @@ export function HomePage() {
             <p>
               The people , The goverment, know who we are , Numbers dont lie!
             </p>
-            <div className="numbers-container">
-              <p>
-                <span className="FWB">26+</span>
-                <span className="text-dark-gray">states</span>
-              </p>
-              <p>
-                <span className="FWB">354+</span>
-                <span className="text-dark-gray">sold properties</span>
-              </p>
-              <p>
-                <span className="FWB">156+</span>
-                <span className="text-dark-gray">Investment deals</span>
-              </p>
-
-              <p>
-                <span className="FWB">24+</span>
-                <span className="text-dark-gray">government agency</span>
-              </p>
-            </div>
+            <motion.div
+              className="numbers-container"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              variants={{
+                hidden: { opacity: 0 },
+                show: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.2, // This makes each number wait 0.2s after the previous one
+                  },
+                },
+              }}
+            >
+              {[
+                { end: 24, label: "states" },
+                { end: 350, label: "sold properties", duration: 3.5 },
+                { end: 124, label: "Investment deals" },
+                { end: 15, label: "government agency" },
+              ].map((stat, idx) => (
+                <motion.p
+                  key={idx}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0 },
+                  }}
+                >
+                  <span className="FWB">
+                    <CountUp
+                      end={stat.end}
+                      suffix="+"
+                      enableScrollSpy={true}
+                      scrollSpyOnce={true}
+                      duration={stat.duration || 2.5}
+                    />
+                  </span>
+                  <span className="FWB text-dark-maroon">{stat.label}</span>
+                </motion.p>
+              ))}
+            </motion.div>
             <br />
             <h5>
               <u>see our certigicate</u>
