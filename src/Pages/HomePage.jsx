@@ -9,16 +9,15 @@ import {
   whatWeOffer,
   clientTestimonials,
   diluxTeam,
-  diluxFaqs,
 } from "../../content";
 import { landListings } from "../../content";
 import { TestimonialCard } from "../Components/TestimonialCard";
 import howItWorksImage1 from "/src/assets/how-it-works/consultation.jpg";
 import howItWorksImage3 from "/src/assets/how-it-works/money-transfer.png";
-import { Faqs } from "./Faqs";
 import { DiluxAds } from "../Components/DiluxAds";
 import { InvestmentSection } from "../Components/InvestmentSection";
 import { HeroSection } from "../Components/HeroSection.jsx";
+import {FaqSection } from '../Components/FaqSection.jsx'
 import { Footer } from "../Components/Footer";
 
 import IRE from "../assets/team/IRE.jpg";
@@ -324,17 +323,7 @@ export function HomePage() {
             </p>
           </div>
         </section>
-
-        <section className="faq-section">
-          <div className="container ">
-            <h3 className="text-center text-white">
-              Frequently Asked Questions
-            </h3>
-            {diluxFaqs.map((faq) => {
-              return <Faqs key={faq.id} faq={faq} />;
-            })}
-          </div>
-        </section>
+          <FaqSection/>
       </main>
       <Footer />
     </div>

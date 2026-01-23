@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
 
-export function Faqs({faq}) {
+export function FaqsCard({faq}) {
   const [open, setOpen] = useState(false);
 
   return(

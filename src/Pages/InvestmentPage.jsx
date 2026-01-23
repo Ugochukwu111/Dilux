@@ -8,6 +8,9 @@ import { PartnerSlider } from "../Components/PartnerSlider";
 import { Footer } from "../Components/Footer";
 import { WhatsAppIcon } from "../Components/WhatsAppIcon";
 import { roiCards } from "../../content";
+import {FaqSection } from '../Components/FaqSection.jsx'
+import { MessageCircle } from "lucide-react";
+
 
 import { Play } from "lucide-react";
 import "./InvestmentPage.css";
@@ -93,7 +96,7 @@ export function InvestmentPage() {
             {roiCards.map((card) => {
               return (
                 <motion.div
-                  
+                  key={card.id}
                   variants={cardItem}
                   initial="hidden"
                   whileInView="visible"
@@ -102,7 +105,7 @@ export function InvestmentPage() {
                 >
                   <figure>
                     <span> Step {card.id}</span>
-                    <img src={card.image} alt={card.title} />
+                    <img loading="lazy" src={card.image} alt={card.title} />
                     <figcaption className="title">
                       {card.icon} {card.title}
                     </figcaption>
@@ -110,9 +113,9 @@ export function InvestmentPage() {
                   <div className="roi-content">
                     <p>
                       {card.longDesc.split("\n\n").map((para, i) => (
-                        <p key={i} className="break">
+                        <span key={i} className="break">
                           {para}
-                        </p>
+                        </span>
                       ))}
                     </p>
                   </div>
@@ -123,13 +126,14 @@ export function InvestmentPage() {
           <div className="d-flex flex-column align-center justify-center">
           <p className="FWB text-green">Ready to invest ? Still have questions? chart with use directly</p>
          <br />
-           <button className="bg-green text-white">
-            Chat With Us Directly
+           <button className="bg-green text-white chat-with-us-btn">
+             <MessageCircle /> Chat With Us Directly
            </button>
           </div>
         </motion.div>
       </section>
       <DiluxAds />
+      <FaqSection/>
       <Footer />
     </div>
   );

@@ -7,13 +7,13 @@ export function WhatsAppIcon() {
     'position': 'fixed',
     'right':'3rem',
     'bottom': '3rem',
-    'background-color': '#25D366',
-    'border-radius': '50%',
+    'backgroundColor': '#25D366',
+    'borderRadius': '50%',
      'display': 'grid',
-     'place-items': 'center',
+     'placeItems': 'center',
      'padding': '.35em',
-     'box-shadow': '2px 2px 4px var(--dark-gray)',
-     'z-index': '100',
+     'boxShadow': '2px 2px 4px var(--dark-gray)',
+     'zIndex': '100',
      'cursor': 'pointer',
 
   }

@@ -12,6 +12,7 @@
 }
 .break{
   padding: .25em 0;
+  display: block;
 }
 
 .investment-page-container .roi-card figure{
@@ -45,4 +46,10 @@
 .investment-page-container .roi-content {
   padding: .5em;
   background-color: var(--white);
+}
+
+.chat-with-us-btn {
+  font-size: clamp(0.875rem, 2vw, 1.25rem);       /* font size scales between 14px and 20px */
+  padding: clamp(0.5rem, 1vw, 1rem)              /* top & bottom */
+           clamp(1rem, 2vw, 2rem);               /* left & right */
 }
