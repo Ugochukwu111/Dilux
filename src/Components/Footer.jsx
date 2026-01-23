@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MapPin,Phone,Mail, ClipboardClock} from "lucide-react";
 import diluxLogo from "../assets/dilux-logo.png";
 
@@ -24,16 +25,16 @@ export function Footer() {
               <h6 className="text-light-gold">Our offers</h6>
               <ul>
                 <li>
-                  <a href="#">24% investment ROI</a>
+                  <Link to="/investment-plan">24% investment ROI</Link>
                 </li>
                 <li>
-                  <a href="#">available lands and properties</a>
+                  <Link to="/properties">available lands and properties</Link>
                 </li>
                 <li>
-                  <a href="#">certified land titles</a>
+                  <Link to="/investment-plan">certified land titles</Link>
                 </li>
                 <li>
-                  <a href="#">legal compliance</a>
+                  <Link to="">legal compliance</Link>
                 </li>
               </ul>
             </div>
@@ -80,7 +81,7 @@ export function Footer() {
           <br />
           <br />
           <div>
-            <p className="text-center">&copy; 2025 all right reserved</p>
+            <p className="text-center">&copy; {new Date().getFullYear()} Dilux Properties, all right reserved.</p>
           </div>
         </div>
       </footer>
