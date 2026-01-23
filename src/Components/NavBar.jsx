@@ -1,6 +1,8 @@
 import { NavLink, Link, useNavigate} from 'react-router-dom'
 import { ShieldCheck, TrendingUp, LandPlot, Users,Menu  } from "lucide-react"
 import { useState } from 'react'
+import { HashLink } from 'react-router-hash-link';
+
 import diluxLogo from '../assets/dilux-logo.png'
 
 import './NavBar.css'
@@ -64,12 +66,13 @@ which closes it
           </li>
         </ul>
       </nav>
-
+       
+       <HashLink smooth to='/contact-us#contact-form-section'>
       <button 
-       onClick={()=>{navigate('/contact-us')}}
        className='bg-dark-maroon text-white'>
         Book Consultation Now
       </button>
+      </HashLink>
       </div>
 
      <button 

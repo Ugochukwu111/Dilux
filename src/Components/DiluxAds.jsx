@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { adsData } from "../../content";
 
 import "./DiluxAds.css";
@@ -25,9 +26,11 @@ export function DiluxAds() {
             <small className="text-white">{currentAd.subtext}</small>
           </div>
 
+          <Link to={currentAd.link}>
           <button className="text-white bg-light-gold">
             {currentAd.btnText}
           </button>
+          </Link>
         </div>
       </div>
     </section>

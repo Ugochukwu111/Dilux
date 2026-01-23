@@ -19,6 +19,8 @@ import { InvestmentSection } from "../Components/InvestmentSection";
 import { HeroSection } from "../Components/HeroSection.jsx";
 import {FaqSection } from '../Components/FaqSection.jsx'
 import { Footer } from "../Components/Footer";
+import { HashLink } from 'react-router-hash-link';
+
 
 import IRE from "../assets/team/IRE.jpg";
 
@@ -71,11 +73,11 @@ export function HomePage() {
                 <div className="d-flex justify-s-between">
                   <p className="FWB">connect on &rarr;</p>
                   <div>
-                    <a href="">
+                    <a href="https://web.facebook.com/igwerealestate3" target="_blank">
                       <FaFacebook color="#1877F2" size={30} />
-                    </a>{" "}
+                    </a>
                     &nbsp;
-                    <a href="">
+                    <a href="https://wa.me/2349012345678" target="_blank">
                       <FaWhatsapp color="#25D366" size={30} />
                     </a>
                   </div>
@@ -162,10 +164,10 @@ export function HomePage() {
           <div className="container land-listings-container">
             <div className="upper-container">
               <div>
-                <p className="verified-property-tag">
+                {/* <p className="verified-property-tag">
                   <Dot size={32} className="text-green" />
                   Verifird Properties
-                </p>
+                </p> */}
                 <h2>Curated , Trusted, and Ready for you</h2>
               </div>
 
@@ -238,14 +240,12 @@ export function HomePage() {
                 </motion.p>
               ))}
             </motion.div>
-            <br />
-            <h5>
-              <u>see our certigicate</u>
-            </h5>
           </div>
         </section>
 
         <section className="testimonial-section">
+          <br /><br />
+          
           <div className="">
             <h3 className="text-center">Real Results, Real Trust</h3>
             <p className="text-center sub-text text-dark-gray">

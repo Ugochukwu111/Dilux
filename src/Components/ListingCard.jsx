@@ -88,6 +88,28 @@ export function ListingCard({ listing }) {
   setPriceOfListing(formatCurrency(converted));
 }, [listing, currency])
 
+function handleBookInspection() {
+  const message = `
+Hi Ire, I’m interested in this property.
+
+. location ${listing.location}
+• Size: ${listing?.size}
+• Price: ${priceOfListing}
+• Status: ${listing?.status?.join(", ")}
+
+How can we move forward?
+  `;
+
+  const encodedMessage = encodeURIComponent(message.trim());
+
+  const phoneNumber = "2349012345678"; // replace with WhatsApp number (no +)
+
+  window.open(
+    `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
+    "_blank"
+  );
+}
+
   return (
     <div key={listing?.id} className="listing-card">
       <figure>
@@ -132,10 +154,11 @@ export function ListingCard({ listing }) {
         <br />
 
         <div className="d-flex flex-wrap align-center listing-cta-buttons-container">
-          <Link>
+          <button onClick={handleBookInspection} className="bg-light-gold text-white">
             Book for inspection &nbsp;
             <MoveRight />
-          </Link>
+            </button>
+
         </div>
       </div>
     </div>

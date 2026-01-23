@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MoveUpRight } from "lucide-react";
 
-import { heroSlides } from "../../content";
-
 
 export  function HeroSection({heroSlides }) {
     const [index, setIndex] = useState(0);
@@ -46,15 +44,17 @@ export  function HeroSection({heroSlides }) {
             <p className="short-description text-light-gray">
               {currentSlide.subtext}
             </p>
-            <Link to="/certificates" className="trust-kicker-link">
+            <Link to="" className="trust-kicker-link">
               <span className="shield-icon">🛡️</span>
-              GOVERNMENT VERIFIED • SEE CERTIFICATES
+              GOVERNMENT VERIFIED • 
             </Link>
             <br />
+            <Link to={currentSlide.link}>
             <button className="bg-white text-dark-maroon">
               {currentSlide.cta}
               <MoveUpRight size={20} />
             </button>
+            </Link>
           </div>
         </section>
       </header>

@@ -257,9 +257,11 @@ header .trust-kicker-link{
 }
 
 .roi-cards-upper-container{
-  min-height: 180px;
+  height: 180px;
   display: grid;
   place-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .roi-cards-lower-container{
@@ -281,13 +283,12 @@ header .trust-kicker-link{
   transform: translateY(-5px);
 }
 
-.roi-cards-container .roi-cards svg{
-  flex-shrink: 0;
-}
+
 
 .roi-cards .title{
   font-weight: 800;
   display: block;
+  color: var(--green);
 }
 .roi-cards .description{
   font-size: .9rem;

@@ -29,7 +29,7 @@ export  const heroSlides = [
         "Stop worrying about land scams. We only deal in 100% vetted, government-cleared titles. Your investment is legally bulletproof.",
       image: heroSectionImage1,
       phoneImage: phoneHeroSectionImage1,
-      link: "/listings",
+      link: "/properties",
       cta: "See Available Lands",
     },
     {
@@ -39,7 +39,7 @@ export  const heroSlides = [
         "Why save in a bank when land appreciates faster? Secure high-growth plots in Epe & Ibeju-Lekki and lock in guaranteed capital gains.",
       image: heroSectionImage2,
       phoneImage: phoneHeroSectionImage2,
-      link: "/investment",
+      link: "/investment-plan",
       cta: "Get ROI Breakdown",
     },
     {
@@ -49,7 +49,7 @@ export  const heroSlides = [
         "Premium estates shouldn't be out of reach. Start your land banking journey with flexible payment plans designed for smart earners.",
       image: heroSectionImage3,
       phoneImage: phoneHeroSectionImage3,
-      link: "/investment",
+      link: "/investment-plan",
       cta: "View Payment Plans",
     },
     {
@@ -413,19 +413,22 @@ export const adsData = [
     id: 1,
     heading: "50ft x 100ft for only ₦600k!",
     subtext: "Flash Sale: Own a full plot in a fast-developing zone at an impossible price. Instant allocation guaranteed.",
-    btnText: "Grab This Deal"
+    btnText: "Grab This Deal",
+    link:'/properties',
   },
   {
     id: 2,
     heading: "Earn 24% Profit in 12 Months",
     subtext: "Why let your money sit in a bank? Our Land Buy-Back scheme outpaces inflation with guaranteed ROI.",
-    btnText: "Start Investing"
+    btnText: "Start Investing",
+    link:'/investment-plan',
   },
   {
     id: 3,
     heading: "100% Gov't Backed - View CofO",
     subtext: "Sleep easy with 100% legal security. Verified titles and Government-approved certificates available for inspection.",
-    btnText: "Verify Now"
+    btnText: "Verify Now",
+    link:'/properties',
   }
 ];
 

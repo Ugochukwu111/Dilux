@@ -8,6 +8,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MoveRight } from "lucide-react";
 import { useInView } from "../Hooks/UseInView";
 import { roiCards } from "../../content";
+import { HashLink } from 'react-router-hash-link';
+
 
 export function InvestmentSection() {
   const navigate = useNavigate();
@@ -50,15 +52,15 @@ export function InvestmentSection() {
                 ref={ref}
                 key={card.id} 
                 className={`roi-cards ${inView ? "reveal-active" : "reveal"}`}>
-                  <div className={`roi-cards-upper-container ${card.bg} text-white`}>
-                    {card.icon}
-                    <span className="title">{card.title}</span>
-                  </div>
+                  <figure className={`roi-cards-upper-container ${card.bg} text-white`}>
+                    <img src={card.image} alt={card.title} />
+                  </figure>
                   <div className="roi-cards-lower-container">
+                  <p className="title">{card.title}</p>
                   <p className="description">
                        {card.shortDesc}
                   </p>
-                   <Link>Read more  </Link>
+                   {/* <HashLink scroll to = {`/investment-plan#${card.id}`}>Read more  </HashLink> */}
                   </div>
                 </div>
               );

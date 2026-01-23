@@ -102,6 +102,7 @@ export function InvestmentPage() {
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.2 }}
                   className="roi-card"
+                  id={`${card.id}`}
                 >
                   <figure>
                     <span> Step {card.id}</span>
