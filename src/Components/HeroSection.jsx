@@ -5,7 +5,7 @@ import { MoveUpRight } from "lucide-react";
 import { heroSlides } from "../../content";
 
 
-export  function HeroSection() {
+export  function HeroSection({heroSlides }) {
     const [index, setIndex] = useState(0);
 
   

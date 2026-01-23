@@ -17,6 +17,10 @@ import phoneHeroSectionImage3 from "./src/assets/hero/phone-dilux-hero3.jpg";
 import phoneHeroSectionImage2 from "./src/assets/hero/phone-dilux-hero2.jpg";
 import phoneHeroSectionImage1 from "./src/assets/hero/phone-dilux-hero1.jpg";
 
+import roiStartIllustration from "./src/assets/illustrations/start-investing-illustration.jpg"
+import roiIllustration from "./src/assets/illustrations/roi-illustration.jpg"
+
+
 export  const heroSlides = [
     {
       id: 1,
@@ -59,6 +63,46 @@ export  const heroSlides = [
       cta: "Talk to an Expert",
     },
   ];
+
+  export const investmentHeroSlides = [
+  {
+    id: 1,
+    heading: "A Contracted 24% Return in 10 Months.",
+    subtext:
+      "This is not speculation. It’s a documented investment plan with clearly defined entry, tenure, and exit. Minimum entry is ₦1,000,000, secured against verified land assets.",
+    image: heroSectionImage1,
+    phoneImage: phoneHeroSectionImage1,
+    cta: "View Investment Structure",
+  },
+  {
+    id: 2,
+    heading: "Backed by Real Land. Protected by Law.",
+    subtext:
+      "Every naira invested is tied to government-verified land with valid title documentation. Your capital is protected by tangible assets — not promises.",
+    image: heroSectionImage2,
+    phoneImage: phoneHeroSectionImage2,
+    cta: "See Legal Backing",
+  },
+  {
+    id: 3,
+    heading: "Designed for Serious Investors, Not Gamblers.",
+    subtext:
+      "If your money is idle or losing value, this plan puts it to work with a fixed 24% return over a short 10-month cycle — no market swings, no guesswork.",
+    image: heroSectionImage3,
+    phoneImage: phoneHeroSectionImage3,
+    cta: "Calculate Your Returns",
+  },
+  {
+    id: 4,
+    heading: "Why Smart Investors Leverage This Opportunity.",
+    subtext:
+      "Our investors understand one thing: when returns are structured, asset-backed, and time-bound, capital moves fast. Many raise funds elsewhere to take full advantage.",
+    image: heroSectionImage1,
+    phoneImage: phoneHeroSectionImage1,
+    cta: "Speak With an Advisor",
+  },
+];
+
 
 export const whatWeOffer = [
     {
@@ -388,14 +432,16 @@ export const adsData = [
 export const roiCards = [
   {
     id: 1,
+    image: roiStartIllustration,
     title: "Start With ₦1,000,000+",
     shortDesc: "A premium entry point for serious investors ready to leverage structured land banking for wealth creation.",
-    longDesc: "This opportunity is specifically curated for high-intent, serious, and hard-working individuals who are ready to commit a minimum capital of ₦1 million into our structured land banking model. By pooling these resources, we are able to move swiftly in the real estate market, acquiring large tracts of land in high-potential areas before prices skyrocket. Your capital isn't just sitting in a bank; it is actively deployed to secure physical assets in fast-developing corridors. This stage is the bedrock of your investment, ensuring that you enter the market at the lowest possible price point to maximize your eventual exit spread.",
+    longDesc: "This opportunity is specifically curated for high-intent, serious, and hard-working individuals who are ready to commit a minimum capital of ₦1 million into our structured land banking model.\n\n By pooling these resources, we are able to move swiftly in the real estate market, acquiring large tracts of land in high-potential areas before prices skyrocket. Your capital isn't just sitting in a bank; it is actively deployed to secure physical assets in fast-developing corridors.\n\n This stage is the bedrock of your investment, ensuring that you enter the market at the lowest possible price point to maximize your eventual exit spread.",
     icon: <Briefcase size={35} />,
     bg: 'bg-green'
   },
   {
     id: 2,
+    image: roiIllustration,
     title: "Strategic Land Banking",
     shortDesc: "Strategic acquisition and positioning in Nigeria's most promising growth corridors for maximum value appreciation.",
     longDesc: "Our strategy goes far beyond simply buying land. We identify 'growth corridors'—regions where government infrastructure, industrial expansion, and residential demand are projected to intersect. We acquire these lands at their raw, early-stage prices and then strategically position them for massive value increase. This is achieved through active land management, perimeter fencing, and wait-period optimization. By timing the market cycle perfectly, we create a high-demand asset. This meticulous, data-driven approach is the engine that drives our projected 24% return, turning a passive holding into a high-performance financial instrument within a crisp 10-month window.",
@@ -404,9 +450,10 @@ export const roiCards = [
   },
   {
     id: 3,
+    image: roiIllustration,
     title: "Capital + 24% Return",
     shortDesc: "Enjoy a guaranteed exit strategy with your initial capital plus a highly competitive 24% return on investment.",
-    longDesc: "The climax of the investment cycle is the payout phase. At the conclusion of the 10-month period, the land assets are liquidated or refinanced based on their new appreciated value. As an investor, you receive your full initial capital back along with a surplus return of up to 24%. Unlike the volatile stock market or depreciating currency, this growth is directly tied to the physical reality of land development and urban expansion in Nigeria. It is a wealth-building strategy built on tangible assets, providing you with a transparent, predictable, and highly rewarding exit. This is not speculation; it is a structured financial harvest from a real-world asset cycle.",
+    longDesc: "The climax of the investment cycle is the payout phase. At the conclusion of the 10-month period, the land assets are liquidated or refinanced based on their new appreciated value.\n\n As an investor, you receive your full initial capital back along with a surplus return of up to 24%. Unlike the volatile stock market or depreciating currency, this growth is directly tied to the physical reality of land development and urban expansion in Nigeria. \n\n It is a wealth-building strategy built on tangible assets, providing you with a transparent, predictable, and highly rewarding exit. This is not speculation; it is a structured financial harvest from a real-world asset cycle.",
     icon: <TrendingUp size={35} />,
     bg: 'bg-green'
   }

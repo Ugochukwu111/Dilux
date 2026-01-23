@@ -26,6 +26,7 @@ import IRE from "../assets/team/IRE.jpg";
 import { PartnerSlider } from "../Components/PartnerSlider";
 import { ListingCard } from "../Components/ListingCard";
 import { DiluxDifferenceCard } from "../Components/DiluxDifferenceCard";
+import { heroSlides } from "../../content";
 
 import "./HomePage.css";
 
@@ -44,7 +45,7 @@ export function HomePage() {
 
   return (
     <div className="homepage-container">
-      <HeroSection />
+      <HeroSection heroSlides={heroSlides} />
 
       <main>
         <PartnerSlider />

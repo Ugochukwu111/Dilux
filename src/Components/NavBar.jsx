@@ -1,4 +1,4 @@
-import { NavLink, Link} from 'react-router-dom'
+import { NavLink, Link, useNavigate} from 'react-router-dom'
 import { ShieldCheck, TrendingUp, LandPlot, Users,Menu  } from "lucide-react"
 import { useState } from 'react'
 import diluxLogo from '../assets/dilux-logo.png'
@@ -6,9 +6,9 @@ import diluxLogo from '../assets/dilux-logo.png'
 import './NavBar.css'
 
 export function NavBar() {
-   
-  const[isNavBar, setIsNavBar] = useState(false);
 
+  const navigate = useNavigate();
+  const[isNavBar, setIsNavBar] = useState(false);
 
 /*  
 when nav bar is active ,
@@ -39,7 +39,7 @@ which closes it
       <nav>
         <ul>
           <li>
-            <NavLink to="investment-plan">
+            <NavLink to="/investment-plan">
               <TrendingUp />
               <span>
                 Investment Plan
@@ -47,7 +47,7 @@ which closes it
             </NavLink>
           </li>
           <li>
-            <NavLink to="properties">
+            <NavLink to="/properties">
               <LandPlot />
               <span>
                 Properties
@@ -55,15 +55,7 @@ which closes it
             </NavLink>
           </li>
           <li>
-            <NavLink to="certificate">
-              <Users />
-              <span>
-                Certificate
-              </span>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="contact-us">
+            <NavLink to="/contact-us">
                <ShieldCheck />
                <span>
                 Contact us
@@ -73,14 +65,16 @@ which closes it
         </ul>
       </nav>
 
-      <button className='bg-dark-maroon text-white'>
+      <button 
+       onClick={()=>{navigate('/contact-us')}}
+       className='bg-dark-maroon text-white'>
         Book Consultation Now
       </button>
       </div>
 
      <button 
        className='d-none nav-bar-btn'
-       onClick={()=>{ setIsNavBar(prev => !prev) ; console.log(isNavBar)}}
+       onClick={()=>{ setIsNavBar(prev => !prev) ;}}
        >
         <Menu />
      </button>

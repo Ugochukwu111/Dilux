@@ -10,6 +10,7 @@
   
   --text-black: #222222; 
   --green: #388E3C; 
+  --light-green: #E8F5E9;
   --black: #000000;
   --white: #FFFFFF; 
 
@@ -43,6 +44,7 @@
 .bg-green { background-color: var(--green); }
 .bg-black { background-color: var(--black); }
 .bg-white { background-color: var(--white); }
+.bg-light-green{background-color: var(--light-green);}
 
 /* --- Text Color Utilities --- */
 .text-dark-maroon { color: var(--dark-maroon); }

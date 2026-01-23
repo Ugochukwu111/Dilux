@@ -1,0 +1,48 @@
+.investment-page-container .roi-card-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.investment-page-container .roi-card{
+  max-width: 500px;
+  margin: 1em auto;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px  var(--light-gray), -2px -2px 2px  var(--light-gray);
+}
+.break{
+  padding: .25em 0;
+}
+
+.investment-page-container .roi-card figure{
+  height: 250px;
+  position: relative;
+  
+}
+
+.investment-page-container .roi-card figure span{
+  position: absolute;
+  background-color: var(--green);
+  padding: .8em 1.5em;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.roi-card .title{
+  position: absolute;
+  bottom: 0;
+  /* justify-self: end; */
+  background:  var(--white);
+  color: var(--green);
+  font-weight: 800;
+  padding: .5em;
+  border-top-right-radius: .5rem;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.investment-page-container .roi-content {
+  padding: .5em;
+  background-color: var(--white);
+}
