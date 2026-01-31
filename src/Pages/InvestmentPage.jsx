@@ -8,8 +8,9 @@ import { PartnerSlider } from "../Components/PartnerSlider";
 import { Footer } from "../Components/Footer";
 import { WhatsAppIcon } from "../Components/WhatsAppIcon";
 import { roiCards } from "../../content";
-import {FaqSection } from '../Components/FaqSection.jsx'
+import { FaqSection } from "../Components/FaqSection.jsx";
 import { MessageCircle } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 
 import { Play } from "lucide-react";
@@ -67,6 +68,17 @@ export function InvestmentPage() {
 
   return (
     <div className="homepage-container investment-page-container">
+      <Helmet>
+        <title>Land Investment with High ROI in Edo State | Dilux</title>
+        <meta
+          name="description"
+          content="Invest in secure Edo State land opportunities with Dilux and earn up to 24% ROI. Transparent, legally backed land investments you can trust."
+        />
+        <meta
+          name="keywords"
+          content="land investment ROI Edo State, real estate ROI Edo State, land investment Nigeria Edo, 24% ROI land investment, secure property investment Edo"
+        />
+      </Helmet>
       <NavBar />
       <WhatsAppIcon />
       <HeroSection heroSlides={investmentHeroSlides} />
@@ -90,9 +102,7 @@ export function InvestmentPage() {
               CEO explaining ROI
             </motion.button>
           </motion.div>
-          <motion.div 
-            variants={cardContainer} 
-            className="roi-card-container">
+          <motion.div variants={cardContainer} className="roi-card-container">
             {roiCards.map((card) => {
               return (
                 <motion.div
@@ -125,16 +135,18 @@ export function InvestmentPage() {
             })}
           </motion.div>
           <div className="d-flex flex-column align-center justify-center">
-          <p className="FWB text-green">Ready to invest ? Still have questions? chart with use directly</p>
-         <br />
-           <button className="bg-green text-white chat-with-us-btn">
-             <MessageCircle /> Chat With Us Directly
-           </button>
+            <p className="FWB text-green">
+              Ready to invest ? Still have questions? chart with use directly
+            </p>
+            <br />
+            <button className="bg-green text-white chat-with-us-btn">
+              <MessageCircle /> Chat With Us Directly
+            </button>
           </div>
         </motion.div>
       </section>
       <DiluxAds />
-      <FaqSection/>
+      <FaqSection />
       <Footer />
     </div>
   );
