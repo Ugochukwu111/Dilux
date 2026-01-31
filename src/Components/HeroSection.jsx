@@ -44,16 +44,17 @@ export  function HeroSection({heroSlides }) {
             <p className="short-description text-light-gray">
               {currentSlide.subtext}
             </p>
+
             <Link to="" className="trust-kicker-link">
               <span className="shield-icon">🛡️</span>
               GOVERNMENT VERIFIED • 
             </Link>
+
             <br />
-            <Link to={currentSlide.link}>
-            <button className="bg-white text-dark-maroon">
+
+            <Link to={currentSlide.link} className="bg-white text-dark-maroon hero-cta-link">
               {currentSlide.cta}
               <MoveUpRight size={20} />
-            </button>
             </Link>
           </div>
         </section>

@@ -80,6 +80,13 @@ header .trust-kicker-link{
   z-index: 0;
 }
 
+.hero-cta-link{
+  border-radius: 2rem;
+  text-align: center;
+  width: fit-content;
+  padding: .8em 1.5em;
+}
+
 
 
 @keyframes textSlideUp {
