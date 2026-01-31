@@ -19,7 +19,8 @@ import { InvestmentSection } from "../Components/InvestmentSection";
 import { HeroSection } from "../Components/HeroSection.jsx";
 import {FaqSection } from '../Components/FaqSection.jsx'
 import { Footer } from "../Components/Footer";
-import { HashLink } from 'react-router-hash-link';
+import { Helmet } from "react-helmet-async";
+
 
 
 import IRE from "../assets/team/IRE.jpg";
@@ -46,8 +47,18 @@ export function HomePage() {
 
   return (
     <div className="homepage-container">
+        <Helmet>
+        <title>Dilux | Secure Land & Investment Platform in Edo State</title>
+        <meta
+          name="description"
+          content="Dilux helps Nigerian youths secure legally verified land in prime Edo State locations and grow wealth through safe, transparent land investment opportunities."
+        />
+        <meta
+          name="keywords"
+          content="buy land in Edo State, land investment Edo State, verified land Edo State, land with C of O Edo State, real estate investment Edo State, Dilux properties"
+        />
+      </Helmet>
       <HeroSection heroSlides={heroSlides} />
-
       <main>
         <PartnerSlider />
         <WhatsAppIcon />
@@ -245,7 +256,7 @@ export function HomePage() {
 
         <section className="testimonial-section">
           <br /><br />
-          
+
           <div className="">
             <h3 className="text-center">Real Results, Real Trust</h3>
             <p className="text-center sub-text text-dark-gray">
