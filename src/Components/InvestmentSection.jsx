@@ -21,8 +21,8 @@ export function InvestmentSection() {
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }} // This acts like an Observer
-          viewport={{ once: true, amount: 0.5 }} // Triggers when 50% visible
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.2 }} // Triggers when 50% visible
+          transition={{ duration: 0.3 }}
          className="investment-video-container">
           <video src="" preload="none" poster={IRE} controls></video>
           <a
