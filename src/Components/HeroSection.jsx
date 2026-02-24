@@ -12,7 +12,7 @@ export  function HeroSection({heroSlides }) {
     useEffect(() => {
       const timer = setInterval(() => {
         setIndex((prevIndex) => (prevIndex + 1) % heroSlides.length);
-      }, 5000);
+      }, 10000);
   
       return () => clearInterval(timer);
     }, []);
