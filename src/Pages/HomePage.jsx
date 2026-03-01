@@ -69,8 +69,7 @@ export function HomePage() {
               <div>
                 <h2>The Dilux Difference</h2>
                 <p className="text-dark-gray sub-text">
-                  Guaranteed returns stem from our stringent, multi-layered
-                  audit. We secure stable, legally compliant, exclusive assets.
+                At DILUX Properties, we make land acquisition simple, secure, and transparent. Our process is built to give you clarity, confidence, and complete peace of mind from start to finish.
                 </p>
                 <br />
 
@@ -88,7 +87,7 @@ export function HomePage() {
                       <FaFacebook color="#1877F2" size={30} />
                     </a>
                     &nbsp;
-                    <a href="https://wa.me/2349012345678" target="_blank">
+                    <a href="https://wa.me/2349070539019" target="_blank">
                       <FaWhatsapp color="#25D366" size={30} />
                     </a>
                   </div>
@@ -112,7 +111,7 @@ export function HomePage() {
 
             <div className="h-i-w-list">
               {/* continer text for how it works */}
-              <div>
+              <div className="step-container">
                 <ol>
                   <motion.li
                     initial={{ opacity: 0, y: 50 }}
@@ -121,10 +120,7 @@ export function HomePage() {
                     transition={{ duration: 0.5 }}
                   >
                     <p>Consultation</p>
-                    Speak with our expert advisors to align your financial goals
-                    with the right property opportunities. We provide
-                    personalized market insights to ensure your strategy is
-                    built on a solid foundation.
+                    Start at our office — meet our team, see our presence, and get answers to all your questions. We guide you through the property, understand your goals, and provide advice so you can make informed decisions with confidence.
                   </motion.li>
                   <motion.li
                     initial={{ opacity: 0, y: 50 }}
@@ -132,24 +128,18 @@ export function HomePage() {
                     viewport={{ once: true, amount: 0.5 }} // Triggers when 50% visible
                     transition={{ duration: 0.6 }}
                   >
-                    <p>Secure your Investment</p>
-                    Finalize your selection through our streamlined, secure
-                    portal. From legal verification to digital contracts, we
-                    handle the complexities so you can commit to your asset with
-                    total confidence.
+                    <p>Free Property Inspection</p>
+                    Next, inspect the property for free. Walk the land, ask questions, and experience it firsthand. Payment is only discussed once you are fully satisfied, ensuring clarity and peace of mind.
                   </motion.li>
-                  motion.
+
                   <motion.li
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }} // This acts like an Observer
                     viewport={{ once: true, amount: 0.5 }} // Triggers when 50% visible
                     transition={{ duration: 0.8 }}
                   >
-                    <p>Receive Payouts</p>
-                    Sit back and watch your capital grow. Whether through rental
-                    yield or property appreciation, your returns are deposited
-                    directly to you, providing a hassle-free passive income
-                    stream
+                    <p>Ownership & Documentation</p>
+                    At DILUX, your ownership is in the documents. When you receive your official paperwork from us, the land is yours — fully secured and legally recognized.
                   </motion.li>
                 </ol>
               </div>

@@ -30,7 +30,7 @@ export const heroSlides = [
     id: 1,
     heading: "Verified Documents. Zero Risk. Period.",
     subtext:
-      "Stop worrying about land scams. We only deal in 100% vetted titles. Your investment is legally bulletproof.",
+      " We deal in 100% vetted titles. Your investment is legally bulletproof.",
     image: heroSectionImage1,
     phoneImage: phoneHeroSectionImage1,
     link: "/properties",
@@ -60,7 +60,7 @@ export const heroSlides = [
     id: 4,
     heading: "Instant Allocation. Build Your Legacy.",
     subtext:
-      "No delays. No stories. Pay today, get your papers tomorrow. Join 500+ investors who built their future with Dilux.",
+      " Join 500+ investors who built their future with Dilux.",
     phoneImage: phoneHeroSectionImage1,
     image: heroSectionImage1,
     link: "/contact-us",
@@ -111,25 +111,25 @@ export const whatWeOffer = [
   {
     id: 1,
     icon: <ChartNoAxesColumnDecreasing size={30} />,
-    name: "Data-Driven Sourcing",
+    name: "See First. Pay Later.",
     description:
-      "We leverage exclusive AI-powered market intelligence to identify undervalued, high-growth assets, ensuring maximum profit potential is baked into every acquisition.",
+      "At DILUX, we start with trust — not money.We take you for a free site inspection before any payment discussion. You see the land yourself. You visit our branch office. You know who we are and where we operate from.No pressure. No hidden demands.Just clarity before commitment.",
     bgcolor: "bg-dark-maroon",
   },
   {
     id: 2,
     icon: <BadgeCheck size={30} />,
-    name: "Rigorous 50-Point Audit",
+    name: "Documentation That Protects You",
     description:
-      "Every property undergoes stringent legal and structural due diligence, guaranteeing your asset is stable, fully compliant, and free from risk before a single dollar is invested.",
+      "We don’t joke with paperwork.Every client receives a minimum of two valid documents. We ensure proper processing because true ownership is backed by paper — not promises.Your land is protected legally and properly.",
     bgcolor: "bg-dark-maroon",
   },
   {
     id: 3,
     icon: <Settings size={30} />,
-    name: "End-to-End Asset Control",
+    name: "Secure Allocation & Transparent Payment",
     description:
-      "We manage the entire investment lifecycle in-house, eliminating third-party inefficiencies and costs, guaranteeing maximum value is returned directly to your portfolio.",
+      "With DILUX, you don’t pay and wait.Once payment is confirmed, allocation is immediate. You know exactly where your plot is — where it starts and where it ends.All payments go through our recognized company account and are fully documented.No personal accounts.No delays.No uncertainty",
     bgcolor: "bg-light-gold ",
   },
 ];
@@ -382,7 +382,7 @@ export const diluxFaqs = [
     id: 1,
     question: "Is Dilux Properties a certified real estate company in Nigeria?",
     answer:
-      "Yes, Dilux is a fully registered and certified real estate firm  with the Corporate Affairs Commission (CAC) and the Economic and Financial Crimes Commision (EFCC) . We pride ourselves on transparency, ensuring all our properties listings meet legal standards to  protect our clients' interests.",
+      "Yes, Dilux is a fully registered and certified real estate firm  with the Corporate Affairs Commission (CAC) and the Economic and Financial Crimes Commision (EFCC) . ",
   },
   {
     id: 2,

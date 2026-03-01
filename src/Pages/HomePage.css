@@ -520,6 +520,10 @@ min-height: 300px;
     align-items: center;
 }
 
+.h-i-w-list .step-container{
+  max-width: 700px;
+}
+
 @media (max-width: 900px) {
    .how-it-works-section .h-i-w-list{
     flex-direction: column;
@@ -548,7 +552,7 @@ min-height: 300px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 200px);
   place-items: center;
-
+  max-width: 600px;
   gap: .5em;
 }
 
