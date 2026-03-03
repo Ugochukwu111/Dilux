@@ -15,26 +15,34 @@ export function Footer() {
                 Dilux <span className="text-light-gold">Properties</span>
               </h6>
               <p>
-                Providing secure, certified, and affordable land investments
-                across Nigeria. From titled acres to a guaranteed 24% ROI, we
-                turn 'dirt' into your future wealth and legacy.
+                Providing premium, genuine, and secured property  investments in 
+                Benin City, Porthacourt, Abuja and Lagos.                
               </p>
             </div>
 
             <div>
               <h6 className="text-light-gold">Our offers</h6>
               <ul>
-                <li>
-                  <Link to="/investment-plan">24% investment ROI</Link>
+                  <li>
+                  <Link to="/properties">Landed properties</Link>
                 </li>
                 <li>
-                  <Link to="/properties">available lands and properties</Link>
+                  <Link to="/investment-plan">25% - 23% investment plans</Link>
                 </li>
                 <li>
-                  <Link to="/investment-plan">certified land titles</Link>
+                  <a to="/investment-plan" target="_blank" href="https://wa.me/2349070539019">Business Consulting</a>
                 </li>
                 <li>
-                  <Link to="">legal compliance</Link>
+                    Legal Land documentations
+                </li>
+                  <li>
+                    Property marketing
+                </li>
+                   <li>
+                    Property management 
+                </li>
+                <li>
+                  Property development
                 </li>
               </ul>
             </div>
@@ -44,17 +52,22 @@ export function Footer() {
               <ul>
                 <li>
                   <a href="">
-                    <MapPin /> 1007 Adeola Odeku St, Victoria Island, Lagos
+                    <MapPin /> G10 Elizabeth Nmoye Plazza,188 Uselu Lagos Road ,Benin City
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+2349012345678">
-                    <Phone /> +234 901 234 5678
+                  <a href="tel:+2348114838937">
+                    <Phone /> +234 8114 838 937
+                  </a>
+                </li>
+                     <li>
+                  <a href="tel:+2349070539019">
+                    <Phone /> +234 9070 539 019
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:info@diluxproperties.com">
-                    <Mail /> info@diluxproperties.com
+                  <a href="mailto:diluxproperties8@gmail.com">
+                    <Mail /> diluxproperties8@gmail.com
                   </a>
                 </li>
                 <li>
@@ -68,10 +81,7 @@ export function Footer() {
                       <a className="fb" href=""></a>
                     </li>
                     <li>
-                      <a className="whatsapp" href=""></a>
-                    </li>
-                    <li>
-                      <a className="tiktok" href=""></a>
+                      <a className="whatsapp" target="_blank" href="https://wa.me/2349070539019"></a>
                     </li>
                   </ul>
                 </li>

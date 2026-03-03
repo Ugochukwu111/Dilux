@@ -216,8 +216,8 @@ export function HomePage() {
               }}
             >
               {[
-                { end: 24, label: "states" },
-                { end: 350, label: "sold properties", duration: 3.5 },
+                { end: 4, label: "states" },
+                { end: 27, label: "sold properties", duration: 3.5 },
                 { end: 124, label: "Investment deals" },
                 { end: 15, label: "government agency" },
               ].map((stat, idx) => (
