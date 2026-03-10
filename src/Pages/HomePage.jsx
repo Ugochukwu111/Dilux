@@ -12,8 +12,9 @@ import {
 } from "../../content";
 import { landListings } from "../../content";
 import { TestimonialCard } from "../Components/TestimonialCard";
-import howItWorksImage1 from "/src/assets/how-it-works/consultation.jpg";
-import howItWorksImage3 from "/src/assets/how-it-works/money-transfer.png";
+import howItWorksImage1 from "/src/assets/how-it-works/consultation.jpeg";
+import howItWorksImage2 from '/src/assets/how-it-works/property-inspection.jpeg';
+import howItWorksImage3 from "/src/assets/how-it-works/ownership-documentation.jpeg";
 import { DiluxAds } from "../Components/DiluxAds";
 import { InvestmentSection } from "../Components/InvestmentSection";
 import { HeroSection } from "../Components/HeroSection.jsx";
@@ -145,15 +146,17 @@ export function HomePage() {
               </div>
               {/* container  for illustration of pics of how it works */}
               <div className="how-it-works-image-container">
-                <figure>
-                  <img src={howItWorksImage1} alt="step1" />
+                <figure className="first-img">
+                  <img loading="lazy" src={howItWorksImage1} alt="Consultation" />
                 </figure>
-                <figure>
-                  <img src={howItWorksImage3} alt="step2" />
-                </figure>
-                <figure>
-                  <img src={howItWorksImage3} alt="step3" />
-                </figure>
+                <div className="right-two-img-container">
+                  <figure>
+                    <img loading="lazy"  src={howItWorksImage2} alt="Free property inspection"/>
+                  </figure>
+                  <figure>
+                    <img loading="lazy"  src={howItWorksImage3} alt="Documentation" />
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
