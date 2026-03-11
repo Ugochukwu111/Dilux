@@ -51,7 +51,7 @@ export function Footer() {
               <h6 className="text-light-gold">lets connect</h6>
               <ul>
                 <li>
-                  <a href="">
+                  <a href="https://maps.app.goo.gl/6jeqKpDXkVPLnrm78" target="_blank">
                     <MapPin /> G10 Elizabeth Nmoye Plazza,188 Uselu Lagos Road ,Benin City
                   </a>
                 </li>
@@ -78,7 +78,7 @@ export function Footer() {
                 <li>
                   <ul className="social-container">
                     <li>
-                      <a className="fb" href=""></a>
+                      <a className="fb" target="_blank" href="https://www.facebook.com/diluxpropertiesng"></a>
                     </li>
                     <li>
                       <a className="whatsapp" target="_blank" href="https://wa.me/2349070539019"></a>

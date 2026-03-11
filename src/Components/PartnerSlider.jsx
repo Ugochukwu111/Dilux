@@ -5,23 +5,26 @@ export function PartnerSlider() {
     <div className="partner-slider">
       <div className="slider-track">
         <span>DILUX PROPERTIES</span>
-        <span>GTEST HOMES</span> 
-        <span>LUXURIA REALTY</span> 
-        <span>ELITE ESTATES</span>
-        <span> PRESTIGE PROPERTIES </span>
-        <span>ROYAL RESIDENCES  </span>
-        <span>PRIME GRAND</span>
-        <span>DEVELOPERS  OPULENCE </span>
-        <span>HOMES  NOBLE</span>  
-        <span>DILUX PROPERTIES</span>
-        <span>GTEST HOMES</span> 
-        <span>LUXURIA REALTY</span> 
-        <span>ELITE ESTATES</span>
-        <span> PRESTIGE PROPERTIES </span>
-        <span>ROYAL RESIDENCES  </span>
-        <span>PRIME GRAND</span>
-        <span>DEVELOPERS  OPULENCE </span>
-        <span>HOMES  NOBLE</span>
+        <span>EHI AND SONS VENTURES</span> 
+        <span>CLIMAX AUTOS</span> 
+        <span>MIBLIZZ CATERING CITADEL</span>
+        <span> COSMOS SOUND </span>
+           <span>DILUX PROPERTIES</span>
+        <span>EHI AND SONS VENTURES</span> 
+        <span>CLIMAX AUTOS</span> 
+        <span>MIBLIZZ CATERING CITADEL</span>
+        <span> COSMOS SOUND </span>
+           <span>DILUX PROPERTIES</span>
+        <span>EHI AND SONS VENTURES</span> 
+        <span>CLIMAX AUTOS</span> 
+        <span>MIBLIZZ CATERING CITADEL</span>
+        <span> COSMOS SOUND </span>
+           <span>DILUX PROPERTIES</span>
+        <span>EHI AND SONS VENTURES</span> 
+        <span>CLIMAX AUTOS</span> 
+        <span>MIBLIZZ CATERING CITADEL</span>
+        <span> COSMOS SOUND </span>
+
       </div>
     </div>
   );
