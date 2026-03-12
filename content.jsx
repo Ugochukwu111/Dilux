@@ -18,9 +18,14 @@ import testimonial4 from "./src/assets/testimonials/uifaces-popular-avatar.jpg";
 import heroSectionImage1 from "./src/assets/hero/dilux-hero1.jpg";
 import heroSectionImage2 from "./src/assets/hero/dilux-hero2.jpg";
 import heroSectionImage3 from "./src/assets/hero/dilux-hero3.jpg";
+
 import phoneHeroSectionImage3 from "./src/assets/hero/phone-dilux-hero3.jpg";
 import phoneHeroSectionImage2 from "./src/assets/hero/phone-dilux-hero2.jpg";
 import phoneHeroSectionImage1 from "./src/assets/hero/phone-dilux-hero1.jpg";
+
+import heroContactImg1 from './src/assets/hero/contact/contact-1.webp';
+import heroContactImg2 from './src/assets/hero/contact/contact-2.webp'
+import heroContactImg3 from './src/assets/hero/contact/contact-3.webp'
 
 import roiStartIllustration from "./src/assets/illustrations/start-investing-illustration.jpg";
 import roiIllustration from "./src/assets/illustrations/roi-illustration.jpg";
@@ -104,6 +109,39 @@ export const investmentHeroSlides = [
     image: heroSectionImage1,
     phoneImage: phoneHeroSectionImage1,
     cta: "Speak With an Investment Banker",
+  },
+];
+
+export const contactHeroSlides = [
+  {
+    id: 1,
+    heading: "Visit the Land. Verify Everything Yourself.",
+    subtext:
+      "Book a guided site visit and experience the location, documentation, and development firsthand. Our team will walk you through every detail before you invest.",
+    image: heroContactImg1,
+    phoneImage: phoneHeroSectionImage1,
+    link: "/contact-us#location-map-section",
+    cta: "See Physical Location",
+  },
+  {
+    id: 2,
+    heading: "See the Location. Meet the Experts.",
+    subtext:
+      "Visit our office or schedule a private estate tour. Our team will answer your questions, explain the investment process, and show you available plots.",
+    image: heroContactImg2,
+    phoneImage: phoneHeroSectionImage2,
+    link: "/contact-us#contact-form-section",
+    cta: "Contact Us",
+  },
+  {
+    id: 3,
+    heading: "Speak With Our Investment Advisors.",
+    subtext:
+      "Whether online or in person, our experts are ready to guide you through every step — from property selection to securing your land.",
+    image: heroContactImg3,
+    phoneImage: phoneHeroSectionImage3,
+    link: "/contact-us#contact-form-section",
+    cta: "Talk to an Expert",
   },
 ];
 

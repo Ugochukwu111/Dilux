@@ -1,16 +1,14 @@
-.contact-us-container{
-  min-height: 90svh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  background-color: var(--dark-maroon);
-}
 
-.contact-us-container h1{
-  color: var(--light-gold);
-  max-width: 800px;
+
+
+ .img-overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  filter: none;
+  overflow: auto;
+  filter: blur(1px);
 }
 
 .contact-us-container p{

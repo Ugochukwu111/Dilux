@@ -79,7 +79,6 @@ export function InvestmentPage() {
           content="land investment ROI Edo State, real estate ROI Edo State, land investment Nigeria Edo, 24% ROI land investment, secure property investment Edo"
         />
       </Helmet>
-      <NavBar />
       <WhatsAppIcon />
       <HeroSection heroSlides={investmentHeroSlides} />
       <PartnerSlider />

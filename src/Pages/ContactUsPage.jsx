@@ -3,20 +3,22 @@ import { Footer } from "../Components/Footer";
 import { DiluxAds } from "../Components/DiluxAds";
 import { Helmet } from "react-helmet-async";
 import { WhatsAppIcon } from "../Components/WhatsAppIcon";
+import { contactHeroSlides } from "../../content";
+import { HeroSection } from "../Components/HeroSection";
+import { NavBar } from "../Components/NavBar";
 
 
 import {
   MapPin,
   Mail,
   Phone,
-  CalendarCheck,
   SendHorizontal,
 } from "lucide-react";
 import "./ContactUsPage.css";
 
 export function ContactUsPage() {
   return (
-    <div>
+    <div className="contact-page-container">
       <Helmet>
         <title>Contact Dilux | Land & Investment Experts in Edo State</title>
         <meta
@@ -29,36 +31,9 @@ export function ContactUsPage() {
         />
       </Helmet>
       <WhatsAppIcon/>
-      <div className="contact-us-container">
-        <div className="container  d-flex flex-column justify-center align-center">
-          <h1>See Where Dilux Is Located — Book a Site Visit Today</h1>
-          <p>
-            Reach Dilux effortlessly — connect with us online or visit our
-            physical location. Our team is always available to assist you,
-            answer your questions, and help schedule a guided site visit.
-          </p>
-        </div>
-        <div className="cta-container">
-          <ScrollLink
-            to="contact-form-section"
-            smooth={true}
-            duration={500}
-            className="btn-pd bg-light-gold text-dark-maroon"
-          >
-            Schedule a Site Visit <CalendarCheck size={20} />
-          </ScrollLink>
-
-          <ScrollLink
-            to="location-map-section"
-            smooth={true}
-            duration={500}
-            className="btn-pd bg-white"
-          >
-            See Location on Map <MapPin size={20} />
-          </ScrollLink>
-        </div>
-      </div>
-      <DiluxAds />
+      <NavBar/>
+       <HeroSection heroSlides={contactHeroSlides} scrollCTA = {true} />
+      
       <section id="location-map-section">
         <div className="container">
           <h2>Our Location</h2>
@@ -73,6 +48,7 @@ export function ContactUsPage() {
           ></iframe>
         </div>
       </section>
+      <DiluxAds />
       <section id="contact-form-section">
         <div className="container contact-us-form-container">
           <div>
