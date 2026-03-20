@@ -93,9 +93,14 @@ export function HomePage() {
                     </a>
                   </div>
                 </div>
-                <video poster={IRE} loop controls>
+                <video 
+                  poster={IRE} 
+                  loop 
+                  controls
+                  preload="none"
+                  >
                   <source
-                    src="https://www.w3schools.com/html/mov_bbb.mp4"
+                    src="https://res.cloudinary.com/dy4qtrmgz/video/upload/q_auto,f_auto/v1774018775/WhatsApp_Video_2026-03-20_at_3.48.30_PM_zedutg.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -201,7 +206,7 @@ export function HomePage() {
           <div className="container">
             <h3>Our Numbers</h3>
             <p>
-              The people , The goverment, know who we are , Numbers dont lie!
+              The people , The government, know who we are , Numbers don't lie!
             </p>
             <motion.div
               className="numbers-container"
@@ -219,10 +224,10 @@ export function HomePage() {
               }}
             >
               {[
-                { end: 4, label: "states" },
-                { end: 27, label: "sold properties", duration: 3.5 },
-                { end: 124, label: "Investment deals" },
-                { end: 15, label: "government agency" },
+                { end: 5, label: "states" },
+                { end: 44, label: "Sold Properties", duration: 3.5 },
+                { end: 95, label: "Investment Deals" },
+                { end: 8, label: "Legal & Property Contractors " },
               ].map((stat, idx) => (
                 <motion.p
                   key={idx}
