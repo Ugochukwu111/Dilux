@@ -1,4 +1,3 @@
-import { Link as ScrollLink } from "react-scroll";
 import { Footer } from "../Components/Footer";
 import { DiluxAds } from "../Components/DiluxAds";
 import { Helmet } from "react-helmet-async";
@@ -7,13 +6,7 @@ import { contactHeroSlides } from "../../content";
 import { HeroSection } from "../Components/HeroSection";
 import { NavBar } from "../Components/NavBar";
 
-
-import {
-  MapPin,
-  Mail,
-  Phone,
-  SendHorizontal,
-} from "lucide-react";
+import { MapPin, Mail, Phone, SendHorizontal } from "lucide-react";
 import "./ContactUsPage.css";
 
 export function ContactUsPage() {
@@ -30,16 +23,16 @@ export function ContactUsPage() {
           content="contact land realtor Edo State, land inspection Edo State, property consultation Edo, Dilux contact, land investment Edo State"
         />
       </Helmet>
-      <WhatsAppIcon/>
-      <NavBar/>
-       <HeroSection heroSlides={contactHeroSlides} scrollCTA = {true} />
-      
+      <WhatsAppIcon />
+      <NavBar />
+      <HeroSection heroSlides={contactHeroSlides} />
+
       <section id="location-map-section">
         <div className="container">
           <h2>Our Location</h2>
           <iframe
             title="Dilux Location Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.924933851761!2d3.3792!3d6.5244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b44b1234567%3A0xabcdef1234567890!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1670000000000!5m2!1sen!2sng"
+            src="https://www.google.com/maps?q=Dilux%20Properties%20Benin%20City&z=17&output=embed"
             width="100%"
             height="400"
             style={{ border: 0 }}
@@ -65,16 +58,23 @@ export function ContactUsPage() {
             </p>
 
             <p>
-              <MapPin /> 1007 Adeola Odeku St, Victoria Island, Lagos
+              <a
+                href="https://maps.app.goo.gl/6jeqKpDXkVPLnrm78"
+                target="_blank"
+              >
+                <MapPin /> G10 Elizabeth Nmoye Plazza,188 Uselu Lagos Road
+                ,Benin City
+              </a>
             </p>
             <p>
-              {" "}
-              <Phone /> +234 7046 253 045 (NGN/whats app)
+              <a href="tel:+2349070539019">
+                <Phone /> +234 9070 539 019
+              </a>
             </p>
             <p>
-              {" "}
-              <Mail />
-              Contact@diluxproperties.com
+              <a href="mailto:diluxproperties8@gmail.com">
+                <Mail /> diluxproperties8@gmail.com
+              </a>
             </p>
           </div>
           <form>

@@ -10,7 +10,7 @@ import {
 import land1Src from "./src/assets/land1.jpg";
 import land2Src from "./src/assets/land2.jpg";
 
-import testimonial1 from "./src/assets/testimonials/uifaces-human-avatar (1).jpg";
+import testimonial1 from "./src/assets/testimonials/iRE.jpeg";
 import testimonial2 from "./src/assets/testimonials/uifaces-human-avatar.jpg";
 import testimonial3 from "./src/assets/testimonials/uifaces-popular-avatar (1).jpg";
 import testimonial4 from "./src/assets/testimonials/uifaces-popular-avatar.jpg";
@@ -81,7 +81,8 @@ export const investmentHeroSlides = [
       "This is not speculation. It’s a documented investment plan with clearly defined entry, tenure, and exit. Minimum entry is ₦1,000,000, secured against verified land assets.",
     image: heroSectionImage1,
     phoneImage: phoneHeroSectionImage1,
-    cta: "View Investment Structure",
+    cta: "Meet an Expert",
+    link: "/contact-us#contact-form-section",
   },
   {
     id: 2,
@@ -90,7 +91,8 @@ export const investmentHeroSlides = [
       "Every naira invested is tied to government-verified land with valid title documentation. Your capital is protected by tangible assets — not promises.",
     image: heroSectionImage2,
     phoneImage: phoneHeroSectionImage2,
-    cta: "See Legal Backing",
+    cta: "Learn More",
+    link: "/contact-us#contact-form-section",
   },
   {
     id: 3,
@@ -99,7 +101,8 @@ export const investmentHeroSlides = [
       "If your money is idle or losing value, this plan puts it to work with a fixed 25% - 23% return over a short 10-month cycle — no market swings, no guesswork.",
     image: heroSectionImage3,
     phoneImage: phoneHeroSectionImage3,
-    cta: "Calculate Your Returns",
+    cta: "See Proof",
+    link: "/contact-us#contact-form-section",
   },
   {
     id: 4,
@@ -108,7 +111,8 @@ export const investmentHeroSlides = [
       "Our investors understand one thing: when returns are structured, asset-backed, and time-bound, capital moves fast. Many raise funds elsewhere to take full advantage.",
     image: heroSectionImage1,
     phoneImage: phoneHeroSectionImage1,
-    cta: "Speak With an Investment Banker",
+    cta: "Meet an Expert",
+    link: "/contact-us#contact-form-section",
   },
 ];
 

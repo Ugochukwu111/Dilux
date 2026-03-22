@@ -18,7 +18,7 @@ export function HeroSection({ heroSlides }) {
 
   const handleScrollLinkClick = (e) => {
     e.preventDefault();
-    const hashIndex = currentSlide.link.indexOf("#");
+    const hashIndex = currentSlide?.link.indexOf("#");
     if (hashIndex === -1) return;
 
     const targetId = currentSlide.link.slice(hashIndex + 1);
@@ -29,7 +29,7 @@ export function HeroSection({ heroSlides }) {
     }
   };
 
-  const isInPageLink = currentSlide.link.includes("#");
+  const isInPageLink = currentSlide?.link.includes("#");
 
   return (
     <header>
@@ -44,7 +44,7 @@ export function HeroSection({ heroSlides }) {
             key={currentSlide.image}
             src={currentSlide.image}
             loading="eager"
-            fetchPriority="high"
+            fetchpriority="high"
             decoding="async"
             alt=""
           />

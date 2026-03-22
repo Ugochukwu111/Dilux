@@ -66,6 +66,8 @@ export function InvestmentPage() {
     },
   };
 
+  console.log(investmentHeroSlides);
+
   return (
     <div className="homepage-container investment-page-container">
       <Helmet>
@@ -80,7 +82,8 @@ export function InvestmentPage() {
         />
       </Helmet>
       <WhatsAppIcon />
-      <HeroSection heroSlides={investmentHeroSlides} />
+      <NavBar/>
+      <HeroSection heroSlides={investmentHeroSlides}  />
       <PartnerSlider />
       <section className="bg-light-green">
         <motion.div
@@ -138,9 +141,11 @@ export function InvestmentPage() {
               Ready to invest ? Still have questions? chart with use directly
             </p>
             <br />
+             <a  target="_blank" href="https://wa.me/2349070539019">
             <button className="bg-green text-white chat-with-us-btn">
-              <MessageCircle /> Chat With Us Directly
+             <MessageCircle /> Chat With Us Directly
             </button>
+            </a>
           </div>
         </motion.div>
       </section>
