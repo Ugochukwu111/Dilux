@@ -15,6 +15,17 @@ import testimonial2 from "./src/assets/testimonials/uifaces-human-avatar.jpg";
 import testimonial3 from "./src/assets/testimonials/uifaces-popular-avatar (1).jpg";
 import testimonial4 from "./src/assets/testimonials/uifaces-popular-avatar.jpg";
 
+import diluxGmo from './src/assets/team/IRE.jpeg';
+import diluxAssociate1 from './src/assets/team/lawrence.jpeg';
+import diluxAssociate2 from './src/assets/team/liuyt.jpeg';
+import diluxAssociate3 from './src/assets/team/precious.jpeg';
+import diluxAssociate4 from './src/assets/team/dilux-associate.jpeg';
+import diluxAssociate5 from './src/assets/team/dilux-associate (2).jpeg';
+
+
+
+
+
 import heroSectionImage1 from "./src/assets/hero/dilux-hero1.jpg";
 import heroSectionImage2 from "./src/assets/hero/dilux-hero2.jpg";
 import heroSectionImage3 from "./src/assets/hero/dilux-hero3.jpg";
@@ -24,8 +35,8 @@ import phoneHeroSectionImage2 from "./src/assets/hero/phone-dilux-hero2.jpg";
 import phoneHeroSectionImage1 from "./src/assets/hero/phone-dilux-hero1.jpg";
 
 import heroContactImg1 from './src/assets/hero/contact/contact-1.webp';
-import heroContactImg2 from './src/assets/hero/contact/contact-2.webp'
-import heroContactImg3 from './src/assets/hero/contact/contact-3.webp'
+import heroContactImg2 from './src/assets/hero/contact/contact-2.webp';
+import heroContactImg3 from './src/assets/hero/contact/contact-3.webp';
 
 import roiStartIllustration from "./src/assets/illustrations/start-investing-illustration.jpg";
 import roiIllustration from "./src/assets/illustrations/roi-illustration.jpg";
@@ -123,7 +134,7 @@ export const contactHeroSlides = [
     subtext:
       "Book a guided site visit and experience the location, documentation, and development firsthand. Our team will walk you through every detail before you invest.",
     image: heroContactImg1,
-    phoneImage: phoneHeroSectionImage1,
+    phoneImage: heroContactImg1,
     link: "/contact-us#location-map-section",
     cta: "See Physical Location",
   },
@@ -133,7 +144,7 @@ export const contactHeroSlides = [
     subtext:
       "Visit our office or schedule a private estate tour. Our team will answer your questions, explain the investment process, and show you available plots.",
     image: heroContactImg2,
-    phoneImage: phoneHeroSectionImage2,
+    phoneImage: heroContactImg2,
     link: "/contact-us#contact-form-section",
     cta: "Contact Us",
   },
@@ -143,7 +154,7 @@ export const contactHeroSlides = [
     subtext:
       "Whether online or in person, our experts are ready to guide you through every step — from property selection to securing your land.",
     image: heroContactImg3,
-    phoneImage: phoneHeroSectionImage3,
+    phoneImage: heroContactImg3,
     link: "/contact-us#contact-form-section",
     cta: "Talk to an Expert",
   },
@@ -348,74 +359,46 @@ export const clientTestimonials = [
 
 export const diluxTeam = [
   {
-    name: "Marcus Thorne",
-    position: "Founder & Chief Strategist",
-    image: testimonial1,
+    name: "Daniel Kelechi, iRE",
+    position: "GMD, Dilux Properties",
+    image: diluxGmo,
     bio: "Visionary leader with 15+ years in land acquisition and wealth preservation.",
     socials: { linkedin: "#", twitter: "#" },
   },
   {
-    name: "Sarah Chen",
-    position: "Head of Land Acquisition",
-    image: testimonial2,
+    name: "Lawrence Equaleona",
+    position: "Admin, Inspection and allocation office",
+    image: diluxAssociate1,
     bio: "Expert at identifying high-yield undeveloped plots before they hit the open market.",
     socials: { linkedin: "#", instagram: "#" },
   },
-  {
-    name: "David Okoro",
-    position: "Senior Property Surveyor",
-    image: testimonial3,
-    bio: "Ensures every acre sold by Dilux is precisely mapped and structurally sound for development.",
-    socials: { linkedin: "#" },
-  },
-  {
-    name: "Elena Rodriguez",
-    position: "Legal & Compliance Director",
-    image: testimonial4,
+    {
+    name: "Precious Igben",
+    position: "Dilux Land Manager & Human Resource manager",
+    image: diluxAssociate3,
     bio: "Specialist in land titles and zoning laws to ensure a 100% risk-free purchase for our clients.",
     socials: { linkedin: "#" },
   },
   {
-    name: "Jameson Blake",
-    position: "Portfolio Growth Manager",
-    image: testimonial1,
+    name: "Miracle Ehigiegba",
+    position: "Sales and Marketing Manager", 
+    image: diluxAssociate2,
+    bio: "Ensures every acre sold by Dilux is precisely mapped and structurally sound for development.",
+    socials: { linkedin: "#" },
+  },
+  {
+    name: "Mrs Rebecca Chizoba",
+    position: "Dilux Associaate",
+    image: diluxAssociate4,
     bio: "Helps investors turn raw land into high-performing real estate portfolios.",
     socials: { linkedin: "#", twitter: "#" },
   },
   {
-    name: "Amara Williams",
-    position: "Client Relations Lead",
-    image: testimonial2,
+    name: "Omotoso Abiodun Moses",
+    position: "Dilux Associate",
+    image: diluxAssociate5,
     bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
     socials: { linkedin: "#", instagram: "#" },
-  },
-  {
-    name: "Samuel Vane",
-    position: "Land Development Consultant",
-    image: testimonial3,
-    bio: "Bridging the gap between raw earth and architectural masterpieces.",
-    socials: { linkedin: "#" },
-  },
-  {
-    name: "Isabella Rossi",
-    position: "Director of Marketing",
-    image: testimonial4,
-    bio: "Capturing the story and potential of every property in the Dilux collection.",
-    socials: { instagram: "#", twitter: "#" },
-  },
-  {
-    name: "Tunde Bakare",
-    position: "Field Operations Manager",
-    image: testimonial1,
-    bio: "The boots on the ground ensuring site security and infrastructure readiness.",
-    socials: { linkedin: "#" },
-  },
-  {
-    name: "Sophia Grant",
-    position: "Investment Analyst",
-    image: testimonial2,
-    bio: "Using data-driven insights to predict the next big 'growth corridor' for land buyers.",
-    socials: { linkedin: "#", twitter: "#" },
   },
 ];
 
