@@ -15,16 +15,12 @@ import testimonial2 from "./src/assets/testimonials/uifaces-human-avatar.jpg";
 import testimonial3 from "./src/assets/testimonials/uifaces-popular-avatar (1).jpg";
 import testimonial4 from "./src/assets/testimonials/uifaces-popular-avatar.jpg";
 
-import diluxGmo from './src/assets/team/IRE.jpeg';
-import diluxAssociate1 from './src/assets/team/lawrence.jpeg';
-import diluxAssociate2 from './src/assets/team/liuyt.jpeg';
-import diluxAssociate3 from './src/assets/team/precious.jpeg';
-import diluxAssociate4 from './src/assets/team/dilux-associate.jpeg';
-import diluxAssociate5 from './src/assets/team/dilux-associate (2).jpeg';
-
-
-
-
+import diluxGmo from "./src/assets/team/IRE.jpeg";
+import diluxAssociate1 from "./src/assets/team/lawrence.jpeg";
+import diluxAssociate2 from "./src/assets/team/liuyt.jpeg";
+import diluxAssociate3 from "./src/assets/team/precious.jpeg";
+import diluxAssociate4 from "./src/assets/team/dilux-associate.jpeg";
+import diluxAssociate5 from "./src/assets/team/dilux-associate (2).jpeg";
 
 import heroSectionImage1 from "./src/assets/hero/dilux-hero1.jpg";
 import heroSectionImage2 from "./src/assets/hero/dilux-hero2.jpg";
@@ -34,9 +30,12 @@ import phoneHeroSectionImage3 from "./src/assets/hero/phone-dilux-hero3.jpg";
 import phoneHeroSectionImage2 from "./src/assets/hero/phone-dilux-hero2.jpg";
 import phoneHeroSectionImage1 from "./src/assets/hero/phone-dilux-hero1.jpg";
 
-import heroContactImg1 from './src/assets/hero/contact/contact-1.webp';
-import heroContactImg2 from './src/assets/hero/contact/contact-2.webp';
-import heroContactImg3 from './src/assets/hero/contact/contact-3.webp';
+import heroContactImg1 from "./src/assets/hero/contact/contact-1.webp";
+import heroContactImg2 from "./src/assets/hero/contact/contact-2.webp";
+import heroContactImg3 from "./src/assets/hero/contact/contact-3.webp";
+import heroContactImg4 from "./src/assets/hero/contact/dilux-group-photo.jpeg";
+import heroContactImg5 from "./src/assets/hero/contact/gmo-with-associate.jpeg";
+
 
 import roiStartIllustration from "./src/assets/illustrations/start-investing-illustration.jpg";
 import roiIllustration from "./src/assets/illustrations/roi-illustration.jpg";
@@ -75,8 +74,7 @@ export const heroSlides = [
   {
     id: 4,
     heading: "Instant Allocation. Build Your Legacy.",
-    subtext:
-      " Join 500+ investors who built their future with Dilux.",
+    subtext: " Join 500+ investors who built their future with Dilux.",
     phoneImage: phoneHeroSectionImage1,
     image: heroSectionImage1,
     link: "/contact-us",
@@ -138,13 +136,14 @@ export const contactHeroSlides = [
     link: "/contact-us#location-map-section",
     cta: "See Physical Location",
   },
+  
   {
     id: 2,
     heading: "See the Location. Meet the Experts.",
     subtext:
       "Visit our office or schedule a private estate tour. Our team will answer your questions, explain the investment process, and show you available plots.",
-    image: heroContactImg2,
-    phoneImage: heroContactImg2,
+    image: heroContactImg4,
+    phoneImage: heroContactImg4,
     link: "/contact-us#contact-form-section",
     cta: "Contact Us",
   },
@@ -157,6 +156,16 @@ export const contactHeroSlides = [
     phoneImage: heroContactImg3,
     link: "/contact-us#contact-form-section",
     cta: "Talk to an Expert",
+  },
+    {
+    id: 4,
+    heading: "See the Location. Meet the Experts.",
+    subtext:
+      "Visit our office or schedule a private estate tour. Our team will answer your questions, explain the investment process, and show you available plots.",
+    image: heroContactImg2,
+    phoneImage: heroContactImg2,
+    link: "/contact-us#contact-form-section",
+    cta: "Contact Us",
   },
 ];
 
@@ -372,7 +381,7 @@ export const diluxTeam = [
     bio: "Expert at identifying high-yield undeveloped plots before they hit the open market.",
     socials: { linkedin: "#", instagram: "#" },
   },
-    {
+  {
     name: "Precious Igben",
     position: "Dilux Land Manager & Human Resource manager",
     image: diluxAssociate3,
@@ -381,7 +390,7 @@ export const diluxTeam = [
   },
   {
     name: "Miracle Ehigiegba",
-    position: "Sales and Marketing Manager", 
+    position: "Sales and Marketing Manager",
     image: diluxAssociate2,
     bio: "Ensures every acre sold by Dilux is precisely mapped and structurally sound for development.",
     socials: { linkedin: "#" },

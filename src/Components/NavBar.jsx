@@ -31,7 +31,7 @@ which closes it
     <div className={`nav-bar-container ${isNavBar?'active-nav': '' }`}>
       <Link to="/">
       <figure className='dilux-logo'>
-        <img src={diluxLogo} alt="diluc logo" />
+        <img src={diluxLogo} alt="dilux logo" />
       </figure>
       </Link>
 
