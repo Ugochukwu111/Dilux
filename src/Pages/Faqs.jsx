@@ -12,14 +12,14 @@ export function FaqsCard({faq}) {
                 <div 
                   className={`faq-card ${open ? "open" : "closed"}`}>
                   <div className="d-flex justify-s-between align-center faq-header">
-                    <h6>{faq.question}</h6>
+                    <h5>{faq.question}</h5>
                     <button onClick={()=> setOpen(!open)}>
                       {open? <Minus size={20}/> : <Plus size={20} /> }
                     </button>
                   </div>
           
 
-                  <div className="faq-question">{faq.answer}</div>
+                  <div className="faq-question"><p>{faq.answer}</p></div>
                 </div>
     
     

@@ -167,7 +167,7 @@ svg{
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: var(--font-header);
+  font-family: var(--font-body);
   color: var(--dark-maroon);
   line-height: 1; 
 }
@@ -183,6 +183,9 @@ h3 { font-size: clamp(1.55rem, 1rem + 2.5vw, 2.75rem); }
 h4 { font-size: clamp(1.35rem, 0.9rem + 2vw, 2.2rem); }
 h5 { font-size: clamp(1.15rem, 0.8rem + 1.5vw, 1.75rem); }
 h6 { font-size: clamp(1rem, 0.8rem + 1vw, 1.4rem); }
+p {
+  font-size: clamp(0.8rem, 0.85rem + 0.5vw, 1rem);
+}
 
 h1, h2, h3 {
   letter-spacing: -0.02em; /* Tighter for a modern look */
