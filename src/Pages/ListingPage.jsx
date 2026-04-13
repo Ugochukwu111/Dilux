@@ -1,5 +1,5 @@
 import { ListingCard } from "../Components/ListingCard";
-import { landListings } from "../../content";
+import { landListings } from "../content";
 import { FilterListings } from "../Components/FilterListings";
 import { Footer } from "../Components/Footer";
 import { Helmet } from "react-helmet-async";

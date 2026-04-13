@@ -7,41 +7,40 @@ import {
   TrendingUp,
 } from "lucide-react";
 
-import land1Src from "./src/assets/land1.jpg";
-import land2Src from "./src/assets/land2.jpg";
+import land1Src from "./assets/land1.jpg";
+import land2Src from "./assets/land2.jpg";
 
-import testimonial1 from "./src/assets/testimonials/iRE.jpeg";
-import testimonial2 from "./src/assets/testimonials/uifaces-human-avatar.jpg";
-import testimonial3 from "./src/assets/testimonials/uifaces-popular-avatar (1).jpg";
-import testimonial4 from "./src/assets/testimonials/uifaces-popular-avatar.jpg";
+import testimonial1 from "./assets/testimonials/iRE.jpeg";
+import testimonial2 from "./assets/testimonials/uifaces-human-avatar.jpg";
+import testimonial3 from "./assets/testimonials/uifaces-popular-avatar (1).jpg";
+import testimonial4 from "./assets/testimonials/uifaces-popular-avatar.jpg";
 
-import diluxGmo from "./src/assets/team/IRE.jpeg";
-import diluxAssociate1 from "./src/assets/team/lawrence.jpeg";
-import diluxAssociate2 from "./src/assets/team/liuyt.jpeg";
-import diluxAssociate3 from "./src/assets/team/precious.jpeg";
-import diluxAssociate4 from "./src/assets/team/dilux-associate.jpeg";
-import diluxAssociate5 from "./src/assets/team/dilux-associate (2).jpeg";
-import diluxAssociate6 from "./src/assets/team/DAMISA MICHAEL.jpeg";
-import diluxAssociate7 from "./src/assets/team/ERHABOR OGBEIDE HUMPHRY.jpeg";
-
-
-import heroSectionImage1 from "./src/assets/hero/dilux-hero1.jpg";
-import heroSectionImage2 from "./src/assets/hero/dilux-hero2.jpg";
-import heroSectionImage3 from "./src/assets/hero/dilux-hero3.jpg";
-
-import phoneHeroSectionImage3 from "./src/assets/hero/phone-dilux-hero3.jpg";
-import phoneHeroSectionImage2 from "./src/assets/hero/phone-dilux-hero2.jpg";
-import phoneHeroSectionImage1 from "./src/assets/hero/phone-dilux-hero1.jpg";
-
-import heroContactImg1 from "./src/assets/hero/contact/contact-1.webp";
-import heroContactImg2 from "./src/assets/hero/contact/contact-2.webp";
-import heroContactImg3 from "./src/assets/hero/contact/contact-3.webp";
-import heroContactImg4 from "./src/assets/hero/contact/dilux-group-photo.jpeg";
-import heroContactImg5 from "./src/assets/hero/contact/gmo-with-associate.jpeg";
+import diluxGmo from "./assets/team/IRE.jpeg";
+import diluxAssociate1 from "./assets/team/lawrence.jpeg";
+import diluxAssociate2 from "./assets/team/liuyt.jpeg";
+import diluxAssociate3 from "./assets/team/precious.jpeg";
+import diluxAssociate4 from "./assets/team/dilux-associate.jpeg";
+import diluxAssociate5 from "./assets/team/dilux-associate (2).jpeg";
+import diluxAssociate6 from "./assets/team/DAMISA MICHAEL.jpeg";
+import diluxAssociate7 from "./assets/team/ERHABOR OGBEIDE HUMPHRY.jpeg";
 
 
-import roiStartIllustration from "./src/assets/illustrations/start-investing-illustration.jpg";
-import roiIllustration from "./src/assets/illustrations/roi-illustration.jpg";
+import heroSectionImage1 from "./assets/hero/dilux-hero1.jpg";
+import heroSectionImage2 from "./assets/hero/dilux-hero2.jpg";
+import heroSectionImage3 from "./assets/hero/dilux-hero3.jpg";
+
+import phoneHeroSectionImage3 from "./assets/hero/phone-dilux-hero3.jpg";
+import phoneHeroSectionImage2 from "./assets/hero/phone-dilux-hero2.jpg";
+import phoneHeroSectionImage1 from "./assets/hero/phone-dilux-hero1.jpg";
+
+import heroContactImg1 from "./assets/hero/contact/contact-1.webp";
+import heroContactImg2 from "./assets/hero/contact/contact-2.webp";
+import heroContactImg3 from "./assets/hero/contact/contact-3.webp";
+import heroContactImg4 from "./assets/hero/contact/dilux-group-photo.jpeg";
+
+
+import roiStartIllustration from "./assets/illustrations/start-investing-illustration.jpg";
+import roiIllustration from "./assets/illustrations/roi-illustration.jpg";
 
 export const heroSlides = [
   {

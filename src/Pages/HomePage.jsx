@@ -9,8 +9,8 @@ import {
   whatWeOffer,
   clientTestimonials,
   diluxTeam,
-} from "../../content";
-import { landListings } from "../../content";
+} from "../content";
+import { landListings } from "../content";
 import { TestimonialCard } from "../Components/TestimonialCard";
 import howItWorksImage1 from "/src/assets/how-it-works/consultation.jpeg";
 import howItWorksImage2 from '/src/assets/how-it-works/property-inspection.jpeg';
@@ -29,7 +29,7 @@ import IRE from "../assets/team/IRE.jpg";
 import { PartnerSlider } from "../Components/PartnerSlider";
 import { ListingCard } from "../Components/ListingCard";
 import { DiluxDifferenceCard } from "../Components/DiluxDifferenceCard";
-import { heroSlides } from "../../content";
+import { heroSlides } from "../content";
 
 import "./HomePage.css";
 

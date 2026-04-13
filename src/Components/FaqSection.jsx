@@ -1,4 +1,4 @@
-import { diluxFaqs } from "../../content";
+import { diluxFaqs } from "../content";
 import { FaqsCard } from "../Pages/Faqs";
 
 export function  FaqSection() {

@@ -4,7 +4,7 @@ import { Footer } from "../Components/Footer";
 import { DiluxAds } from "../Components/DiluxAds";
 import { Helmet } from "react-helmet-async";
 import { WhatsAppIcon } from "../Components/WhatsAppIcon";
-import { contactHeroSlides } from "../../content";
+import { contactHeroSlides } from "../content";
 import { HeroSection } from "../Components/HeroSection";
 
 import {

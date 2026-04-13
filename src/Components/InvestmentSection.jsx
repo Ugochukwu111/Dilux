@@ -7,7 +7,7 @@ import IRE from "../assets/team/IRE.jpg";
 import { FaWhatsapp } from "react-icons/fa";
 import { MoveRight } from "lucide-react";
 import { useInView } from "../Hooks/UseInView";
-import { roiCards } from "../../content";
+import { roiCards } from "../content";
 import { HashLink } from 'react-router-hash-link';
 
 

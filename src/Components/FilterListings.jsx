@@ -1,6 +1,6 @@
 import * as Select from '@radix-ui/react-select';
 import './FilterListings.css';
-import { landListings } from '../../content';
+import { landListings } from '../content';
 import { ListFilter } from 'lucide-react';
 
 

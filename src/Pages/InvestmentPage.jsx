@@ -1,13 +1,13 @@
 import { NavBar } from "../Components/NavBar";
 import { HeroSection } from "../Components/HeroSection";
 import "./HomePage.css";
-import { investmentHeroSlides } from "../../content";
+import { investmentHeroSlides } from "../content";
 import { motion } from "framer-motion";
 import { DiluxAds } from "../Components/DiluxAds";
 import { PartnerSlider } from "../Components/PartnerSlider";
 import { Footer } from "../Components/Footer";
 import { WhatsAppIcon } from "../Components/WhatsAppIcon";
-import { roiCards } from "../../content";
+import { roiCards } from "../content";
 import { FaqSection } from "../Components/FaqSection.jsx";
 import { MessageCircle } from "lucide-react";
 import { Helmet } from "react-helmet-async";
