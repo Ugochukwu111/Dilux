@@ -15,7 +15,7 @@ import testimonial2 from "./assets/testimonials/uifaces-human-avatar.jpg";
 import testimonial3 from "./assets/testimonials/uifaces-popular-avatar (1).jpg";
 import testimonial4 from "./assets/testimonials/uifaces-popular-avatar.jpg";
 
-import diluxGmo from "./assets/team/IRE.jpeg";
+import diluxGmo from "./assets/team/IRE.jpg";
 import diluxAssociate1 from "./assets/team/lawrence.jpeg";
 import diluxAssociate2 from "./assets/team/liuyt.jpeg";
 import diluxAssociate3 from "./assets/team/precious.jpeg";
