@@ -1,15 +1,62 @@
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Footer } from "../Components/Footer";
 import { DiluxAds } from "../Components/DiluxAds";
 import { Helmet } from "react-helmet-async";
 import { WhatsAppIcon } from "../Components/WhatsAppIcon";
 import { contactHeroSlides } from "../../content";
 import { HeroSection } from "../Components/HeroSection";
-import { NavBar } from "../Components/NavBar";
 
-import { MapPin, Mail, Phone, SendHorizontal } from "lucide-react";
+import {
+  MapPin,
+  Mail,
+  Phone,
+  SendHorizontal,
+  Check,
+  CircleX,
+} from "lucide-react";
 import "./ContactUsPage.css";
 
 export function ContactUsPage() {
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(null);
+  const btnRef = useRef();
+
+  const getInputValue = (e) => {
+    setFormValues((prevValues) => ({
+      ...prevValues,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      await emailjs.send(
+        "service_qxipzaf",
+        "template_7rzzxld",
+        formValues,
+        "Vt7cGDhsIwncQuJPx",
+      );
+      setFormValues({ name: "", email: "", message: "" });
+      setSubmitSuccess(true);
+    } catch (err) {
+      console.error(err);
+      setSubmitSuccess(false);
+    } finally {
+      setIsSubmitting(false);
+      setTimeout(() => {
+        setSubmitSuccess(null);
+      }, 3000);
+    }
+  };
+
   return (
     <div className="contact-page-container">
       <Helmet>
@@ -24,7 +71,6 @@ export function ContactUsPage() {
         />
       </Helmet>
       <WhatsAppIcon />
-      <NavBar />
       <HeroSection heroSlides={contactHeroSlides} />
 
       <section id="location-map-section">
@@ -42,6 +88,7 @@ export function ContactUsPage() {
         </div>
       </section>
       <DiluxAds />
+
       <section id="contact-form-section">
         <div className="container contact-us-form-container">
           <div>
@@ -77,39 +124,80 @@ export function ContactUsPage() {
               </a>
             </p>
           </div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="input-container">
               <label htmlFor="name">Name</label>
               <input
+                value={formValues.name}
                 type="text"
                 required
                 autoComplete="name"
                 id="name"
                 name="name"
-                placeholder="Eg: Johon Doe"
+                placeholder="Eg: John Doe"
+                onChange={(e) => {
+                  getInputValue(e);
+                }}
               />
             </div>
             <div className="input-container">
               <label htmlFor="email">Email</label>
               <input
+                value={formValues.email}
                 required
                 autoComplete="email"
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Eg: johndoe@email.com"
+                onChange={(e) => {
+                  getInputValue(e);
+                }}
               />
             </div>
             <div className="input-container">
               <label htmlFor="message">Message</label>
-              <textarea required name="message" id="message"></textarea>
+              <textarea
+                required
+                value={formValues.message}
+                name="message"
+                id="message"
+                onChange={(e) => {
+                  getInputValue(e);
+                }}
+              ></textarea>
             </div>
-            <button>
-              Submit <SendHorizontal />
+            <button
+              ref={btnRef}
+              disabled={isSubmitting}
+              className="bg-dark-maroon text-white"
+            >
+              {isSubmitting ? "Submitting" : "Submit"}
+              <SendHorizontal
+                size={21}
+                className={`${isSubmitting ? "submitting" : ""} `}
+              />
             </button>
           </form>
         </div>
       </section>
+      {submitSuccess !== null && (
+        <div
+          className={`form-status-container ${submitSuccess ? "success" : "error"}`}
+        >
+          <p className="d-flex align-center">
+            {submitSuccess ? (
+              <>
+                message sent <Check />
+              </>
+            ) : (
+              <>
+                message failed <CircleX />
+              </>
+            )}
+          </p>
+        </div>
+      )}
       <Footer />
     </div>
   );

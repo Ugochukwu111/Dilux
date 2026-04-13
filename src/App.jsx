@@ -1,10 +1,10 @@
 import { Routes , Route } from "react-router-dom"
-
 import { HomePage } from "./Pages/HomePage"
 import { ListingPage } from "./Pages/ListingPage"
 import { ContactUsPage } from "./Pages/ContactUsPage"
 import { NavBar } from "./Components/NavBar"
 import { InvestmentPage } from "./Pages/InvestmentPage"
+
 
 
 function App() {

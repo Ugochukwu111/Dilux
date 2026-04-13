@@ -56,7 +56,7 @@
 
 .contact-us-form-container form{
     margin-top: -5rem;
-    padding: 2.5em 2em;
+    padding: 2.5em 1.5em;
     border-radius: .5rem;
     max-width: 600px;
     display: flex;
@@ -98,7 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--light-gold);
+  border-radius: .5rem;
 }
 
 .contact-us-container form #name{
@@ -108,6 +108,60 @@
 .contact-us-form-container form .input-container{
   display: flex;
   flex-direction: column;
+}
+
+
+/* below is the classlist  to animate submit icon send when submitting form */
+.submitting{
+animation: load .8s linear infinite;
+}
+
+@keyframes load {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.form-status-container{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  color: var(--bright-white);
+  background-color: green;
+  font-weight: 700;
+  padding: .85em 2em;
+  border-radius: .5rem;
+  display: grid;
+  place-self: center;
+  box-shadow:  2px 1px 2px var(--dark-gray);
+  transition: all 200ms ease;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.form-status-container.success{
+  bottom: 2em;
+}
+
+.form-status-container.error{
+  background-color: red;
+}
+
+@keyframes slideUp {
+    0%{
+      bottom: 0em;
+    }
+    50% {
+      bottom: 2em;
+    }
+    100%{
+      bottom: 0em;
+    }
 }
 
 @media(max-width:800px){

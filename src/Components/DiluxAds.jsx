@@ -26,10 +26,8 @@ export function DiluxAds() {
             <small className="text-white">{currentAd.subtext}</small>
           </div>
 
-          <Link to={currentAd.link}>
-          <button className="text-white bg-light-gold">
+          <Link to={currentAd.link} className="text-white bg-light-gold">
             {currentAd.btnText}
-          </button>
           </Link>
         </div>
       </div>

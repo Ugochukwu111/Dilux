@@ -37,11 +37,23 @@
   justify-content: space-between;
   box-shadow: 2px 2px 3px var(--dark-gray);
   animation: slideUpFade 5s ease-out infinite;
-  align-items: start;
+  align-items: center;
   background: rgba(26, 26, 26, 0.8); 
   backdrop-filter: blur(10px);
   border: 1px solid #d3a23e;
 }
+
+
+.ads-container a{
+  border-radius:inherit ;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: centers;
+  padding: .5em 1em;
+}
+
+
 
 
 
