@@ -21,6 +21,9 @@ import diluxAssociate2 from "./src/assets/team/liuyt.jpeg";
 import diluxAssociate3 from "./src/assets/team/precious.jpeg";
 import diluxAssociate4 from "./src/assets/team/dilux-associate.jpeg";
 import diluxAssociate5 from "./src/assets/team/dilux-associate (2).jpeg";
+import diluxAssociate6 from "./src/assets/team/DAMISA MICHAEL.jpeg";
+import diluxAssociate7 from "./src/assets/team/ERHABOR OGBEIDE HUMPHRY.jpeg";
+
 
 import heroSectionImage1 from "./src/assets/hero/dilux-hero1.jpg";
 import heroSectionImage2 from "./src/assets/hero/dilux-hero2.jpg";
@@ -311,6 +314,20 @@ export const diluxTeam = [
     name: "Omotoso Abiodun Moses",
     position: "Dilux Associate",
     image: diluxAssociate5,
+    bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
+    socials: { linkedin: "#", instagram: "#" },
+  },
+    {
+    name: "Damisa Michael",
+    position: "Dilux Associate",
+    image: diluxAssociate6,
+    bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
+    socials: { linkedin: "#", instagram: "#" },
+  },
+    {
+    name: "Erhabor Ogbeide Humphry",
+    position: "Dilux Associate",
+    image: diluxAssociate7,
     bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
     socials: { linkedin: "#", instagram: "#" },
   },
