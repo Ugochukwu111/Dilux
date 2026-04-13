@@ -102,7 +102,7 @@ How can we move forward?
 
   const encodedMessage = encodeURIComponent(message.trim());
 
-  const phoneNumber = "2349012345678"; // replace with WhatsApp number (no +)
+  const phoneNumber = "2349070539019"; // replace with WhatsApp number (no +)
 
   window.open(
     `https://wa.me/${phoneNumber}?text=${encodedMessage}`,

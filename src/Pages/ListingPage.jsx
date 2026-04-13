@@ -58,8 +58,7 @@ export function ListingPage() {
       <br />
       <br />
       <br />
-      <br />
-      <h1>Dilux Properties</h1>
+      <h1 className="text-center">Dilux Properties</h1>
       <FilterListings filters={filters} setSearchParams={setSearchParams} />
       <main className="container">
         {filteredLandListings.map((listing) => (
