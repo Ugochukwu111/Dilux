@@ -69,7 +69,7 @@ which closes it
        
        <HashLink smooth to='/contact-us#contact-form-section'>
       <button 
-       className='bg-dark-maroon text-white'>
+       className='bg-dark-maroon text-white '>
         Book Consultation Now
       </button>
       </HashLink>

@@ -8,7 +8,7 @@
      align-items: start;
      overflow: auto;
      scrollbar-width: none;
-       z-index: 2147483647;
+     z-index: 2147483647;
 }
 
 .nav-bar-container-wrapper.active{
@@ -141,6 +141,9 @@
 
   .navbar-book-btn-container button{
     width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
   }
   .navbar-book-btn-container button:hover{
     transform: none;
