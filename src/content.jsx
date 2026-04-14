@@ -24,7 +24,6 @@ import diluxAssociate5 from "./assets/team/dilux-associate (2).jpeg";
 import diluxAssociate6 from "./assets/team/DAMISA MICHAEL.jpeg";
 import diluxAssociate7 from "./assets/team/ERHABOR OGBEIDE HUMPHRY.jpeg";
 
-
 import heroSectionImage1 from "./assets/hero/dilux-hero1.jpg";
 import heroSectionImage2 from "./assets/hero/dilux-hero2.jpg";
 import heroSectionImage3 from "./assets/hero/dilux-hero3.jpg";
@@ -37,7 +36,6 @@ import heroContactImg1 from "./assets/hero/contact/contact-1.webp";
 import heroContactImg2 from "./assets/hero/contact/contact-2.webp";
 import heroContactImg3 from "./assets/hero/contact/contact-3.webp";
 import heroContactImg4 from "./assets/hero/contact/dilux-group-photo.jpeg";
-
 
 import roiStartIllustration from "./assets/illustrations/start-investing-illustration.jpg";
 import roiIllustration from "./assets/illustrations/roi-illustration.jpg";
@@ -138,7 +136,7 @@ export const contactHeroSlides = [
     link: "/contact-us#location-map-section",
     cta: "See Physical Location",
   },
-  
+
   {
     id: 2,
     heading: "See the Location. Meet the Experts.",
@@ -159,7 +157,7 @@ export const contactHeroSlides = [
     link: "/contact-us#contact-form-section",
     cta: "Talk to an Expert",
   },
-    {
+  {
     id: 4,
     heading: "See the Location. Meet the Experts.",
     subtext:
@@ -207,9 +205,11 @@ export const landListings = [
     size: "450sqm (approx 100X50ft)",
     status: ["Available", "Rapidly Developing", "20hr Power"],
     security: "Aihuobunbekun Community Approval",
-    oldPrice: 1850000, 
-    newPrice: 1650000, 
+    oldPrice: 1850000,
+    newPrice: 1650000,
     ctaLink: "/listings/photon-city",
+    description:
+      "Own a piece of the future at Photon City Estate. Located in the fast-growing Oluku axis, this property offers a rare combination of 20-hour daily power supply and full community approval for total peace of mind. Whether you are looking to build your dream home or secure a high-growth investment, this rapidly developing neighborhood ensures your capital appreciates while you enjoy a modern, secure lifestyle. Don't miss the current price slash—your path to becoming a landlord starts here.",
   },
   {
     id: 2,
@@ -222,54 +222,40 @@ export const landListings = [
     oldPrice: 1300000,
     newPrice: 1000000,
     ctaLink: "/listings/garland-megacity",
+    description: "Don't miss out on our most successful project yet! Garland MegaCity has already seen Phases 1 and 2 completely sold out, proving it to be a top choice for smart investors in the Egba area. With full Evbo-Iyamu community approval, you can rest easy knowing your investment is secure and legally backed. This estate offers the best value for your money, providing a golden opportunity to own property in a fast-growing community at an unbeatable price. Secure your spot in the next phase before it's gone!",
   },
 ];
 
 export const clientTestimonials = [
   {
-    image: testimonial1,
-    id: 1,
+    id: 6,
     quote:
-      "The 24% returns were delivered exactly as promised. Dilux is the most secure investment platform I've used. They handle the legal work with complete transparency.",
-    name: "A. Williams",
-    location: " Abuja",
-    job: "Investor",
+      "As a one-time beneficiary of Daniel Kelechi’s expertise and guidance, I can confidently say my first land-buying experience couldn’t have gone any better. Seeing him step into this role with such professionalism and dedication was something I truly appreciated. You’ll be in safe and capable hands.",
+    name: "Jude Ike",
   },
   {
-    image: testimonial2,
-    id: 2,
+    id: 7,
     quote:
-      "Finding legally vetted land has always been a challenge, but Dilux made the entire process seamless and trustworthy. Highly recommend their auditing service and professional approach.",
-    name: "T. Okoro",
-    location: " Lagos",
-    job: "Entrepreneur",
+      "Getting a property from Dilux has been one of the most seamless experiences I’ve had. They don’t just focus on selling; they go the extra mile to educate you. That level of guidance made me feel truly relieved, confident, and assured throughout the process.",
+    name: "Michael Damisa",
   },
   {
-    image: testimonial3,
-    id: 3,
+    id: 8,
     quote:
-      "Our capital was secured, and the monthly income arrived on time. The personalized consultation was key to our decision and provided a clear path to growth.",
-    name: "C. Eke",
-    location: "Port Harcourt",
-    job: "Software Developer",
+      "Dilux Properties gave me the life-changing opportunity to become a landlord with the most affordable prices for land at a wonderful location. To the management and staff, I sincerely appreciate the opportunity.",
+    name: "Erhabor Ogbeide Humphry",
   },
   {
-    image: testimonial4,
-    id: 4,
+    id: 9,
     quote:
-      "Exceptional service from start to finish. The team is knowledgeable, and the property titles were clean and verified, which gave me total confidence in my purchase.",
-    name: "J. Adewale",
-    location: "UK (united Kingdom)",
-    job: "Senetor",
+      "Partnering with Dilux Properties was a smooth and rewarding experience. Their professionalism, honesty, and dedication made the entire process stress-free. They were transparent in every step and delivered excellent service.",
+    name: "Asaborelukpea Jude Ofure",
   },
   {
-    image: testimonial1,
-    id: 5,
+    id: 10,
     quote:
-      "Dilux is a game-changer in real estate investment. Their guarantee gave me peace of mind, and the asset value has already exceeded my expectations.",
-    name: "M. Udoma",
-    location: "Kano",
-    job: "Bank Manager",
+      "Dilux is a sincere and trustworthy agent to get property with peace of mind. I will always keep getting property through them.",
+    name: "Egwuom Michael Ebuka",
   },
 ];
 
@@ -316,14 +302,14 @@ export const diluxTeam = [
     bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
     socials: { linkedin: "#", instagram: "#" },
   },
-    {
+  {
     name: "Damisa Michael",
     position: "Dilux Associate",
     image: diluxAssociate6,
     bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
     socials: { linkedin: "#", instagram: "#" },
   },
-    {
+  {
     name: "Erhabor Ogbeide Humphry",
     position: "Dilux Associate",
     image: diluxAssociate7,

@@ -47,7 +47,7 @@ header .trust-kicker-link{
   padding: .25em .5em;
   border-radius: 2rem;
   font-size: .8rem;
-  width: 100%;
+  /* width: 100%; */
   max-width: 360px;
   text-align: center;
 }

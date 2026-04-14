@@ -146,10 +146,7 @@ How can we move forward?
         <span> ✅ dilux verified</span>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ullam
-          ipsa at, necessitatibus maiores reiciendis quod? Facere molestias,
-          excepturi temporibus ullam iste cum, commodi, facilis labore
-          voluptates vitae minima nostrum.
+          {listing?.description}
         </p>
         <br />
 

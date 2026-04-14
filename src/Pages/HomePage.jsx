@@ -43,7 +43,7 @@ export function HomePage() {
 
   useEffect(() => {
     const intervalId = setInterval(generateRandomNumber, 5000);
-    return () => clearInterval(intervalId); // cleanup
+    return () => clearInterval(intervalId); 
   }, []);
 
   return (
@@ -182,10 +182,7 @@ export function HomePage() {
 
               <div className="d-flex flex-column">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-                  nulla nemo ut quasi odio. Eos corporis culpa expedita iure
-                  necessitatibus illo temporibus dolore dignissimos, inventore
-                  maxime accusamus quo voluptatum eligendi.
+                Own land without the stress. We offer only legally vetted, community-approved properties in Benin City’s fastest-growing locations. Secure your future with Dilux—where transparency meets total peace of mind.
                 </p>
                 <br />
                 <div className="d-flex justify-end">
@@ -253,7 +250,7 @@ export function HomePage() {
         </section>
 
         <section className="testimonial-section">
-          <br /><br />
+          <br />
 
           <div className="">
             <h3 className="text-center">Real Results, Real Trust</h3>
