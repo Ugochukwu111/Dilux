@@ -93,9 +93,11 @@ export function ContactUsPage() {
         <div className="container contact-us-form-container">
           <div>
             <h3>
-              Questions on how to be a land Owner ?
+              Questions on how to be a land Owner ? <br/>
               <span>
-                need a personal payment schedule? Ask the question we provide
+                need a personal payment schedule? 
+                <br/>
+                Ask the question we provide
                 the answer
               </span>
             </h3>
