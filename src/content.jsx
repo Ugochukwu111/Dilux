@@ -23,6 +23,8 @@ import diluxAssociate4 from "./assets/team/dilux-associate.jpeg";
 import diluxAssociate5 from "./assets/team/dilux-associate (2).jpeg";
 import diluxAssociate6 from "./assets/team/DAMISA MICHAEL.jpeg";
 import diluxAssociate7 from "./assets/team/ERHABOR OGBEIDE HUMPHRY.jpeg";
+import diluxAssociate8 from "./assets/team/Aghimien-Etinosa-Jeffery.webp";
+import diluxAssociate9 from "./assets/team/samuel-kofi.webp";
 
 import heroSectionImage1 from "./assets/hero/dilux-hero1.jpg";
 import heroSectionImage2 from "./assets/hero/dilux-hero2.jpg";
@@ -319,6 +321,20 @@ export const diluxTeam = [
     name: "Erhabor Ogbeide Humphry",
     position: "Dilux Associate",
     image: diluxAssociate7,
+    bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
+    socials: { linkedin: "#", instagram: "#" },
+  },
+    {
+    name: "Erhabor Ogbeide Humphry",
+    position: "Dilux Associate",
+    image: diluxAssociate8,
+    bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
+    socials: { linkedin: "#", instagram: "#" },
+  },
+    {
+    name: "Samuel Kofi ",
+    position: "Dilux Associate",
+    image: diluxAssociate9,
     bio: "Dedicated to providing a seamless 'white-glove' experience from inquiry to deed transfer.",
     socials: { linkedin: "#", instagram: "#" },
   },
