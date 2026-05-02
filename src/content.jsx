@@ -175,7 +175,7 @@ export const whatWeOffer = [
     icon: <ChartNoAxesColumnDecreasing size={30} />,
     name: "See First. Pay Later.",
     description:
-      "At DILUX, we start with trust — not money.We take you for a free site inspection before any payment discussion. You see the land yourself. You visit our branch office. You know who we are and where we operate from.No pressure. No hidden demands.Just clarity before commitment.",
+      "At DILUX, we start with trust — not money. We take you for a free site inspection before any payment discussion. You see the land yourself. You visit our branch office. You know who we are and where we operate from. No pressure. No hidden demands. Just clarity before commitment.",
     bgcolor: "bg-dark-maroon",
   },
   {
@@ -183,7 +183,7 @@ export const whatWeOffer = [
     icon: <BadgeCheck size={30} />,
     name: "Documentation That Protects You",
     description:
-      "We don’t joke with paperwork.Every client receives a minimum of two valid documents. We ensure proper processing because true ownership is backed by paper — not promises.Your land is protected legally and properly.",
+      "We don’t joke with paperwork. Every client receives a minimum of two valid documents. We ensure proper processing because true ownership is backed by paper — not promises. Your land is protected legally and properly.",
     bgcolor: "bg-dark-maroon",
   },
   {
@@ -191,7 +191,7 @@ export const whatWeOffer = [
     icon: <Settings size={30} />,
     name: "Secure Allocation & Transparent Payment",
     description:
-      "With DILUX, you don’t pay and wait.Once payment is confirmed, allocation is immediate. You know exactly where your plot is — where it starts and where it ends.All payments go through our recognized company account and are fully documented.No personal accounts.No delays.No uncertainty",
+      "With DILUX, you don’t pay and wait. Once payment is confirmed, allocation is immediate. You know exactly where your plot is — where it starts and where it ends. All payments go through our recognized company account and are fully documented. No personal accounts. No delays. No uncertainty.",
     bgcolor: "bg-light-gold ",
   },
 ];
@@ -228,34 +228,40 @@ export const landListings = [
 
 export const clientTestimonials = [
   {
-    id: 6,
+    id: 1,
     quote:
       "As a one-time beneficiary of Daniel Kelechi’s expertise and guidance, I can confidently say my first land-buying experience couldn’t have gone any better. Seeing him step into this role with such professionalism and dedication was something I truly appreciated. You’ll be in safe and capable hands.",
     name: "Jude Ike",
   },
   {
-    id: 7,
+    id: 2,
     quote:
       "Getting a property from Dilux has been one of the most seamless experiences I’ve had. They don’t just focus on selling; they go the extra mile to educate you. That level of guidance made me feel truly relieved, confident, and assured throughout the process.",
     name: "Michael Damisa",
   },
   {
-    id: 8,
+    id: 3,
     quote:
       "Dilux Properties gave me the life-changing opportunity to become a landlord with the most affordable prices for land at a wonderful location. To the management and staff, I sincerely appreciate the opportunity.",
     name: "Erhabor Ogbeide Humphry",
   },
   {
-    id: 9,
+    id: 4,
     quote:
       "Partnering with Dilux Properties was a smooth and rewarding experience. Their professionalism, honesty, and dedication made the entire process stress-free. They were transparent in every step and delivered excellent service.",
     name: "Asaborelukpea Jude Ofure",
   },
   {
-    id: 10,
+    id: 5,
     quote:
-      "Dilux is a sincere and trustworthy agent to get property with peace of mind. I will always keep getting property through them.",
+      "Dilux is a sincere and trustworthy agency to get property with peace of mind. I will always keep getting property through them.",
     name: "Egwuom Michael Ebuka",
+  },
+    {
+    id: 6,
+    quote:
+      "Buying a land from Dilux was very easy because the Dilux team made me a Landlord in a very easy way without stress. They are very reliable and trustworthy, I will recommend them over and over again to anyone and everyone",
+    name: "OHUMENDE JERRY",
   },
 ];
 
@@ -269,7 +275,7 @@ export const diluxTeam = [
   },
   {
     name: "Lawrence Equaleona",
-    position: "Admin, Inspection and allocation office",
+    position: "Admin, Inspection and allocation officer",
     image: diluxAssociate1,
     bio: "Expert at identifying high-yield undeveloped plots before they hit the open market.",
     socials: { linkedin: "#", instagram: "#" },
@@ -290,7 +296,7 @@ export const diluxTeam = [
   },
   {
     name: "Mrs Rebecca Chizoba",
-    position: "Dilux Associaate",
+    position: "Dilux Associate",
     image: diluxAssociate4,
     bio: "Helps investors turn raw land into high-performing real estate portfolios.",
     socials: { linkedin: "#", twitter: "#" },
@@ -327,9 +333,9 @@ export const diluxFaqs = [
   },
   {
     id: 2,
-    question: "Does Dilux office has a physical office ?",
+    question: "Does Dilux Properties have a physical office ?",
     answer:
-      "Yes, dilux properties operate from a physical office . you are welcome to visit us for consultations , inquires , and transaction processing at : G10, Elizabeth Nmoye Plaza, 188 Uselu Lagos Road, Benin City Nigeria. We are always available to meet our client in person.  ",
+      "Yes, dilux properties operate from a physical office. You are welcome to visit us for consultations, inquires, and transaction processing at: G10, Elizabeth Nmoye Plaza, 188 Uselu Lagos Road, Benin City Nigeria. We are always available to meet our client in person.  ",
   },
   {
     id: 5,
@@ -355,7 +361,7 @@ export const diluxFaqs = [
 export const adsData = [
   {
     id: 1,
-    heading: "50ft x 100ft for only ₦600k!",
+    heading: "50ft x 100ft for only ₦900k!",
     subtext:
       "Flash Sale: Own a full plot in a fast-developing zone at an impossible price. Instant allocation guaranteed.",
     btnText: "Grab This Deal",
@@ -363,7 +369,7 @@ export const adsData = [
   },
   {
     id: 2,
-    heading: "Earn 24% Profit in 12 Months",
+    heading: "Earn 25% - 23% Profit in 12 Months",
     subtext:
       "Why let your money sit in a bank? Our Land Buy-Back scheme outpaces inflation with guaranteed ROI.",
     btnText: "Start Investing",
@@ -398,18 +404,18 @@ export const roiCards = [
     shortDesc:
       "Strategic acquisition and positioning in Nigeria's most promising growth corridors for maximum value appreciation.",
     longDesc:
-      "Our strategy goes far beyond simply buying land. We identify 'growth corridors'—regions where government infrastructure, industrial expansion, and residential demand are projected to intersect. We acquire these lands at their raw, early-stage prices and then strategically position them for massive value increase. This is achieved through active land management, perimeter fencing, and wait-period optimization. By timing the market cycle perfectly, we create a high-demand asset. This meticulous, data-driven approach is the engine that drives our projected 24% return, turning a passive holding into a high-performance financial instrument within a crisp 10-month window.",
+      "Our strategy goes far beyond simply buying land. We identify 'growth corridors'—regions where government infrastructure, industrial expansion, and residential demand are projected to intersect. We acquire these lands at their raw, early-stage prices and then strategically position them for massive value increase. This is achieved through active land management, perimeter fencing, and wait-period optimization. By timing the market cycle perfectly, we create a high-demand asset. This meticulous, data-driven approach is the engine that drives our projected 25% - 23% return, turning a passive holding into a high-performance financial instrument within a crisp 10-month window.",
     icon: <MapPin size={35} />,
     bg: "bg-light-gold",
   },
   {
     id: 3,
     image: roiIllustration,
-    title: "Capital + 24% Return",
+    title: "Capital + 25% - 23% Return",
     shortDesc:
-      "Enjoy a guaranteed exit strategy with your initial capital plus a highly competitive 24% return on investment.",
+      "Enjoy a guaranteed exit strategy with your initial capital plus a highly competitive 25% - 23% return on investment.",
     longDesc:
-      "The climax of the investment cycle is the payout phase. At the conclusion of the 10-month period, the land assets are liquidated or refinanced based on their new appreciated value.\n\n As an investor, you receive your full initial capital back along with a surplus return of up to 24%. Unlike the volatile stock market or depreciating currency, this growth is directly tied to the physical reality of land development and urban expansion in Nigeria. \n\n It is a wealth-building strategy built on tangible assets, providing you with a transparent, predictable, and highly rewarding exit. This is not speculation; it is a structured financial harvest from a real-world asset cycle.",
+      "The climax of the investment cycle is the payout phase. At the conclusion of the 10-month period, the land assets are liquidated or refinanced based on their new appreciated value.\n\n As an investor, you receive your full initial capital back along with a surplus return of up to 25% - 23%. Unlike the volatile stock market or depreciating currency, this growth is directly tied to the physical reality of land development and urban expansion in Nigeria. \n\n It is a wealth-building strategy built on tangible assets, providing you with a transparent, predictable, and highly rewarding exit. This is not speculation; it is a structured financial harvest from a real-world asset cycle.",
     icon: <TrendingUp size={35} />,
     bg: "bg-green",
   },
