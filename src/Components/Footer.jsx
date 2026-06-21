@@ -48,7 +48,7 @@ export function Footer() {
             </div>
 
             <div>
-              <h6 className="text-light-gold">lets connect</h6>
+              <h6 className="text-light-gold">Connect With Us</h6>
               <ul>
                 <li>
                   <a href="https://maps.app.goo.gl/6jeqKpDXkVPLnrm78" target="_blank">
