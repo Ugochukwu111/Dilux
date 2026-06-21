@@ -222,7 +222,7 @@ export function HomePage() {
             >
               {[
                 { end: 5, label: "states" },
-                { end: 44, label: "Sold Properties", duration: 3.5 },
+                { end: 65, label: "Sold Properties", duration: 3.5 },
                 { end: 95, label: "Investment Deals" },
                 { end: 8, label: "Legal & Property Contractors " },
               ].map((stat, idx) => (
@@ -255,7 +255,7 @@ export function HomePage() {
           <div className="">
             <h3 className="text-center">Real Results, Real Trust</h3>
             <p className="text-center sub-text text-dark-gray">
-              Verified stories from investors who earned guaranteed 24% growth.
+              Verified stories from investors who owned their properties with us.
             </p>
 
             <div className="testimonial-container">

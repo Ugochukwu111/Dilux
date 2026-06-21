@@ -143,7 +143,7 @@ How can we move forward?
           <p className="listing-price">{priceOfListing}</p>
         </div>
 
-        <span> ✅ dilux verified</span>
+        <span> ✅ DILUX VERIFIED</span>
 
         <p>
           {listing?.description}

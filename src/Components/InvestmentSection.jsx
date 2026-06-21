@@ -42,7 +42,7 @@ export function InvestmentSection() {
             Something Real.
           </h3>
           <p>
-           Don't just earn wealth—grow it. Dilux secures your future by placing your capital in strategic land assets with high development potential, offering a 24% projected return while you focus on life.
+           Don't just earn wealth—grow it. Dilux secures your future by placing your capital in strategic land assets with high development potential, offering a 25% - 23% projected return while you focus on life.
           </p>
           <br />
           <div className="roi-cards-container">
