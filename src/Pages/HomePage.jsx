@@ -50,14 +50,55 @@ export function HomePage() {
     <div className="homepage-container">
         <Helmet>
         <title>Dilux | Secure Land & Investment Platform in Edo State</title>
+        <link rel="canonical" href="https://diluxproperties.com.ng/" />
         <meta
           name="description"
-          content="Dilux helps Nigerian youths secure legally verified land in prime Edo State locations and grow wealth through safe, transparent land investment opportunities."
+          content="Dilux helps Nigerians secure legally verified land in prime Edo State locations and grow wealth through safe, transparent land investment opportunities."
         />
         <meta
           name="keywords"
-          content="buy land in Edo State, land investment Edo State, verified land Edo State, land with C of O Edo State, real estate investment Edo State, Dilux properties"
+          content="buy land in Edo State, land investment Edo State, verified land, property investment Benin City, Dilux properties"
         />
+        {/* Open Graph / Social */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Dilux | Secure Land & Investment Platform in Edo State" />
+        <meta property="og:description" content="Secure, legally-verified land and high-return investment opportunities in Edo State. Free inspections, full documentation, and transparent processes." />
+        <meta property="og:url" content="https://diluxproperties.com.ng/" />
+        <meta property="og:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Dilux | Secure Land & Investment Platform in Edo State" />
+        <meta name="twitter:description" content="Secure, legally-verified land and high-return investment opportunities in Edo State. Free inspections and full documentation." />
+        <meta name="twitter:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        {/* Structured Data */}
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "DILUX Properties",
+      "url": "https://diluxproperties.com.ng",
+      "logo": "https://diluxproperties.com.ng/dilux-favicon.png",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+2349070539019",
+          "contactType": "customer service",
+          "areaServed": "NG"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://diluxproperties.com.ng",
+      "name": "DILUX Properties",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://diluxproperties.com.ng/search?query={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}`}</script>
       </Helmet>
       <HeroSection heroSlides={heroSlides} />
       <main>

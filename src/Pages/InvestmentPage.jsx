@@ -72,6 +72,7 @@ export function InvestmentPage() {
     <div className="homepage-container investment-page-container">
       <Helmet>
         <title>Land Investment with High ROI in Edo State | Dilux</title>
+        <link rel="canonical" href="https://diluxproperties.com.ng/investment-plan" />
         <meta
           name="description"
           content="Invest in secure Edo State land opportunities with Dilux and earn up to 24% ROI. Transparent, legally backed land investments you can trust."
@@ -80,6 +81,22 @@ export function InvestmentPage() {
           name="keywords"
           content="land investment ROI Edo State, real estate ROI Edo State, land investment Nigeria Edo, 24% ROI land investment, secure property investment Edo"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Land Investment with High ROI in Edo State | Dilux" />
+        <meta property="og:description" content="Invest securely and earn up to 24% ROI on select Edo State land offerings with Dilux. Full documentation and transparent processes." />
+        <meta property="og:url" content="https://diluxproperties.com.ng/investment-plan" />
+        <meta property="og:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Land Investment with High ROI in Edo State | Dilux" />
+        <meta name="twitter:description" content="Invest securely and earn up to 24% ROI on select Edo State land offerings with Dilux. Full documentation and transparent processes." />
+        <meta name="twitter:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://diluxproperties.com.ng/investment-plan",
+  "name": "Dilux Properties - Investment Plan",
+  "description": "Detailed investment plan page outlining the 24% ROI product and investment terms."
+}`}</script>
       </Helmet>
       <WhatsAppIcon />
       <NavBar/>

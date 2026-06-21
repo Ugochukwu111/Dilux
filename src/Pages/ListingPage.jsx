@@ -44,6 +44,7 @@ export function ListingPage() {
 
       <Helmet>
         <title>Verified Land for Sale in Edo State | Dilux Properties</title>
+        <link rel="canonical" href="https://diluxproperties.com.ng/properties" />
         <meta
           name="description"
           content="Explore verified land for sale in Edo State. All Dilux properties come with approved documents including C of O, survey plans, and community approvals."
@@ -52,6 +53,22 @@ export function ListingPage() {
           name="keywords"
           content="land for sale in Edo State, buy land Edo State Nigeria, verified land Edo, land with C of O Edo State, Dilux land listings"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Verified Land for Sale in Edo State | Dilux Properties" />
+        <meta property="og:description" content="Explore verified land for sale in Edo State with full documentation and transparent processes." />
+        <meta property="og:url" content="https://diluxproperties.com.ng/properties" />
+        <meta property="og:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Verified Land for Sale in Edo State | Dilux Properties" />
+        <meta name="twitter:description" content="Explore verified land for sale in Edo State with full documentation and transparent processes." />
+        <meta name="twitter:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://diluxproperties.com.ng/properties",
+  "name": "Dilux Properties - Listings",
+  "description": "Verified land listings in Edo State with documentation and secure purchase process."
+}`}</script>
       </Helmet>
       <WhatsAppIcon/>
 

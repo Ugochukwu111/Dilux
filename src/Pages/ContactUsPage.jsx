@@ -61,6 +61,7 @@ export function ContactUsPage() {
     <div className="contact-page-container">
       <Helmet>
         <title>Contact Dilux | Land & Investment Experts in Edo State</title>
+        <link rel="canonical" href="https://diluxproperties.com.ng/contact-us" />
         <meta
           name="description"
           content="Contact Dilux for land inspections, consultations, and verified property inquiries in Edo State. We make land ownership simple and secure."
@@ -69,6 +70,22 @@ export function ContactUsPage() {
           name="keywords"
           content="contact land realtor Edo State, land inspection Edo State, property consultation Edo, Dilux contact, land investment Edo State"
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Dilux | Land & Investment Experts in Edo State" />
+        <meta property="og:description" content="Reach out to Dilux for site inspections, consultations, and verified property inquiries in Edo State." />
+        <meta property="og:url" content="https://diluxproperties.com.ng/contact-us" />
+        <meta property="og:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Dilux | Land & Investment Experts in Edo State" />
+        <meta name="twitter:description" content="Reach out to Dilux for site inspections, consultations, and verified property inquiries in Edo State." />
+        <meta name="twitter:image" content="https://diluxproperties.com.ng/dilux-favicon.png" />
+        <script type="application/ld+json">{`{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "url": "https://diluxproperties.com.ng/contact-us",
+  "name": "Contact Dilux Properties",
+  "description": "Contact page for Dilux Properties - reach out for consultations and site inspections."
+}`}</script>
       </Helmet>
       <WhatsAppIcon />
       <HeroSection heroSlides={contactHeroSlides} />
