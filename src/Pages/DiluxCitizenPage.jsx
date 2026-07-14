@@ -17,76 +17,100 @@ const citizenRoles = [
   {
     id: 1,
     title: "Interns",
-    badge: "Early Career Growth",
+    badge: "Learn • Practice • Earn",
+
     summary:
-      "Build experience with Dilux while gaining access to a trusted property network that values fresh ideas and disciplined execution.",
+      "Join the Dilux Academy and gain real-world experience in Business Development and Real Estate while earning commissions from live property sales.",
+
     description:
-      "Interns become part of a professional ecosystem that introduces them to land advisory, client engagement, documentation, and the practical side of property sales.",
+      "Train for 6 or 12 months through hands-on mentorship, then apply your skills by marketing verified Dilux properties and earning a percentage(%) commission on every successful sale.",
+
     highlights: [
-      "Hands-on exposure to land and property sales",
-      "Mentorship from experienced Dilux professionals",
-      "A clear path to become a full Dilux advocate",
+      "6 to 12 months of mentorship",
+      "Access to verified Dilux properties",
+      "Earn percentage(%) commission on every sale",
     ],
+
     image: roleInterns,
   },
+
   {
     id: 2,
-    title: "Sponsors",
-    badge: "Capital & Visibility",
+    title: "Investment Partners (Sponsors)",
+    badge: "Build the Future With Us",
+
     summary:
-      "Sponsors help expand the Dilux reach by funding opportunities, supporting community-led property projects, and opening doors for more buyers.",
+      "Join a select group of visionaries helping shape the future of land ownership and business education.",
+
     description:
-      "Whether you are supporting a project, backing high-potential land deals, or helping new clients access verified properties, your partnership strengthens the ecosystem.",
+      "Partner with Dilux to expand access to verified land while empowering the next generation of entrepreneurs through practical business education.",
+
     highlights: [
-      "Support verified land and property opportunities",
-      "Expand your influence through trusted real estate growth",
-      "Receive visibility through Dilux-backed initiatives",
+      "Recognized Dilux Growth Partner",
+      "Support future entrepreneurs",
+      "Invest in land and education",
     ],
+
     image: roleSponsors,
   },
+
   {
     id: 3,
     title: "Corpers",
-    badge: "Service with Purpose",
+    badge: "Serve • Grow • Earn",
+
     summary:
-      "Corpers bring credibility, reach, and discipline to the Dilux community while helping connect communities to secure property options.",
+      "Complete your NYSC with practical experience, mentorship, and rewarding real estate opportunities.",
+
     description:
-      "This role is designed for young graduates who want meaningful service, professional networking, and a platform to support land ownership conversations in a structured way.",
+      "Whether Dilux is your PPA or not, you can access our property portfolio, gain industry experience, and earn commissions while building valuable professional skills.",
+
     highlights: [
-      "Represent Dilux in communities and outreach programs",
-      "Learn the real estate value chain from the ground up",
-      "Create long-term opportunities through trusted referrals",
+      "Ideal NYSC opportunity (legally approved)",
+      "Access to all Dilux properties",
+      "Mentorship and commissions",
     ],
+
     image: roleCorpers,
   },
+
   {
     id: 4,
     title: "IT Students",
-    badge: "Digital Access",
+    badge: "Industry Experience",
+
     summary:
-      "IT students help Dilux build digital experiences, automation tools, and modern property platforms that make buying and selling easier.",
+      "Gain practical real estate experience that complements your classroom knowledge.",
+
     description:
-      "From customer-facing solutions to lead management systems, this role empowers technology-driven citizens to shape the future of property access.",
+      "Estate Management students receive hands-on industry training, work with verified properties, and earn a percentage(%) commission on every successful sale.",
+
     highlights: [
-      "Contribute to digital property tools and innovation",
-      "Work with a forward-thinking property network",
-      "Grow your portfolio while building practical tech skills",
+      "Ideal for Estate Management students",
+      "Practical market experience",
+      "Earn percentage(%) commission",
     ],
+
     image: roleStudents,
   },
+
   {
     id: 5,
-    title: "Associate Citizens",
-    badge: "Community Leadership",
+    title: "Associates",
+    badge: "Sell Without Limits",
+
     summary:
-      "Associate citizens are trusted members of the Dilux community who help connect verified buyers, landowners, and investors to the right opportunities.",
+      "Join the Dilux network and create income by connecting buyers with trusted property opportunities.",
+
     description:
-      "This includes individuals who can represent Dilux, introduce property opportunities, and support the mission of making land ownership clear, secure, and accessible for everyone.",
+      "Enjoy flexible access to our verified property portfolio, build your network, and earn by referring and marketing quality real estate opportunities.",
+
     highlights: [
-      "Gain access to a verified property sales network",
-      "Support land ownership conversations with confidence",
-      "Create recurring opportunities through trusted referrals",
+      "Flexible participation",
+      "Verified property access",
+      "Grow your income",
     ],
+
     image: roleAssociates,
   },
 ];
