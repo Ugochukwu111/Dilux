@@ -166,8 +166,8 @@ export function DiluxCitizenPage() {
                   <p>
                     From young professionals to strategic partners, each member plays a role in expanding access to secure property opportunities.
                   </p>
-                  <Link to="/contact-us" className="citizen-login-btn citizen-login-btn-secondary">
-                    Request Login Access
+                  <Link to="https://app.diluxproperties.com.ng/associate/profile" target="_blank" className="citizen-login-btn citizen-login-btn-secondary">
+                    Login  | Sign Up
                     <ArrowRight size={18} />
                   </Link>
                 </div>
@@ -205,7 +205,7 @@ export function DiluxCitizenPage() {
                         <li key={item}>{item}</li>
                       ))}
                     </ul>
-                    <Link to="/contact-us" className="citizen-login-btn">
+                    <Link to="https://app.diluxproperties.com.ng/sign-in" target="_blank" className="citizen-login-btn">
                       Login to Portal
                       <ArrowRight size={18} />
                     </Link>
