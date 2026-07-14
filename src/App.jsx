@@ -4,6 +4,7 @@ import { ListingPage } from "./Pages/ListingPage"
 import { ContactUsPage } from "./Pages/ContactUsPage"
 import { NavBar } from "./Components/NavBar"
 import { InvestmentPage } from "./Pages/InvestmentPage"
+import { DiluxCitizenPage } from "./Pages/DiluxCitizenPage"
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/properties' element = {<ListingPage/>}></Route>
         <Route path="/contact-us" element={<ContactUsPage/>}></Route>
         <Route path="/investment-plan" element={<InvestmentPage/>}></Route>
+        <Route path="/dilux-citizen" element={<DiluxCitizenPage/>}></Route>
       </Routes>
     </>
   )

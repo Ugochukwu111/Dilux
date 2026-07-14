@@ -1,0 +1,206 @@
+.dilux-citizen-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fdf7f0 0%, #ffffff 100%);
+}
+
+.dilux-citizen-main {
+  padding-bottom: 2rem;
+}
+
+.citizen-intro-section {
+  padding-top: 3rem;
+}
+
+.citizen-intro-card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border-radius: 2rem;
+  background: linear-gradient(135deg, rgba(115, 57, 57, 0.95), rgba(211, 162, 62, 0.95));
+  color: var(--bright-white);
+  box-shadow: 0 24px 70px rgba(115, 57, 57, 0.18);
+}
+
+.citizen-intro-copy h2,
+.citizen-intro-copy p,
+.citizen-intro-visual p,
+.citizen-intro-visual h3 {
+  color: var(--bright-white);
+}
+
+.citizen-pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.citizen-highlights-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.citizen-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.9rem;
+}
+
+.citizen-intro-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.citizen-visual-card {
+  width: 100%;
+  padding: 1.3rem;
+  border-radius: 1.4rem;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.visual-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.6rem;
+}
+
+.citizen-login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  background: var(--bright-white);
+  color: var(--dark-maroon);
+  font-weight: 700;
+  width: fit-content;
+}
+
+.citizen-login-btn-secondary {
+  background: var(--green);
+  color: var(--bright-white);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.section-kicker {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 0.6rem;
+}
+
+.citizen-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.citizen-role-card {
+  background: var(--bright-white);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(27, 27, 27, 0.08);
+  border: 1px solid rgba(115, 57, 57, 0.08);
+}
+
+.citizen-role-media {
+  height: 220px;
+}
+
+.citizen-role-media img {
+  object-fit: cover;
+}
+
+.citizen-role-body {
+  padding: 1.2rem;
+}
+
+.citizen-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(56, 142, 60, 0.12);
+  color: var(--green);
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.citizen-role-summary {
+  font-weight: 700;
+  color: var(--dark-maroon);
+  margin-bottom: 0.6rem;
+}
+
+.citizen-role-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.9rem 0 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.citizen-role-body li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.citizen-role-body li::before {
+  content: "•";
+  color: var(--light-gold);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .citizen-intro-card,
+  .citizen-role-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .citizen-intro-section {
+    padding-top: 1.4rem;
+  }
+
+  .citizen-role-media {
+    height: 180px;
+  }
+
+  .citizen-highlights-row {
+    flex-direction: column;
+  }
+}

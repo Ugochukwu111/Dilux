@@ -127,6 +127,39 @@ export const investmentHeroSlides = [
   },
 ];
 
+export const diluxCitizenHeroSlides = [
+  {
+    id: 1,
+    heading: "Join the Dilux Citizen network.",
+    subtext:
+      "A premium access point for interns, sponsors, corpers, IT students, and associate citizens who want to grow with verified land and property opportunities.",
+    image: heroSectionImage1,
+    phoneImage: phoneHeroSectionImage1,
+    link: "/dilux-citizen#citizen-roles",
+    cta: "Explore Roles",
+  },
+  {
+    id: 2,
+    heading: "Build trust, access opportunity, and sell with confidence.",
+    subtext:
+      "Every Dilux Citizen becomes part of a professional community that supports safe property deals and long-term growth.",
+    image: heroSectionImage2,
+    phoneImage: phoneHeroSectionImage2,
+    link: "/contact-us",
+    cta: "Request Portal Access",
+  },
+  {
+    id: 3,
+    heading: "Create access for buyers, sellers, and investors.",
+    subtext:
+      "Whether you are starting your career, building your brand, or supporting projects financially, Dilux Citizen gives you a place to contribute and grow.",
+    image: heroSectionImage3,
+    phoneImage: phoneHeroSectionImage3,
+    link: "/contact-us",
+    cta: "Talk to the Team",
+  },
+];
+
 export const contactHeroSlides = [
   {
     id: 1,
