@@ -57,6 +57,14 @@ which closes it
             </NavLink>
           </li>
           <li>
+            <NavLink to="/dilux-citizen">
+              <Users />
+              <span>
+                Dilux Citizen
+              </span>
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/contact-us">
                <ShieldCheck />
                <span>
