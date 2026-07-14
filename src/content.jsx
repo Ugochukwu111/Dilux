@@ -39,6 +39,9 @@ import heroContactImg2 from "./assets/hero/contact/contact-2.webp";
 import heroContactImg3 from "./assets/hero/contact/contact-3.webp";
 import heroContactImg4 from "./assets/hero/contact/dilux-group-photo.jpeg";
 
+import citizenHeroimg1 from "./assets/dilux-citizen.webp"
+
+
 import roiStartIllustration from "./assets/illustrations/start-investing-illustration.jpg";
 import roiIllustration from "./assets/illustrations/roi-illustration.jpg";
 
@@ -133,7 +136,7 @@ export const diluxCitizenHeroSlides = [
     heading: "Join the Dilux Citizen network.",
     subtext:
       "A premium access point for interns, sponsors, corpers, IT students, and associate citizens who want to grow with verified land and property opportunities.",
-    image: heroSectionImage1,
+    image: citizenHeroimg1,
     phoneImage: phoneHeroSectionImage1,
     link: "/dilux-citizen#citizen-roles",
     cta: "Explore Roles",
@@ -143,7 +146,7 @@ export const diluxCitizenHeroSlides = [
     heading: "Build trust, access opportunity, and sell with confidence.",
     subtext:
       "Every Dilux Citizen becomes part of a professional community that supports safe property deals and long-term growth.",
-    image: heroSectionImage2,
+    image: citizenHeroimg1,
     phoneImage: phoneHeroSectionImage2,
     link: "/contact-us",
     cta: "Request Portal Access",
@@ -153,7 +156,7 @@ export const diluxCitizenHeroSlides = [
     heading: "Create access for buyers, sellers, and investors.",
     subtext:
       "Whether you are starting your career, building your brand, or supporting projects financially, Dilux Citizen gives you a place to contribute and grow.",
-    image: heroSectionImage3,
+    image: citizenHeroimg1,
     phoneImage: phoneHeroSectionImage3,
     link: "/contact-us",
     cta: "Talk to the Team",

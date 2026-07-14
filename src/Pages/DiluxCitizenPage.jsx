@@ -7,10 +7,10 @@ import { Footer } from "../Components/Footer";
 import { diluxCitizenHeroSlides } from "../content";
 import "./DiluxCitizenPage.css";
 
-import roleInterns from "../assets/hero/contact/contact-1.webp";
+import roleInterns from "../assets/dilux-citizen.webp";
 import roleSponsors from "../assets/hero/contact/contact-2.webp";
 import roleCorpers from "../assets/hero/contact/contact-3.webp";
-import roleStudents from "../assets/hero/dilux-hero2.jpg";
+import roleStudents from "../assets/dilux-citizen.webp";
 import roleAssociates from "../assets/hero/contact/dilux-group-photo.jpeg";
 
 const citizenRoles = [
