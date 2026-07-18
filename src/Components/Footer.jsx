@@ -30,6 +30,9 @@ export function Footer() {
                   <Link to="/investment-plan">25% - 23% investment plans</Link>
                 </li>
                 <li>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
+                </li>
+                <li>
                   <a to="/investment-plan" target="_blank" href="https://wa.me/2349070539019">Business Consulting</a>
                 </li>
                 <li>
