@@ -36,7 +36,7 @@ const citizenRoles = [
 
   {
     id: 2,
-    title: "Investment Partners (Sponsors)",
+    title: "Dilux Sponsors | Partners",
     badge: "Build the Future With Us",
 
     summary:
