@@ -313,7 +313,7 @@ export function DiluxCitizenPage() {
                 <span className="citizen-pill">Dilux Citizen Program</span>
                 <h2>Become a trusted part of the Dilux property network.</h2>
                 <p>
-                  Dilux Citizen program is built for people who want more than a transaction. It is for interns, sponsors, corpers, IT students, and associate citizens who can help buyers, sellers, and investors access verified land and property opportunities with clarity, confidence, and professionalism.
+                  Dilux Citizen Program is built for people who want more than a transaction. It is for interns, sponsors, corpers, IT students, and associate citizens who can help buyers, sellers, and investors access verified land and property opportunities with clarity, confidence, and professionalism.
                 </p>
                 <div className="citizen-highlights-row">
                   <div className="citizen-highlight-item">
