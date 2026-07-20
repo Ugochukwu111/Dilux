@@ -11,9 +11,9 @@ import land1Src from "./assets/land1.jpg";
 import land2Src from "./assets/land2.jpg";
 
 import testimonial1 from "./assets/testimonials/iRE.jpeg";
-import testimonial2 from "./assets/testimonials/uifaces-human-avatar.jpg";
-import testimonial3 from "./assets/testimonials/uifaces-popular-avatar (1).jpg";
-import testimonial4 from "./assets/testimonials/uifaces-popular-avatar.jpg";
+import testimonial2 from "./assets/testimonials/iRE.jpeg";
+import testimonial3 from "./assets/testimonials/iRE.jpeg";
+import testimonial4 from "./assets/testimonials/iRE.jpeg";
 
 import diluxGmo from "./assets/team/IRE.jpg";
 import diluxAssociate1 from "./assets/team/lawrence.jpeg";

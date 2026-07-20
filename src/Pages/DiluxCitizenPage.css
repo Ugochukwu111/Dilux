@@ -90,14 +90,14 @@
   margin-top: 1rem;
   padding: 0.8rem 1.1rem;
   border-radius: 999px;
-  background: var(--bright-white);
-  color: var(--dark-maroon);
+  background: var( --light-gray);
+  color: var( --dark-gray);
   font-weight: 700;
   width: fit-content;
 }
 
 .citizen-login-btn-secondary {
-  background: var(--green);
+  background: var( --dark-gray);
   color: var(--bright-white);
 }
 
@@ -184,10 +184,115 @@
   line-height: 1;
 }
 
+.citizen-careers-section {
+  padding-top: 0.5rem;
+}
+
+.citizen-department-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+}
+
+.citizen-department-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  padding: 1.2rem;
+  border-radius: 1.5rem;
+  background: var(--bright-white);
+  border: 1px solid rgba(115, 57, 57, 0.08);
+  box-shadow: 0 16px 45px rgba(27, 27, 27, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.citizen-department-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 55px rgba(27, 27, 27, 0.12);
+}
+
+.citizen-department-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 999px;
+  background: rgba(211, 162, 62, 0.16);
+  color: var(--dark-maroon);
+}
+
+.citizen-department-header h3 {
+  margin-bottom: 0.25rem;
+  font-size: clamp(1.1rem, 1.2vw, 1.25rem);
+}
+
+.citizen-department-subtitle {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 0.86rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.citizen-department-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.citizen-department-list li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(56, 142, 60, 0.08);
+  color: var(--text-black);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.citizen-cta-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1.8rem;
+  padding: clamp(1.2rem, 3vw, 1.7rem);
+  border-radius: 1.8rem;
+  background: linear-gradient(135deg, rgba(115, 57, 57, 0.05), rgba(211, 162, 62, 0.08));
+  border: 1px solid rgba(115, 57, 57, 0.08);
+  box-shadow: 0 16px 45px rgba(27, 27, 27, 0.06);
+}
+
+.citizen-cta-copy {
+  max-width: 780px;
+}
+
+.citizen-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
 @media (max-width: 900px) {
   .citizen-intro-card,
-  .citizen-role-grid {
+  .citizen-role-grid,
+  .citizen-department-grid {
     grid-template-columns: 1fr;
+  }
+
+  .citizen-department-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .citizen-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -202,5 +307,15 @@
 
   .citizen-highlights-row {
     flex-direction: column;
+  }
+
+  .citizen-department-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .citizen-cta-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

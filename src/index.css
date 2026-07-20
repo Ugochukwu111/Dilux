@@ -59,6 +59,21 @@
 .text-black { color: var(--black); }
 .text-white { color: var(--white); }
 
+.coming-soon {
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f8f8f8,
+    #efefef,
+    #fafafa
+  );
+
+  border: 1px dashed #d8d8d8;
+  border-radius: 1.5rem;
+
+  opacity: 0.85;
+}
+
 /* --- Gradient Background Utilities --- */
 .bg-soft-gradient { background: var(--soft-gradient); }
 .bg-deep-gradient { background: var(--deep-gradient); }

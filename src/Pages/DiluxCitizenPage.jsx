@@ -1,5 +1,24 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, BadgeCheck, Building2, GraduationCap, HandCoins, ShieldCheck, Users } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  BriefcaseBusiness,
+  Building2,
+  Camera,
+  ClipboardList,
+  GraduationCap,
+  HandCoins,
+  Headset,
+  Map,
+  MapPinned,
+  Megaphone,
+  Scale,
+  ShieldCheck,
+  TrendingUp,
+  Users,
+  UsersRound,
+  Wallet,
+} from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { HeroSection } from "../Components/HeroSection";
 import { WhatsAppIcon } from "../Components/WhatsAppIcon";
@@ -116,11 +135,159 @@ const citizenRoles = [
 ];
 
 const roleIcons = [
-  <GraduationCap size={18} />, 
-  <HandCoins size={18} />, 
-  <ShieldCheck size={18} />, 
-  <Building2 size={18} />, 
+  <GraduationCap size={18} />,
+  <HandCoins size={18} />,
+  <ShieldCheck size={18} />,
+  <Building2 size={18} />,
   <Users size={18} />,
+];
+
+const staffDepartments = [
+  {
+    title: "General Managing Director (GMD)",
+    subtitle: "Leadership & Strategy",
+    icon: <BriefcaseBusiness size={22} />,
+    responsibilities: [
+      "Provides vision and leadership",
+      "Makes strategic business decisions",
+      "Approves major transactions and partnerships",
+      "Represents the company publicly",
+    ],
+  },
+  {
+    title: "General Manager",
+    subtitle: "Operations & Delivery",
+    icon: <Building2 size={22} />,
+    responsibilities: [
+      "Oversees daily operations",
+      "Supervises all departments",
+      "Ensures company targets are achieved",
+      "Reports directly to the GMD",
+    ],
+  },
+  {
+    title: "Sales Head",
+    subtitle: "Growth & Revenue",
+    icon: <TrendingUp size={22} />,
+    responsibilities: [
+      "Generates leads",
+      "Markets company properties",
+      "Conducts client follow-up",
+      "Closes sales",
+      "Prepares sales reports",
+    ],
+  },
+  {
+    title: "Inspection & Allocation Manager",
+    subtitle: "Site Coordination",
+    icon: <MapPinned size={22} />,
+    responsibilities: [
+      "Schedules site inspections",
+      "Coordinates transportation",
+      "Allocates plots",
+      "Maintains allocation records",
+      "Verifies land documentation",
+      "Ensures correct plot allocation",
+    ],
+  },
+  {
+    title: "Customer Service",
+    subtitle: "Client Support",
+    icon: <Headset size={22} />,
+    responsibilities: [
+      "Handles customer inquiries",
+      "Resolves complaints",
+      "Provides after-sales support",
+      "Maintains client relationships",
+    ],
+  },
+  {
+    title: "Marketing Officer",
+    subtitle: "Brand & Outreach",
+    icon: <Megaphone size={22} />,
+    responsibilities: [
+      "Creates marketing campaigns",
+      "Manages social media",
+      "Organizes promotional events",
+      "Generates qualified leads",
+    ],
+  },
+  {
+    title: "Admin",
+    subtitle: "Operations Support",
+    icon: <ClipboardList size={22} />,
+    responsibilities: [
+      "Maintains company records",
+      "Prepares reports",
+      "Coordinates meetings",
+      "Handles office administration",
+    ],
+  },
+  {
+    title: "Accountant",
+    subtitle: "Finance & Reporting",
+    icon: <Wallet size={22} />,
+    responsibilities: [
+      "Manages finances",
+      "Processes payments",
+      "Prepares financial reports",
+      "Maintains accounting records",
+    ],
+  },
+  {
+    title: "Legal Officer",
+    subtitle: "Compliance & Contracts",
+    icon: <Scale size={22} />,
+    responsibilities: [
+      "Verifies land documents",
+      "Drafts agreements",
+      "Handles legal matters",
+      "Ensures compliance",
+    ],
+  },
+  {
+    title: "Human Resources",
+    subtitle: "People & Culture",
+    icon: <UsersRound size={22} />,
+    responsibilities: [
+      "Recruits staff",
+      "Conducts orientation",
+      "Monitors performance",
+      "Enforces company policies",
+    ],
+  },
+  {
+    title: "Academy Coordinator",
+    subtitle: "Dilux Real Estate & Business Academy",
+    icon: <GraduationCap size={22} />,
+    responsibilities: [
+      "Organizes training",
+      "Coordinates orientation",
+      "Tracks attendance",
+      "Oversees certification",
+    ],
+  },
+  {
+    title: "Media & Creative Officer",
+    subtitle: "Content & Branding",
+    icon: <Camera size={22} />,
+    responsibilities: [
+      "Designs graphics",
+      "Produces photos & videos",
+      "Manages branding",
+      "Creates promotional content",
+    ],
+  },
+  {
+    title: "Field Officer",
+    subtitle: "Property Intelligence",
+    icon: <Map size={22} />,
+    responsibilities: [
+      "Scouts new properties",
+      "Inspects sites",
+      "Monitors projects",
+    ],
+  },
 ];
 
 export function DiluxCitizenPage() {
@@ -212,6 +379,54 @@ export function DiluxCitizenPage() {
                   </div>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="citizen-careers-section">
+          <div className="container">
+            <div className="section-heading">
+              <p className="section-kicker">Career opportunities</p>
+              <h2>Join Our Professional Team</h2>
+              <p>
+                Behind every successful property transaction is a team of professionals. From leadership and legal compliance to customer service, media and field operations, every department plays a vital role in delivering the Dilux experience.
+              </p>
+            </div>
+
+            <div className="citizen-department-grid">
+              {staffDepartments.map((department) => (
+                <article className="citizen-department-card" key={department.title}>
+                  <div className="citizen-department-icon">{department.icon}</div>
+                  <div className="citizen-department-header">
+                    <h3>{department.title}</h3>
+                    {department.subtitle ? <p className="citizen-department-subtitle">{department.subtitle}</p> : null}
+                  </div>
+                  <ul className="citizen-department-list">
+                    {department.responsibilities.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+
+            <div className="citizen-cta-card">
+              <div className="citizen-cta-copy">
+                <p className="section-kicker">Grow with Dilux</p>
+                <h3>Build Your Career With Dilux</h3>
+                <p>
+                  Whether you&apos;re passionate about management, sales, customer service, legal services, finance, media or field operations, Dilux offers opportunities to grow while helping people own verified land with confidence.
+                </p>
+              </div>
+              <div className="citizen-cta-actions">
+                <Link to=""  className="citizen-login-btn coming-soon">
+                  Apply Now
+                  <ArrowRight size={18} />
+                </Link>
+                <Link to="" className="citizen-login-btn citizen-login-btn-secondary coming-soon">
+                  Contact HR
+                </Link>
+              </div>
             </div>
           </div>
         </section>
